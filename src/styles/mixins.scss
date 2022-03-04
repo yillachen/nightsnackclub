@@ -1,0 +1,27 @@
+@use 'sass:math';
+
+// breakpoints
+$bp-mob: 500px;
+$bp-tab: 768px;
+$bp-lap: 1280px;
+$bp-lg-lap: 1440px;
+$bp-desk: 1680px;
+$bp-lg-desk: 1920px;
+
+@mixin respond($width) {
+  @media screen and (max-width: $width) { @content; }
+}
+@mixin respond-min($width) {
+  @media screen and (min-width: $width) { @content; }
+}
+
+@function px-calc($size) {
+  $pxSize: $size * 1.333333333;
+  @return #{$pxSize}px;
+}
+
+@include respond($bp-tab) {
+  .mobile-only {
+    display: none !important;
+  }
+}

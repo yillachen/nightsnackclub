@@ -1,0 +1,454 @@
+@import "./fonts";
+@import "./mixins";
+@import "./navigation";
+@import "./opening-sequence";
+@import "./image-well";
+@import "./thanks-page";
+
+// general body styles
+body {
+  position: relative;
+  margin: 0;
+
+  &.body-index {
+    background-color: #ffd9b7;
+  }
+  &.body-asian-womxn {
+    background-color: #fff0dc;
+  }
+  &.body-illustrators {
+    background-color: #0b1676;
+  }
+  &.body-spiritual {
+    background-color: #ddd2f5;
+  }
+  &.body-blog {
+    background-color: #0a4d4d;
+  }
+  &.body-health {
+    background-color: #ffe2b7;
+  }
+  &.body-nightsnack {
+    background-color: #c6d2cf;
+  }
+}
+
+// general background styles
+.background-container {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+// background segments
+.background-container .bg-segment {
+  height: 33.3333vh;
+  width: 0%;
+  max-width: 100%;
+
+  &.index {
+    background: #ffe3c9;
+  }
+  &.asian-womxn {
+    background: #fff1de;
+  }
+  &.illustrators {
+    background: #0a1772;
+  }
+  &.spiritual {
+    background: #ddd3f3;
+  }
+  &.blog {
+    background: #0f4d4d;
+  }
+  &.health {
+    background: #fee3ba;
+  }
+  &.nightsnack-club {
+    background: #c6d2cf;
+  }
+  &.thanks {
+    background: #ffe3c9;
+  }
+}
+
+.scene-wrapper {
+  height: 100vh;
+  // width: 100vw;
+  width: 100%;
+  overflow: hidden;
+}
+
+// large page titles
+.page-title-container {
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+  &.asian-title,
+  &.illustrators-title,
+  &.blog-title,
+  &.nightsnack-title,
+  &.health-title {
+    display: block;
+
+    @include respond-min($bp-tab) {
+      display: inline-block;
+    }
+  }
+}
+
+.page-title {
+  font-family: "Helvetica Roman";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.85;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  word-spacing: 0.72px;
+
+  @include respond-min($bp-tab) {
+    font-size: 150px;
+  }
+  @include respond-min($bp-lap) {
+    font-size: 195px;
+  }
+
+  .character-in {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  span.blank-char {
+    min-width: 50px;
+    display: inline-block;
+  }
+}
+
+.scene-container {
+  width: 100%;
+}
+
+.intro-video {
+  text-align: center;
+  margin: 9px auto;
+  width: 100%;
+
+  @include respond-min($bp-tab) {
+    margin: 9px auto 12px;
+    width: 85%;
+  }
+
+  @include respond-min($bp-lap) {
+    width: 78%;
+  }
+
+  @include respond-min($bp-desk) {
+    width: 82%;
+    margin: 21px auto;
+  }
+}
+
+.anim-container {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+
+  &.page-container-spacing {
+    padding-top: 51px;
+    padding-bottom: 14px;
+
+    @include respond-min($bp-desk) {
+      padding-top: 69px;
+      padding-bottom: 21px;
+    }
+  }
+
+  .anim-title {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    // z-index: 9;
+    margin: 0px 0 9px;
+
+    @include respond-min($bp-tab) {
+      margin: 0px 0 15px;
+    }
+
+    @include respond-min($bp-desk) {
+      margin: 0px 0 21px;
+    }
+
+    &.current-title {
+      margin-bottom: 0;
+    }
+  }
+
+  .thanks-title {
+    position: relative;
+    display: block;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .anim-subtitle {
+    display: inline-block;
+    position: relative;
+  }
+
+  .nsc-title-small {
+    font-size: 32px;
+    font-weight: 200;
+    text-align: center;
+
+    @include respond-min($bp-tab) {
+      font-size: 46px;
+      margin: 0px 0 15px;
+    }
+
+    @include respond-min($bp-lap) {
+      font-size: 60px;
+    }
+
+    @include respond-min($bp-desk) {
+      margin: 0px 0 21px;
+    }
+  }
+
+  .nsc-title-medium {
+    font-family: "Big Caslon";
+    font-size: 36px;
+    font-weight: 200;
+    line-height: 1.25;
+    vertical-align: middle;
+    letter-spacing: -0.72px;
+    color: #5e7017;
+    text-align: center;
+    margin: 0;
+
+    @include respond-min($bp-tab) {
+      font-size: 69px;
+      letter-spacing: -1.38;
+    }
+
+    @include respond-min($bp-desk) {
+      font-size: 112px;
+    }
+  }
+
+  .nsc-title-large {
+    font-size: 70px;
+    line-height: 0.9;
+    letter-spacing: -4px;
+
+    @include respond-min($bp-tab) {
+      font-size: 138px;
+      line-height: 0.85;
+    }
+
+    @include respond-min($bp-lap) {
+      font-size: 185px;
+      letter-spacing: -7.4px;
+    }
+
+    @include respond-min($bp-desk) {
+      font-size: 262px;
+    }
+  }
+
+  .nsc-title-kerning {
+    margin-right: 4px;
+
+    @include respond-min($bp-tab) {
+      margin-right: 8px;
+    }
+  }
+}
+
+.intro-container-spacing {
+  padding-top: 168px;
+  padding-bottom: 3px;
+
+  @include respond-min($bp-tab) {
+    padding-top: 24%;
+  }
+
+  @include respond-min($bp-lap) {
+    padding-top: 74px;
+    padding-bottom: 0;
+  }
+}
+
+.previous-title {
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  font-weight: 200;
+
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: -1;
+  font-size: 32px;
+
+  @include respond-min($bp-mob) {
+    font-size: 46px;
+  }
+
+  @include respond-min($bp-lap) {
+    font-size: 60px;
+  }
+}
+
+.opening-title {
+  color: #5e7017;
+}
+.asian-title {
+  color: #f73b35;
+}
+.illustrators-title {
+  color: #ffceb3;
+}
+.spiritual-title {
+  color: #0b8639;
+}
+.blog-title {
+  color: #c8ffce;
+}
+.health-title {
+  color: #34ac5d;
+}
+.nightsnack-title {
+  color: #8667ff;
+}
+.thanks-title {
+  color: #5e7017;
+}
+
+.nsc-page-title {
+  font-family: "Big Caslon";
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+#nsc-anim-wipe {
+  width: 0%;
+  clip-path: inset(0 0 0 0);
+  min-height: 38px;
+
+  @include respond-min($bp-tab) {
+    min-height: 52px;
+  }
+
+  @include respond-min($bp-lap) {
+    min-height: 72px;
+  }
+
+  .current-title {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.title-container {
+  width: 100%;
+  position: relative;
+  z-index: 8;
+}
+
+.year-in-review {
+  text-align: center;
+
+  .thanks-cont {
+    padding-top: 30px;
+
+    @include respond-min($bp-tab) {
+      padding-top: 42px;
+    }
+
+    @include respond-min($bp-lg-lap) {
+      padding-top: 46px;
+    }
+
+    @include respond-min($bp-desk) {
+      // padding-top: 56px;
+      padding-top: 0;
+    }
+  }
+
+  h3 {
+    font-family: "Helvetica Roman";
+    font-weight: 400;
+    line-height: 85%;
+    color: #5e7017;
+    margin: 0;
+
+    &.thanks-content {
+      color: #5e7017;
+      font-size: 60px;
+      line-height: 1;
+      letter-spacing: -0.04em;
+
+      @include respond-min($bp-lap) {
+        font-size: 112px;
+        line-height: 0.9;
+      }
+
+      @include respond-min($bp-lg-lap) {
+        font-size: 136px;
+      }
+
+      @include respond-min($bp-desk + 1) {
+        font-size: 170px;
+      }
+
+      &.content-mobile {
+        display: block;
+
+        @include respond-min($bp-lap) {
+          display: none;
+        }
+      }
+
+      &.content-desk {
+        display: none;
+
+        @include respond-min($bp-lap) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.yir-cont {
+  &:first-child {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  &:last-child {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+video {
+  width: 80%;
+}
