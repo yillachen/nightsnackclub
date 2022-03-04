@@ -1,13 +1,15 @@
 import React from "react";
-import { Router } from "react-router-dom";
 import "./styles/styles.scss";
-import Routes from "./Routes";
+import AllRoutes from "./AllRoutes";
+import Intro from "./components/Intro";
 
 function App() {
   return (
-    <Router>
-      <Routes />
-    </Router>
+    <>
+      <Intro />
+
+      {/* <AllRoutes /> */}
+    </>
   );
 }
 
