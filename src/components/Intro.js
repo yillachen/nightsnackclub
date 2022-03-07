@@ -1,8 +1,8 @@
-import "../styles/styles.scss";
 import { Link } from "react-router-dom";
 import StartButton from "./StartButton";
 import Animation from "../assets/images/2020_original-hevc-safari.mp4";
 import Animation2 from "../assets/images/2020_original-vp9-chrome.webm";
+import PageTransition from "../js/pages";
 
 export default function Intro() {
   return (
