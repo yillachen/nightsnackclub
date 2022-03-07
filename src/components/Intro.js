@@ -1,10 +1,21 @@
+import { useEffect } from "react";
+import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 import StartButton from "./StartButton";
 import Animation from "../assets/images/2020_original-hevc-safari.mp4";
 import Animation2 from "../assets/images/2020_original-vp9-chrome.webm";
-import PageTransition from "../js/pages";
 
-export default function Intro() {
+export default function Intro(props) {
+  useEffect(() => {
+    gsap.from(".page-title-js", {
+      duration: 1,
+      ease: "power4",
+      yPercent: -120,
+      stagger: 0.045,
+      delay: 0.3,
+    });
+  });
+
   return (
     <main className="body-index">
       <div data-router-wrapper>
@@ -65,9 +76,9 @@ export default function Intro() {
           </main>
 
           <div className="nav-row__btn start-btn">
-            {/* <Link href="/asian-womxn"> */}
-            <StartButton />
-            {/* </Link> */}
+            <Link to="/asian-womxn">
+              <StartButton />
+            </Link>
           </div>
         </div>
       </div>

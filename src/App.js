@@ -11,9 +11,11 @@ import {
   BlogWorms,
   Outro,
 } from "./components/index";
+import PageTransition from './js/pages'
 
 const routes = [
   { path: "/", name: "Home", component: Intro },
+  { path: "/home", name: "Home", component: Intro },
   { path: "/asian-womxn", name: "Asian Womxn", component: AsianWomxn },
   { path: "/draw-and-tell", name: "Draw and Tell", component: DrawAndTell },
   {
@@ -32,6 +34,7 @@ const routes = [
 ];
 
 export default function App() {
+  console.log(PageTransition)
   return (
     <Switch>
       {routes.map(({ path, component }, index) => (
