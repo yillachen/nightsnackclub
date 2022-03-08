@@ -1,4 +1,4 @@
-@use 'sass:math';
+@use "sass:math";
 
 // breakpoints
 $bp-mob: 500px;
@@ -9,10 +9,14 @@ $bp-desk: 1680px;
 $bp-lg-desk: 1920px;
 
 @mixin respond($width) {
-  @media screen and (max-width: $width) { @content; }
+  @media screen and (max-width: $width) {
+    @content;
+  }
 }
-@mixin respond-min($width) {
-  @media screen and (min-width: $width) { @content; }
+@mixin respond-max($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
 }
 
 @function px-calc($size) {

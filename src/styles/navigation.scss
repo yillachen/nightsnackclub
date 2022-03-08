@@ -1,18 +1,17 @@
 .nav-row {
-
   &__btn {
     bottom: 32px;
     position: absolute;
 
-    @include respond-min($bp-tab) {
+    @include respond-max($bp-tab) {
       bottom: 50px;
     }
 
-    @include respond-min($bp-lg-lap) {
+    @include respond-max($bp-lg-lap) {
       bottom: 70px;
     }
 
-    @include respond-min($bp-lg-desk) {
+    @include respond-max($bp-lg-desk) {
       bottom: 85px;
     }
 
@@ -20,19 +19,19 @@
       display: inline-block;
       position: relative;
       width: 100%;
-      vertical-align: middle; 
+      vertical-align: middle;
       overflow: hidden;
 
       svg {
         display: inline-block;
         width: 95px;
         height: 100%;
-  
-        @include respond-min($bp-lap) {
+
+        @include respond-max($bp-lap) {
           width: 110px;
         }
-  
-        @include respond-min($bp-desk) {
+
+        @include respond-max($bp-desk) {
           width: 150px;
         }
       }
@@ -40,12 +39,12 @@
       &.begin-again {
         svg {
           width: 114px;
-    
-          @include respond-min($bp-lap) {
+
+          @include respond-max($bp-lap) {
             width: 137px;
           }
-    
-          @include respond-min($bp-desk) {
+
+          @include respond-max($bp-desk) {
             width: 182px;
           }
         }
@@ -59,19 +58,19 @@
     &.back-btn {
       left: 20px;
 
-      @include respond-min($bp-lap) {
+      @include respond-max($bp-lap) {
         left: 33px;
       }
 
-      @include respond-min($bp-lg-lap) {
+      @include respond-max($bp-lg-lap) {
         left: 55px;
       }
 
-      @include respond-min($bp-desk) {
+      @include respond-max($bp-desk) {
         left: 50px;
       }
 
-      @include respond-min($bp-lg-desk) {
+      @include respond-max($bp-lg-desk) {
         left: 65px;
       }
     }
@@ -80,19 +79,19 @@
       transform: translateX(0%);
       right: 20px;
 
-      @include respond-min($bp-lap) {
+      @include respond-max($bp-lap) {
         right: 33px;
       }
 
-      @include respond-min($bp-lg-lap) {
+      @include respond-max($bp-lg-lap) {
         right: 55px;
       }
 
-      @include respond-min($bp-desk) {
+      @include respond-max($bp-desk) {
         right: 50px;
       }
 
-      @include respond-min($bp-lg-desk) {
+      @include respond-max($bp-lg-desk) {
         right: 65px;
       }
     }
@@ -101,20 +100,20 @@
       right: 50%;
       transform: translateX(50%);
 
-      @include respond-min($bp-lap) {
+      @include respond-max($bp-lap) {
         right: 35px;
         transform: translateX(0%);
       }
 
-      @include respond-min($bp-lg-lap) {
+      @include respond-max($bp-lg-lap) {
         right: 55px;
       }
 
-      @include respond-min($bp-desk) {
+      @include respond-max($bp-desk) {
         right: 50px;
       }
 
-      @include respond-min($bp-lg-desk) {
+      @include respond-max($bp-lg-desk) {
         right: 70px;
       }
     }
@@ -125,61 +124,61 @@
 
     &.asian-womxn {
       svg path.btn-stroke {
-        stroke: #FF4C24;
+        stroke: #ff4c24;
       }
-      
+
       svg path.btn-fill {
-        fill: #FF4C24;
+        fill: #ff4c24;
       }
     }
 
     &.illustrators {
       svg path.btn-stroke {
-        stroke: #FFCEB3;
+        stroke: #ffceb3;
       }
 
       svg path.btn-fill {
-        fill: #FFCEB3;
+        fill: #ffceb3;
       }
     }
 
     &.spiritual {
       svg path.btn-stroke {
-        stroke: #0B8639;
+        stroke: #0b8639;
       }
 
       svg path.btn-fill {
-        fill: #0B8639;
+        fill: #0b8639;
       }
     }
 
     &.blog {
       svg path.btn-stroke {
-        stroke: #C8FFCE;
+        stroke: #c8ffce;
       }
 
       svg path.btn-fill {
-        fill: #C8FFCE;
+        fill: #c8ffce;
       }
     }
 
     &.health {
       svg path.btn-stroke {
-        stroke: #34AC5D;
+        stroke: #34ac5d;
       }
 
       svg path.btn-fill {
-        fill: #34AC5D;
+        fill: #34ac5d;
       }
     }
 
     &.snack-attack {
       svg path.btn-stroke {
-        stroke: #8667FF;
+        stroke: #8667ff;
       }
 
       svg path.btn-fill {
-        fill: #8667FF;
+        fill: #8667ff;
       }
     }
   }

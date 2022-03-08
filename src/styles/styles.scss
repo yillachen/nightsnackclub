@@ -3,6 +3,7 @@
 @import "./navigation";
 @import "./image-well";
 @import "./thanks-page";
+@import "./opening-sequence";
 
 // general body styles
 body {
@@ -97,7 +98,7 @@ main {
   &.health-title {
     display: block;
 
-    @include respond-min($bp-tab) {
+    @include respond-max($bp-tab) {
       display: inline-block;
     }
   }
@@ -116,10 +117,10 @@ main {
   position: relative;
   word-spacing: 0.72px;
 
-  @include respond-min($bp-tab) {
+  @include respond-max($bp-tab) {
     font-size: 150px;
   }
-  @include respond-min($bp-lap) {
+  @include respond-max($bp-lap) {
     font-size: 195px;
   }
 
@@ -145,16 +146,16 @@ main {
   margin: 9px auto;
   width: 100%;
 
-  @include respond-min($bp-tab) {
+  @include respond-max($bp-tab) {
     margin: 9px auto 12px;
     width: 85%;
   }
 
-  @include respond-min($bp-lap) {
+  @include respond-max($bp-lap) {
     width: 78%;
   }
 
-  @include respond-min($bp-desk) {
+  @include respond-max($bp-desk) {
     width: 82%;
     margin: 21px auto;
   }
@@ -170,7 +171,7 @@ main {
     padding-top: 51px;
     padding-bottom: 14px;
 
-    @include respond-min($bp-desk) {
+    @include respond-max($bp-desk) {
       padding-top: 69px;
       padding-bottom: 21px;
     }
@@ -183,11 +184,11 @@ main {
     // z-index: 9;
     margin: 0px 0 9px;
 
-    @include respond-min($bp-tab) {
+    @include respond-max($bp-tab) {
       margin: 0px 0 15px;
     }
 
-    @include respond-min($bp-desk) {
+    @include respond-max($bp-desk) {
       margin: 0px 0 21px;
     }
 
@@ -213,16 +214,16 @@ main {
     font-weight: 200;
     text-align: center;
 
-    @include respond-min($bp-tab) {
+    @include respond-max($bp-tab) {
       font-size: 46px;
       margin: 0px 0 15px;
     }
 
-    @include respond-min($bp-lap) {
+    @include respond-max($bp-lap) {
       font-size: 60px;
     }
 
-    @include respond-min($bp-desk) {
+    @include respond-max($bp-desk) {
       margin: 0px 0 21px;
     }
   }
@@ -238,12 +239,12 @@ main {
     text-align: center;
     margin: 0;
 
-    @include respond-min($bp-tab) {
+    @include respond-max($bp-tab) {
       font-size: 69px;
       letter-spacing: -1.38;
     }
 
-    @include respond-min($bp-desk) {
+    @include respond-max($bp-desk) {
       font-size: 112px;
     }
   }
@@ -253,17 +254,17 @@ main {
     line-height: 0.9;
     letter-spacing: -4px;
 
-    @include respond-min($bp-tab) {
+    @include respond-max($bp-tab) {
       font-size: 138px;
       line-height: 0.85;
     }
 
-    @include respond-min($bp-lap) {
+    @include respond-max($bp-lap) {
       font-size: 185px;
       letter-spacing: -7.4px;
     }
 
-    @include respond-min($bp-desk) {
+    @include respond-max($bp-desk) {
       font-size: 262px;
     }
   }
@@ -271,7 +272,7 @@ main {
   .nsc-title-kerning {
     margin-right: 4px;
 
-    @include respond-min($bp-tab) {
+    @include respond-max($bp-tab) {
       margin-right: 8px;
     }
   }
@@ -281,11 +282,11 @@ main {
   padding-top: 168px;
   padding-bottom: 3px;
 
-  @include respond-min($bp-tab) {
+  @include respond-max($bp-tab) {
     padding-top: 24%;
   }
 
-  @include respond-min($bp-lap) {
+  @include respond-max($bp-lap) {
     padding-top: 74px;
     padding-bottom: 0;
   }
@@ -304,11 +305,11 @@ main {
   z-index: -1;
   font-size: 32px;
 
-  @include respond-min($bp-mob) {
+  @include respond-max($bp-mob) {
     font-size: 46px;
   }
 
-  @include respond-min($bp-lap) {
+  @include respond-max($bp-lap) {
     font-size: 60px;
   }
 }
@@ -350,11 +351,11 @@ main {
   clip-path: inset(0 0 0 0);
   min-height: 38px;
 
-  @include respond-min($bp-tab) {
+  @include respond-max($bp-tab) {
     min-height: 52px;
   }
 
-  @include respond-min($bp-lap) {
+  @include respond-max($bp-lap) {
     min-height: 72px;
   }
 
@@ -382,15 +383,15 @@ main {
   .thanks-cont {
     padding-top: 30px;
 
-    @include respond-min($bp-tab) {
+    @include respond-max($bp-tab) {
       padding-top: 42px;
     }
 
-    @include respond-min($bp-lg-lap) {
+    @include respond-max($bp-lg-lap) {
       padding-top: 46px;
     }
 
-    @include respond-min($bp-desk) {
+    @include respond-max($bp-desk) {
       // padding-top: 56px;
       padding-top: 0;
     }
@@ -409,23 +410,23 @@ main {
       line-height: 1;
       letter-spacing: -0.04em;
 
-      @include respond-min($bp-lap) {
+      @include respond-max($bp-lap) {
         font-size: 112px;
         line-height: 0.9;
       }
 
-      @include respond-min($bp-lg-lap) {
+      @include respond-max($bp-lg-lap) {
         font-size: 136px;
       }
 
-      @include respond-min($bp-desk + 1) {
+      @include respond-max($bp-desk + 1) {
         font-size: 170px;
       }
 
       &.content-mobile {
         display: block;
 
-        @include respond-min($bp-lap) {
+        @include respond-max($bp-lap) {
           display: none;
         }
       }
@@ -433,7 +434,7 @@ main {
       &.content-desk {
         display: none;
 
-        @include respond-min($bp-lap) {
+        @include respond-max($bp-lap) {
           display: block;
         }
       }
@@ -454,39 +455,4 @@ main {
 
 video {
   width: 80%;
-}
-
-.top-gradient {
-  background: rgb(221, 220, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(221, 220, 255, 1) 0%,
-    rgba(250, 251, 251, 0) 100%
-  );
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 219px;
-  // z-index: 3;
-
-  @include respond-min($bp-tab) {
-    height: 253px;
-  }
-
-  @include respond-min($bp-lap) {
-    height: 76px;
-  }
-
-  @include respond-min($bp-lg-lap) {
-    height: 128px;
-  }
-
-  @include respond-min($bp-desk) {
-    height: 116px;
-  }
-
-  @include respond-min($bp-lg-desk) {
-    height: 131px;
-  }
 }
