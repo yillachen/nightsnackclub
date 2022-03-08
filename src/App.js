@@ -34,7 +34,6 @@ const routes = [
 ];
 
 export default function App() {
-  console.log(PageTransition)
   return (
     <Switch>
       {routes.map(({ path, component }, index) => (
