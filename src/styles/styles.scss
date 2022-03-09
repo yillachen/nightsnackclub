@@ -117,11 +117,26 @@ main {
   position: relative;
   word-spacing: 0.72px;
 
+  @include respond-max($bp-lg-desk) {
+    font-size: 195px;
+  }
+  @include respond-max($bp-desk) {
+    font-size: 195px;
+  }
+
+  @include respond-max($bp-lg-lap) {
+    font-size: 165px;
+  }
+  @include respond-max($bp-lap) {
+    font-size: 150px;
+  }
+
   @include respond-max($bp-tab) {
     font-size: 150px;
   }
-  @include respond-max($bp-lap) {
-    font-size: 195px;
+
+  @include respond-max($bp-mob) {
+    font-size: 64px;
   }
 
   .character-in {
@@ -239,13 +254,28 @@ main {
     text-align: center;
     margin: 0;
 
+    @include respond-max($bp-lg-desk) {
+      font-size: 102px;
+    }
+    @include respond-max($bp-desk) {
+      font-size: 112px;
+    }
+
+    @include respond-max($bp-lg-lap) {
+      font-size: 81px;
+    }
+    @include respond-max($bp-lap) {
+      font-size: 69px;
+    }
+
     @include respond-max($bp-tab) {
       font-size: 69px;
       letter-spacing: -1.38;
     }
 
-    @include respond-max($bp-desk) {
-      font-size: 112px;
+    @include respond-max($bp-mob) {
+      font-size: 36px;
+      letter-spacing: -1.38;
     }
   }
 
@@ -254,18 +284,30 @@ main {
     line-height: 0.9;
     letter-spacing: -4px;
 
-    @include respond-max($bp-tab) {
-      font-size: 138px;
-      line-height: 0.85;
+    @include respond-max($bp-lg-desk) {
+      font-size: 262px;
+    }
+    @include respond-max($bp-desk) {
+      font-size: 185px;
     }
 
+    @include respond-max($bp-lg-lap) {
+      font-size: 200px;
+      letter-spacing: -7.4px;
+    }
     @include respond-max($bp-lap) {
       font-size: 185px;
       letter-spacing: -7.4px;
     }
 
-    @include respond-max($bp-desk) {
-      font-size: 262px;
+    @include respond-max($bp-tab) {
+      font-size: 138px;
+      line-height: 0.85;
+    }
+
+    @include respond-max($bp-mob) {
+      font-size: 70px;
+      letter-spacing: -0.04em;
     }
   }
 
