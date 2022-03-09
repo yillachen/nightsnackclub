@@ -135,9 +135,9 @@ export default function AsianWomxn() {
                   <h2 className="page-title page-title-js">
                     <span>N</span>
                   </h2>
-                {/* </div>
-                <div className="page-title-container asian-title mobile-only"> */}
-                  <h2 className="page-title page-title-js mobile-only">
+                </div>
+                <div className="page-title-container asian-title mobile-only">
+                  <h2 className="page-title page-title-js">
                     &nbsp;
                   </h2>
                   <h2 className="page-title page-title-js">

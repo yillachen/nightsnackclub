@@ -24,9 +24,15 @@ $bp-lg-desk: 1920px;
   @return #{$pxSize}px;
 }
 
+@include respond($bp-lg-desk) {
+  .mobile-only {
+    display: inline-block !important;
+  }
+}
+
 @include respond($bp-tab) {
   .mobile-only {
     display: block !important;
-    margin-top: -20% !important;
+    // margin-top: -20% !important;
   }
 }

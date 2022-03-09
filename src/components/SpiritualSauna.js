@@ -126,7 +126,8 @@ export default function SpiritualSauna() {
                   <div class="page-title page-title-js">A</div>
                   <div class="page-title page-title-js">L</div>
                 </div>
-                <div class="page-title-container spiritual-title">
+                <div className="page-title-container spiritual-title mobile-only">
+                  <h2 className="page-title page-title-js">&nbsp;</h2>
                   <div class="page-title page-title-js">S</div>
                   <div class="page-title page-title-js">A</div>
                   <div class="page-title page-title-js">U</div>

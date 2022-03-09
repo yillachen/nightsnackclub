@@ -93,10 +93,11 @@ main {
 
   &.asian-title,
   &.illustrators-title,
+  &.spiritual-title,
   &.blog-title,
   &.nightsnack-title,
   &.health-title {
-    display: block;
+    display: inline-block;
 
     @include respond-max($bp-tab) {
       display: inline-block;

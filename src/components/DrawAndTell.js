@@ -4,7 +4,6 @@ import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 import BackButton from "./BackButton";
 import NextButton from "./NextButton";
-import PageTransition from "../js/pages";
 
 // Images
 
@@ -121,11 +120,9 @@ export default function DrawAndTell() {
                   <span className="page-title page-title-js">R</span>
                   <span className="page-title page-title-js">A</span>
                   <span className="page-title page-title-js">W</span>
-                  <span className="page-title page-title-js mobile-only">
-                    &nbsp;
-                  </span>
                 </div>
-                <div className="page-title-container illustrators-title">
+                <div className="page-title-container illustrators-title mobile-only">
+                  <h2 className="page-title page-title-js">&nbsp;</h2>
                   <span className="page-title page-title-js">A</span>
                   <span className="page-title page-title-js">N</span>
                   <span className="page-title page-title-js">D</span>
