@@ -2,12 +2,13 @@ import "../styles/styles.scss";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
-import BackButton from "./BackButton";
-import NextButton from "./NextButton";
+import BackButton from "../components/BackButton";
+import NextButton from "../components/NextButton";
 
 // Images
+import {BW_Duy, BW_Johana, BW_Leah, BW_Nicole, BW_Nicolet, BW_Poster} from '../assets/images/allPhotos'
 
-export default function NightSnacks(props) {
+export default function BlogWorms() {
   useEffect(() => {
     function removeClass(targetClass) {
       const imageGroup = document.querySelectorAll(".images-well .targetClass");
@@ -70,7 +71,7 @@ export default function NightSnacks(props) {
       .fromTo(
         ".bg-segment",
         {
-          width: "0%",
+          width: "100%",
         },
         {
           duration: 2.5,
@@ -97,91 +98,104 @@ export default function NightSnacks(props) {
   });
 
   return (
-    <main className="body-nightsnack">
+    <main className="body-blog">
       <div data-router-wrapper>
-        <div data-router-view data-page="nightsnack-club">
+        <div data-router-view data-page="blog">
           <main className="scene-wrapper">
             <div className="nsc-page-title">
               <div className="anim-nsc">
                 <div className="anim-container page-title-container page-container-spacing">
                   <div className="title-container">
                     <div id="nsc-anim-wipe" className="title-swipe-effect">
-                      <h3 className="current-title nsc-title-small anim-title nightsnack-title">
+                      <h3 className="current-title nsc-title-small anim-title blog-title">
                         Night Snack Club
                       </h3>
                     </div>
-                    <h3 className="previous-title health-title">
+                    <h3 className="previous-title spiritual-title">
                       Night Snack Club
                     </h3>
                   </div>
                 </div>
-                <div className="page-title-container nightsnack-title">
-                  <div className="page-title page-title-js">S</div>
-                  <div className="page-title page-title-js">N</div>
-                  <div className="page-title page-title-js">A</div>
-                  <div className="page-title page-title-js">C</div>
-                  <div className="page-title page-title-js">K</div>
-                </div>
-                <div className="page-title-container nightsnack-title mobile-only">
+                <div className="page-title-container blog-title">
+                  <div className="page-title page-title-js">B</div>
+                  <div className="page-title page-title-js">L</div>
+                  <div className="page-title page-title-js">O</div>
+                  <div className="page-title page-title-js">G</div>
+                  </div>
+                <div className="page-title-container blog-title mobile-only">
                   <h2 className="page-title page-title-js">&nbsp;</h2>
-                  <div className="page-title page-title-js">A</div>
-                  <div className="page-title page-title-js">T</div>
-                  <div className="page-title page-title-js">T</div>
-                  <div className="page-title page-title-js">A</div>
-                  <div className="page-title page-title-js">C</div>
-                  <div className="page-title page-title-js">K</div>
+                  <div className="page-title page-title-js">W</div>
+                  <div className="page-title page-title-js">O</div>
+                  <div className="page-title page-title-js">R</div>
+                  <div className="page-title page-title-js">M</div>
+                  <div className="page-title page-title-js">S</div>
                 </div>
               </div>
             </div>
             <div className="background-container">
-              <div className="bg-segment nightsnack-club"></div>
-              <div className="bg-segment nightsnack-club"></div>
-              <div className="bg-segment nightsnack-club"></div>
+              <div className="bg-segment blog"></div>
+              <div className="bg-segment blog"></div>
+              <div className="bg-segment blog"></div>
             </div>
-            <div className="images-well nightsnack">
+            <div className="images-well blog">
               <div className="images-palette">
-                <div className="targetClass poster ns-poster inactive-card">
-                  <img src="./assets/6_Night_Snacks/35_Poster_Night_Snacks.png" />
+                <div className="targetClass poster bw-poster inactive-card">
+                  {/* <img src={BW_Poster} alt="Blog Worms" /> */}
                 </div>
-                <div className="targetClass ns-1 inactive-card">
-                  <img src="./assets/6_Night_Snacks/36_Shirley.jpg" />
-                  <div className="project-title">Pansy Orange Gin Cordial</div>
-                </div>
-                <div className="targetClass ns-2 inactive-card">
-                  <img src="./assets/6_Night_Snacks/37_Jenn.JPG" />
+                <div className="targetClass bw-1 inactive-card">
+                  {/* <img src={BW_Nicolet} alt="Sacai with Nicolet" /> */}
                   <div className="project-title">
-                    My Mom’s HK Style Egg Tarts <br />
-                    with A Touch of Philly
+                    Drawing a Sacai <br />
+                    with Nicolet
                   </div>
                 </div>
-                <div className="targetClass ns-3 inactive-card">
-                  <img src="./assets/6_Night_Snacks/38_Johana.jpg" />
+                <div className="targetClass bw-2 inactive-card">
+                  {/* <img src={BW_Leah} alt="Leah Maldonado" /> */}
                   <div className="project-title">
-                    Finding Inspiration, <br />
-                    Dessert Edition
+                    Leah Maldonado Invites You to <br />
+                    Her Digital Playground
                   </div>
                 </div>
-                <div className="targetClass ns-4 inactive-card">
-                  <img src="./assets/6_Night_Snacks/39_Shirley.jpg" />
-                  <div className="project-title">Anh Anh’s Salted Eggs</div>
+                <div className="targetClass bw-3 inactive-card">
+                  {/* <img src={BW_Johana} alt="Sourdough Diaries: Brownies" /> */}
+                  <div className="project-title">
+                    Sourdough Diaries: <br />
+                    Brownies
+                  </div>
+                </div>
+                <div className="targetClass bw-4 inactive-card">
+                  {/* <img src={BW_Nicole} alt="Sewing Circle with Nicole Liao" /> */}
+                  <div className="project-title">
+                    Sewing Circle with <br />
+                    Nicole Liao
+                  </div>
+                </div>
+                <div className="targetClass bw-5 inactive-card">
+                  {/* <img src={BW_Duy} alt="Duy's Comme des Garcons Collection" /> */}
+                  <div className="project-title">
+                    A Collector: Duy’s Comme <br />
+                    des Garçons Collection
+                  </div>
                 </div>
               </div>
             </div>
           </main>
 
-          <div className="nav-row__btn back-btn snack-attack">
-            <Link to="/health-wellness">
+          <div className="nav-row__btn back-btn blog">
+            <Link to="/spiritual-sauna">
               <BackButton />
             </Link>
           </div>
 
-          <div className="nav-row__btn forward-btn snack-attack">
-            <Link to="/thank-you">
+          <div className="nav-row__btn forward-btn blog">
+            <Link to="/health-wellness">
               <NextButton />
             </Link>
           </div>
         </div>
       </div>
+
+      <script src="js/app.js" type="module"></script>
     </main>
   );
 }

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
-import StartButton from "./StartButton";
+import StartButton from "../components/StartButton";
 import Animation from "../assets/images/2020_original-hevc-safari.mp4";
 import Animation2 from "../assets/images/2020_original-vp9-chrome.webm";
 

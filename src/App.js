@@ -11,7 +11,7 @@ import {
   SpiritualSauna,
   BlogWorms,
   Outro,
-} from "./components/index";
+} from "./pages/index";
 
 const routes = [
   { path: "/", name: "Home", component: Intro },

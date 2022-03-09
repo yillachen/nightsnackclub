@@ -71,6 +71,18 @@
   list-style: none;
   font-size: 14px;
 
+  a,
+  a:link {
+    color: #5e7017;
+    text-decoration: none;
+    transition: 0.5s;
+
+    &:hover {
+      color: #ff4c24;
+      cursor: crosshair;
+    }
+  }
+
   @include respond-max($bp-desk) {
     font-size: 14px;
   }

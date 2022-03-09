@@ -2,17 +2,11 @@ import "../styles/styles.scss";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
-import BackButton from "./BackButton";
-import NextButton from "./NextButton";
+import BackButton from "../components/BackButton";
+import NextButton from "../components/NextButton";
 
 // Images
-import Jeannie from "../assets/images/1_Asian_Womxn/5_Jeannie.jpg";
-import Caitlin from "../assets/images/1_Asian_Womxn/7_Caitlin.JPG";
-import Jenn from "../assets/images/1_Asian_Womxn/6_Jenn.jpg";
-import JudyOscar from "../assets/images/1_Asian_Womxn/4_Judy.png";
-import Nicole from "../assets/images/1_Asian_Womxn/3_Nicole.JPG";
-import Robyn from "../assets/images/1_Asian_Womxn/2_Robyn.JPG";
-import Poster from "../assets/images/1_Asian_Womxn/1_Poster_Asian_Womxn.png";
+import {AW_Caitlin, AW_Jeannie, AW_Jenn, AW_JudyOscar, AW_Nicole, AW_Poster, AW_Robyn} from '../assets/images/allPhotos'
 
 export default function AsianWomxn(props) {
   useEffect(() => {
@@ -164,11 +158,11 @@ export default function AsianWomxn(props) {
             <div className="images-well asian-womxn">
               <div className="images-palette">
                 <div className="targetclassName aw-1 inactive-card">
-                  {/* <img src={Caitlin} alt="Cookie Do" /> */}
+                  {/* <img src={AW_Caitlin} alt="Cookie Do" /> */}
                   <div className="project-title">COOKIE DO</div>
                 </div>
                 <div className="targetclassName aw-2 inactive-card">
-                  {/* <img src={Jenn} alt="Jenn Chen" /> */}
+                  {/* <img src={AW_Jenn} alt="Jenn Chen" /> */}
                   <div className="project-title">
                     The Contemplative <br />
                     Art of Suminagashi with <br />
@@ -176,7 +170,7 @@ export default function AsianWomxn(props) {
                   </div>
                 </div>
                 <div className="targetclassName aw-3 inactive-card">
-                  {/* <img src={Jeannie} alt="Jeannie Huang" /> */}
+                  {/* <img src={AW_Jeannie} alt="Jeannie Huang" /> */}
                   <div className="project-title">
                     The Ephemeral AND Intangible <br />
                     Art of Wearable Florals with <br />
@@ -184,14 +178,14 @@ export default function AsianWomxn(props) {
                   </div>
                 </div>
                 <div className="targetclassName aw-4 inactive-card">
-                  {/* <img src={JudyOscar} alt="Judy & Oscar" /> */}
+                  {/* <img src={AW_JudyOscar} alt="Judy & Oscar" /> */}
                   <div className="project-title">
                     Creative Couple Series: <br />
                     Judy & Oscar
                   </div>
                 </div>
                 <div className="targetclassName aw-5 inactive-card">
-                  {/* <img src={Nicole} alt="Nicole Liao" /> */}
+                  {/* <img src={AW_Nicole} alt="Nicole Liao" /> */}
                   <div className="project-title">
                     Sewing Circle <br />
                     with Nicole Liao
@@ -200,14 +194,14 @@ export default function AsianWomxn(props) {
                   </div>
                 </div>
                 <div className="targetclassName aw-6 inactive-card">
-                  {/* <img src={Robyn} alt="Corners in Clay" /> */}
+                  {/* <img src={AW_Robyn} alt="Corners in Clay" /> */}
                   <div className="project-title">
                     Smoothing Out Hard <br />
                     Corners in Clay
                   </div>
                 </div>
                 <div className="targetclassName poster aw-poster inactive-card">
-                  {/* <img src={Poster} alt="Asian Womxn" /> */}
+                  {/* <img src={AW_Poster} alt="Asian Womxn" /> */}
                 </div>
               </div>
             </div>

@@ -2,10 +2,11 @@ import "../styles/styles.scss";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
-import BackButton from "./BackButton";
-import NextButton from "./NextButton";
+import BackButton from "../components/BackButton";
+import NextButton from "../components/NextButton";
 
 // Images
+import {HW_Anna, HW_Hui, HW_Jenn, HW_Poster, HW_Yilla, HW_Ying} from '../assets/images/allPhotos'
 
 export default function HealthWellness() {
   useEffect(() => {
@@ -150,25 +151,25 @@ export default function HealthWellness() {
             <div className="images-well health">
               <div className="images-palette">
                 <div className="targetClass poster hw-poster inactive-card">
-                  {/* <img src="./assets/5_Health_and_Wellness/29_Poster_Health_and_Wellness.png" /> */}
+                  {/* <img src={HW_Poster} alt="Health and Wellness" /> */}
                 </div>
                 <div className="targetClass hw-1 inactive-card">
-                  {/* <img src="./assets/5_Health_and_Wellness/30_Yilla.png" /> */}
+                  {/* <img src={HW_Yilla} alt="Facial Massage with Yilla" /> */}
                   <div className="project-title">
                     Sculpt Your Way to <br />
                     Glowy Skin with Yilla
                   </div>
                 </div>
                 <div className="targetClass hw-2 inactive-card">
-                  {/* <img src="./assets/5_Health_and_Wellness/31_Ying.jpg" /> */}
+                  {/* <img src={HW_Ying} alt="Yoga with Ying" /> */}
                   <div className="project-title">Yoga Journey with Ying</div>
                 </div>
                 <div className="targetClass hw-3 inactive-card">
-                  {/* <img src="./assets/5_Health_and_Wellness/32_Anna.jpg" /> */}
+                  {/* <img src={HW_Anna} alt="Kombucha Dabbles with Anna" /> */}
                   <div className="project-title">Kombucha Dabbles</div>
                 </div>
                 <div className="targetClass hw-4 inactive-card">
-                  {/* <img src="./assets/5_Health_and_Wellness/33_Jenn.jpg" /> */}
+                  {/* <img src={HW_Jenn} alt="Suminagashi with Jenn" /> */}
                   <div className="project-title">
                     The Contemplative <br />
                     Art of Suminagashi with <br />
@@ -176,7 +177,7 @@ export default function HealthWellness() {
                   </div>
                 </div>
                 <div className="targetClass hw-5 inactive-card">
-                  {/* <img src="./assets/5_Health_and_Wellness/34_Hui.jpeg" /> */}
+                  {/* <img src={HW_Hui} alt="Herbalism with Hui" /> */}
                   <div className="project-title">
                     The Unqualified <br />
                     Herbalist: Chamomile

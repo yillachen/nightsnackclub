@@ -2,12 +2,13 @@ import "../styles/styles.scss";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
-import BackButton from "./BackButton";
-import NextButton from "./NextButton";
+import BackButton from "../components/BackButton";
+import NextButton from "../components/NextButton";
 
 // Images
+import {NS_Jenn, NS_Johana, NS_Poster, NS_Shirley, NS_Shirley2} from '../assets/images/allPhotos'
 
-export default function SpiritualSauna() {
+export default function NightSnacks(props) {
   useEffect(() => {
     function removeClass(targetClass) {
       const imageGroup = document.querySelectorAll(".images-well .targetClass");
@@ -23,7 +24,7 @@ export default function SpiritualSauna() {
     });
 
     function getBgColor() {
-      const bgColor = '#0b1676';
+      const bgColor = "#0b1676";
       document.body.class = "";
       document.body.classList.add("body-" + bgColor);
     }
@@ -70,7 +71,7 @@ export default function SpiritualSauna() {
       .fromTo(
         ".bg-segment",
         {
-          width: "100%",
+          width: "0%",
         },
         {
           duration: 2.5,
@@ -97,91 +98,86 @@ export default function SpiritualSauna() {
   });
 
   return (
-    <main className="body-spiritual">
+    <main className="body-nightsnack">
       <div data-router-wrapper>
-        <div data-router-view data-page="spiritual">
+        <div data-router-view data-page="nightsnack-club">
           <main className="scene-wrapper">
             <div className="nsc-page-title">
               <div className="anim-nsc">
                 <div className="anim-container page-title-container page-container-spacing">
                   <div className="title-container">
                     <div id="nsc-anim-wipe" className="title-swipe-effect">
-                      <h3 className="current-title nsc-title-small anim-title spiritual-title">
+                      <h3 className="current-title nsc-title-small anim-title nightsnack-title">
                         Night Snack Club
                       </h3>
                     </div>
-                    <h3 className="previous-title illustrators-title">
+                    <h3 className="previous-title health-title">
                       Night Snack Club
                     </h3>
                   </div>
                 </div>
-                <div className="page-title-container spiritual-title">
+                <div className="page-title-container nightsnack-title">
                   <div className="page-title page-title-js">S</div>
-                  <div className="page-title page-title-js">P</div>
-                  <div className="page-title page-title-js">I</div>
-                  <div className="page-title page-title-js">R</div>
-                  <div className="page-title page-title-js">I</div>
-                  <div className="page-title page-title-js">T</div>
-                  <div className="page-title page-title-js">U</div>
-                  <div className="page-title page-title-js">A</div>
-                  <div className="page-title page-title-js">L</div>
-                </div>
-                <div className="page-title-container spiritual-title mobile-only">
-                  <h2 className="page-title page-title-js">&nbsp;</h2>
-                  <div className="page-title page-title-js">S</div>
-                  <div className="page-title page-title-js">A</div>
-                  <div className="page-title page-title-js">U</div>
                   <div className="page-title page-title-js">N</div>
                   <div className="page-title page-title-js">A</div>
+                  <div className="page-title page-title-js">C</div>
+                  <div className="page-title page-title-js">K</div>
+                </div>
+                <div className="page-title-container nightsnack-title mobile-only">
+                  <h2 className="page-title page-title-js">&nbsp;</h2>
+                  <div className="page-title page-title-js">A</div>
+                  <div className="page-title page-title-js">T</div>
+                  <div className="page-title page-title-js">T</div>
+                  <div className="page-title page-title-js">A</div>
+                  <div className="page-title page-title-js">C</div>
+                  <div className="page-title page-title-js">K</div>
                 </div>
               </div>
             </div>
             <div className="background-container">
-              <div className="bg-segment spiritual"></div>
-              <div className="bg-segment spiritual"></div>
-              <div className="bg-segment spiritual"></div>
+              <div className="bg-segment nightsnack-club"></div>
+              <div className="bg-segment nightsnack-club"></div>
+              <div className="bg-segment nightsnack-club"></div>
             </div>
-            <div className="images-well spiritual">
+            <div className="images-well nightsnack">
               <div className="images-palette">
-                <div
-                  className="targetClass poster ss-poster inactive-card"
-                  loading="eager"
-                >
-                  {/* <img src="./assets/3_Spirtual_Sauna/19_Poster_Tarot.jpg" /> */}
+                <div className="targetClass poster ns-poster inactive-card">
+                  <img src={NS_Poster} alt="Night Snacks" />
                 </div>
-                <div className="targetClass ss-1 inactive-card" loading="eager">
-                  {/* <img src="./assets/3_Spirtual_Sauna/20_NightSnackClub_AugustTarot_Spread.png" /> */}
+                <div className="targetClass ns-1 inactive-card">
+                  <img src={NS_Shirley} alt="Pansy Orange Fin Cordial" />
+                  <div className="project-title">Pansy Orange Gin Cordial</div>
+                </div>
+                <div className="targetClass ns-2 inactive-card">
+                  <img src={NS_Jenn} alt="Hong Kong meets Philly Egg Tarts" />
                   <div className="project-title">
-                    Tarot Spread Guide <br />
-                    for August 2020
+                    My Mom’s HK Style Egg Tarts <br />
+                    with A Touch of Philly
                   </div>
                 </div>
-                <div className="targetClass ss-2 inactive-card" loading="eager">
-                  {/* <img src="./assets/3_Spirtual_Sauna/21_NightSnackClub_JulyTarot_Spread.png" /> */}
+                <div className="targetClass ns-3 inactive-card">
+                  <img src={NS_Johana} alt="Finding Inspiration, Dessert Edition" />
                   <div className="project-title">
-                    Tarot Spread Guide <br />
-                    for July 2020
+                    Finding Inspiration, <br />
+                    Dessert Edition
                   </div>
                 </div>
-                <div className="targetClass ss-3 inactive-card" loading="eager">
-                  {/* <img src="./assets/3_Spirtual_Sauna/22_NightSnackClub_SeptemberTarot_Spread.png" /> */}
-                  <div className="project-title">
-                    Tarot Spread Guide <br />
-                    for September 2020
-                  </div>
+                <div className="targetClass ns-4 inactive-card">
+                  <img src={NS_Shirley2} alt="Anh Anh's   Salted Eggs" />
+                  <div className="project-title">Anh Anh’s Salted Eggs</div>
                 </div>
               </div>
             </div>
           </main>
 
-          <div className="nav-row__btn back-btn spiritual">
-            <Link to="/draw-and-tell">
+          <div className="nav-row__btn back-btn snack-attack">
+            <Link to="/health-wellness">
               <BackButton />
             </Link>
           </div>
 
-          <div className="nav-row__btn forward-btn spiritual">
-            <Link to="/blog-worms">
+          <div className="nav-row__btn forward-btn snack-attack">
+            <Link to="/thank-you">
               <NextButton />
             </Link>
           </div>

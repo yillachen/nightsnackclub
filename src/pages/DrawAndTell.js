@@ -2,10 +2,11 @@ import "../styles/styles.scss";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
-import BackButton from "./BackButton";
-import NextButton from "./NextButton";
+import BackButton from "../components/BackButton";
+import NextButton from "../components/NextButton";
 
 // Images
+import {DT_Ale, DT_Caitlin, DT_Emily, DT_Enle, DT_Header, DT_Jocelyn, DT_Leah, DT_Liz, DT_Monica, DT_NicoleT, DT_Poster, DT_Tiffany} from '../assets/images/allPhotos'
 
 export default function DrawAndTell() {
   useEffect(() => {
@@ -145,67 +146,67 @@ export default function DrawAndTell() {
                   className="targetClass poster ii-poster inactive-card"
                   loading="eager"
                 >
-                  {/* <img src="./assets/2_Draw_And_Tell/8_Poster_Illustrators.png" /> */}
+                  {/* <img src={DT_Poster} alt="Draw and Tell" /> */}
                 </div>
                 <div className="targetClass ii-1 inactive-card" loading="eager">
-                  {/* <img src="./assets/2_Draw_And_Tell/10_Liz.jpeg" /> */}
+                  {/* <img src={DT_Liz} alt="Liz and Enle" /> */}
                   <div className="project-title">
                     Creative Couple Series: <br />
                     Liz & Enle
                   </div>
                 </div>
                 <div className="targetClass ii-2 inactive-card" loading="eager">
-                  {/* <img src="./assets/2_Draw_And_Tell/17_Caitlin.PNG" /> */}
+                  {/* <img src={DT_Caitlin} alt="Caitlin" /> */}
                   <div className="project-title">COOKIE DO</div>
                 </div>
                 <div className="targetClass ii-3 inactive-card" loading="eager">
-                  {/* <img src="./assets/2_Draw_And_Tell/12_Ale.jpg" /> */}
+                  {/* <img src={DT_Ale} alt="Alejandro Chen Li" /> */}
                   <div className="project-title">
                     Meet Alejandro <br />
                     Chen Li
                   </div>
                 </div>
                 <div className="targetClass ii-4 inactive-card" loading="eager">
-                  {/* <img src="./assets/2_Draw_And_Tell/13_Monica.jpg" /> */}
+                  {/* <img src={DT_Monica} alt="Eunji" /> */}
                   <div className="project-title">
                     Tattooing As a Form of <br />
                     Ritual with Eunji
                   </div>
                 </div>
                 <div className="targetClass ii-5 inactive-card" loading="eager">
-                  {/* <img src="./assets/2_Draw_And_Tell/14_Tiffany.png" /> */}
+                  {/* <img src={DT_Tiffany} alt="Tiffany" /> */}
                   <div className="project-title">Abc for Abcs</div>
                 </div>
                 <div className="targetClass ii-6 inactive-card" loading="eager">
-                  {/* <img src="./assets/2_Draw_And_Tell/15_Emily.jpg" /> */}
+                  {/* <img src={DT_Emily} alt="Emily" /> */}
                   <div className="project-title">
                     The meandering <br />
                     path of emily
                   </div>
                 </div>
                 <div className="targetClass ii-7 inactive-card" loading="eager">
-                  {/* <img src="./assets/2_Draw_And_Tell/16_Leah.png" /> */}
+                  {/* <img src={DT_Leah} alt="Leah Maldonado" /> */}
                   <div className="project-title">
                     Leah Maldonado Invites You to <br />
                     Her Digital Playground
                   </div>
                 </div>
                 <div className="targetClass ii-8 inactive-card" loading="eager">
-                  {/* <img src="./assets/2_Draw_And_Tell/11_Enle.jpeg" /> */}
+                  {/* <img src={DT_Enle} alt="Liz and Enle 2" /> */}
                   <div className="project-title">
                     Creative Couple Series: <br />
                     Liz & Enle
                   </div>
                 </div>
                 <div className="targetClass ii-9 inactive-card" loading="eager">
-                  {/* <img src="./assets/2_Draw_And_Tell/18_Jocelyn.JPG" /> */}
+                  {/* <img src={DT_Jocelyn} alt="Jocelyn" /> */}
                   <div className="project-title">Behind the Murals</div>
                 </div>
                 <div
                   className="targetClass ii-10 inactive-card"
                   loading="eager"
                 >
-                  {/* <img src="./assets/2_Draw_And_Tell/9_Nicolet.jpg" /> */}
+                  {/* <img src={DT_Nicolet} alt="Nicolet" /> */}
                   <div className="project-title">
                     Drawing a Sacai <br />
                     with Nicolet
@@ -215,7 +216,7 @@ export default function DrawAndTell() {
                   className="targetClass ii-11 drop-shadow inactive-card"
                   loading="eager"
                 >
-                  {/* <img src="./assets/2_Draw_And_Tell/header-image.png" /> */}
+                  {/* <img src={DT_Header} alt="From NYC to NOLA" /> */}
                   <div className="project-title">From NYC to NOLA</div>
                 </div>
               </div>

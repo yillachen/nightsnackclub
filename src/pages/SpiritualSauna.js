@@ -2,12 +2,13 @@ import "../styles/styles.scss";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
-import BackButton from "./BackButton";
-import NextButton from "./NextButton";
+import BackButton from "../components/BackButton";
+import NextButton from "../components/NextButton";
 
 // Images
+import {SS_August, SS_July, SS_Poster, SS_Sept} from '../assets/images/allPhotos'
 
-export default function BlogWorms() {
+export default function SpiritualSauna() {
   useEffect(() => {
     function removeClass(targetClass) {
       const imageGroup = document.querySelectorAll(".images-well .targetClass");
@@ -23,7 +24,7 @@ export default function BlogWorms() {
     });
 
     function getBgColor() {
-      const bgColor = "#0b1676";
+      const bgColor = '#0b1676';
       document.body.class = "";
       document.body.classList.add("body-" + bgColor);
     }
@@ -97,104 +98,96 @@ export default function BlogWorms() {
   });
 
   return (
-    <main className="body-blog">
+    <main className="body-spiritual">
       <div data-router-wrapper>
-        <div data-router-view data-page="blog">
+        <div data-router-view data-page="spiritual">
           <main className="scene-wrapper">
             <div className="nsc-page-title">
               <div className="anim-nsc">
                 <div className="anim-container page-title-container page-container-spacing">
                   <div className="title-container">
                     <div id="nsc-anim-wipe" className="title-swipe-effect">
-                      <h3 className="current-title nsc-title-small anim-title blog-title">
+                      <h3 className="current-title nsc-title-small anim-title spiritual-title">
                         Night Snack Club
                       </h3>
                     </div>
-                    <h3 className="previous-title spiritual-title">
+                    <h3 className="previous-title illustrators-title">
                       Night Snack Club
                     </h3>
                   </div>
                 </div>
-                <div className="page-title-container blog-title">
-                  <div className="page-title page-title-js">B</div>
-                  <div className="page-title page-title-js">L</div>
-                  <div className="page-title page-title-js">O</div>
-                  <div className="page-title page-title-js">G</div>
-                  </div>
-                <div className="page-title-container blog-title mobile-only">
-                  <h2 className="page-title page-title-js">&nbsp;</h2>
-                  <div className="page-title page-title-js">W</div>
-                  <div className="page-title page-title-js">O</div>
-                  <div className="page-title page-title-js">R</div>
-                  <div className="page-title page-title-js">M</div>
+                <div className="page-title-container spiritual-title">
                   <div className="page-title page-title-js">S</div>
+                  <div className="page-title page-title-js">P</div>
+                  <div className="page-title page-title-js">I</div>
+                  <div className="page-title page-title-js">R</div>
+                  <div className="page-title page-title-js">I</div>
+                  <div className="page-title page-title-js">T</div>
+                  <div className="page-title page-title-js">U</div>
+                  <div className="page-title page-title-js">A</div>
+                  <div className="page-title page-title-js">L</div>
+                </div>
+                <div className="page-title-container spiritual-title mobile-only">
+                  <h2 className="page-title page-title-js">&nbsp;</h2>
+                  <div className="page-title page-title-js">S</div>
+                  <div className="page-title page-title-js">A</div>
+                  <div className="page-title page-title-js">U</div>
+                  <div className="page-title page-title-js">N</div>
+                  <div className="page-title page-title-js">A</div>
                 </div>
               </div>
             </div>
             <div className="background-container">
-              <div className="bg-segment blog"></div>
-              <div className="bg-segment blog"></div>
-              <div className="bg-segment blog"></div>
+              <div className="bg-segment spiritual"></div>
+              <div className="bg-segment spiritual"></div>
+              <div className="bg-segment spiritual"></div>
             </div>
-            <div className="images-well blog">
+            <div className="images-well spiritual">
               <div className="images-palette">
-                <div className="targetClass poster bw-poster inactive-card">
-                  {/* <img src="./assets/4_Blog_Worms/23_Poster_Blogworms.png" /> */}
+                <div
+                  className="targetClass poster ss-poster inactive-card"
+                  loading="eager"
+                >
+                  {/* <img src={SS_Poster} alt="Spiritual Sauna" /> */}
                 </div>
-                <div className="targetClass bw-1 inactive-card">
-                  {/* <img src="./assets/4_Blog_Worms/24_Nicolet.jpg" /> */}
+                <div className="targetClass ss-1 inactive-card" loading="eager">
+                  {/* <img src={SS_August} alt="Tarot Spread Guide for August 2020" /> */}
                   <div className="project-title">
-                    Drawing a Sacai <br />
-                    with Nicolet
+                    Tarot Spread Guide <br />
+                    for August 2020
                   </div>
                 </div>
-                <div className="targetClass bw-2 inactive-card">
-                  {/* <img src="./assets/4_Blog_Worms/25_Leah.png" /> */}
+                <div className="targetClass ss-2 inactive-card" loading="eager">
+                  {/* <img src={SS_July} alt="Tarot Spread Guide for July 2020" /> */}
                   <div className="project-title">
-                    Leah Maldonado Invites You to <br />
-                    Her Digital Playground
+                    Tarot Spread Guide <br />
+                    for July 2020
                   </div>
                 </div>
-                <div className="targetClass bw-3 inactive-card">
-                  {/* <img src="./assets/4_Blog_Worms/26_Johana.jpg" /> */}
+                <div className="targetClass ss-3 inactive-card" loading="eager">
+                  {/* <img src=src={SS_September} alt="Tarot Spread Guide for September 2020" /> */}
                   <div className="project-title">
-                    Sourdough Diaries: <br />
-                    Brownies
-                  </div>
-                </div>
-                <div className="targetClass bw-4 inactive-card">
-                  {/* <img src="./assets/4_Blog_Worms/27_Nicole.jpg" /> */}
-                  <div className="project-title">
-                    Sewing Circle with <br />
-                    Nicole Liao
-                  </div>
-                </div>
-                <div className="targetClass bw-5 inactive-card">
-                  {/* <img src="./assets/4_Blog_Worms/28_Duy.jpg" /> */}
-                  <div className="project-title">
-                    A Collector: Duy’s Comme <br />
-                    des Garçons Collection
+                    Tarot Spread Guide <br />
+                    for September 2020
                   </div>
                 </div>
               </div>
             </div>
           </main>
 
-          <div className="nav-row__btn back-btn blog">
-            <Link to="/spiritual-sauna">
+          <div className="nav-row__btn back-btn spiritual">
+            <Link to="/draw-and-tell">
               <BackButton />
             </Link>
           </div>
 
-          <div className="nav-row__btn forward-btn blog">
-            <Link to="/health-wellness">
+          <div className="nav-row__btn forward-btn spiritual">
+            <Link to="/blog-worms">
               <NextButton />
             </Link>
           </div>
         </div>
       </div>
-
-      <script src="js/app.js" type="module"></script>
     </main>
   );
 }

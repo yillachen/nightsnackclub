@@ -2,8 +2,8 @@ import "../styles/styles.scss";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
-import BackButton from "./BackButton";
-import RestartButton from "./RestartButton";
+import BackButton from "../components/BackButton";
+import RestartButton from "../components/RestartButton";
 
 // Images
 
@@ -226,8 +226,8 @@ export default function Outro(props) {
                 </div>
 
                 <ul className="social-links">
-                  <li>WEBSITE</li>
-                  <li>INSTAGRAM</li>
+                  <li><a href="https://nightsnackclub.com" target="_blank" rel="noreferrer">WEBSITE</a></li>
+                  <li><a href="https://instagram.com/nightsnackclub" target="_blank" rel="noreferrer">INSTAGRAM</a></li>
                 </ul>
               </div>
             </div>
