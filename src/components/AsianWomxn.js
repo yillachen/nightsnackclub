@@ -14,7 +14,7 @@ import Nicole from "../assets/images/1_Asian_Womxn/3_Nicole.JPG";
 import Robyn from "../assets/images/1_Asian_Womxn/2_Robyn.JPG";
 import Poster from "../assets/images/1_Asian_Womxn/1_Poster_Asian_Womxn.png";
 
-export default function AsianWomxn() {
+export default function AsianWomxn(props) {
   useEffect(() => {
     function removeClass(targetClass) {
       const imageGroup = document.querySelectorAll(".images-well .targetClass");
@@ -30,8 +30,8 @@ export default function AsianWomxn() {
     });
 
     function getBgColor() {
-      const bgColor = gsap.to.dataset.page;
-      document.body.className = "";
+      const bgColor = "#0b1676";
+      document.body.class = "";
       document.body.classList.add("body-" + bgColor);
     }
 
@@ -137,9 +137,7 @@ export default function AsianWomxn() {
                   </h2>
                 </div>
                 <div className="page-title-container asian-title mobile-only">
-                  <h2 className="page-title page-title-js">
-                    &nbsp;
-                  </h2>
+                  <h2 className="page-title page-title-js">&nbsp;</h2>
                   <h2 className="page-title page-title-js">
                     <span>W</span>
                   </h2>
@@ -159,9 +157,9 @@ export default function AsianWomxn() {
               </div>
             </div>
             <div className="background-container">
-              <div className="bg-segment asian-womxn"></div>
-              <div className="bg-segment asian-womxn"></div>
-              <div className="bg-segment asian-womxn"></div>
+              <div className="bg-segment asian-womxn" />
+              <div className="bg-segment asian-womxn" />
+              <div className="bg-segment asian-womxn" />
             </div>
             <div className="images-well asian-womxn">
               <div className="images-palette">

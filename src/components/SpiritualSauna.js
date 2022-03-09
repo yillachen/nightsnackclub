@@ -13,7 +13,7 @@ export default function SpiritualSauna() {
       const imageGroup = document.querySelectorAll(".images-well .targetClass");
 
       imageGroup.forEach((el) => {
-        el.classNameList.remove(targetClass);
+        el.classList.remove(targetClass);
       });
     }
 
@@ -23,9 +23,9 @@ export default function SpiritualSauna() {
     });
 
     function getBgColor() {
-      const bgColor = gsap.to.dataset.page;
-      document.body.classNameName = "";
-      document.body.classNameList.add("body-" + bgColor);
+      const bgColor = '#0b1676';
+      document.body.class = "";
+      document.body.classList.add("body-" + bgColor);
     }
 
     function projectTooltip() {
@@ -70,7 +70,7 @@ export default function SpiritualSauna() {
       .fromTo(
         ".bg-segment",
         {
-          width: "0%",
+          width: "100%",
         },
         {
           duration: 2.5,
@@ -97,75 +97,75 @@ export default function SpiritualSauna() {
   });
 
   return (
-    <main class="body-spiritual">
+    <main className="body-spiritual">
       <div data-router-wrapper>
         <div data-router-view data-page="spiritual">
-          <main class="scene-wrapper">
-            <div class="nsc-page-title">
-              <div class="anim-nsc">
-                <div class="anim-container page-title-container page-container-spacing">
-                  <div class="title-container">
-                    <div id="nsc-anim-wipe" class="title-swipe-effect">
-                      <h3 class="current-title nsc-title-small anim-title spiritual-title">
+          <main className="scene-wrapper">
+            <div className="nsc-page-title">
+              <div className="anim-nsc">
+                <div className="anim-container page-title-container page-container-spacing">
+                  <div className="title-container">
+                    <div id="nsc-anim-wipe" className="title-swipe-effect">
+                      <h3 className="current-title nsc-title-small anim-title spiritual-title">
                         Night Snack Club
                       </h3>
                     </div>
-                    <h3 class="previous-title illustrators-title">
+                    <h3 className="previous-title illustrators-title">
                       Night Snack Club
                     </h3>
                   </div>
                 </div>
-                <div class="page-title-container spiritual-title">
-                  <div class="page-title page-title-js">S</div>
-                  <div class="page-title page-title-js">P</div>
-                  <div class="page-title page-title-js">I</div>
-                  <div class="page-title page-title-js">R</div>
-                  <div class="page-title page-title-js">I</div>
-                  <div class="page-title page-title-js">T</div>
-                  <div class="page-title page-title-js">U</div>
-                  <div class="page-title page-title-js">A</div>
-                  <div class="page-title page-title-js">L</div>
+                <div className="page-title-container spiritual-title">
+                  <div className="page-title page-title-js">S</div>
+                  <div className="page-title page-title-js">P</div>
+                  <div className="page-title page-title-js">I</div>
+                  <div className="page-title page-title-js">R</div>
+                  <div className="page-title page-title-js">I</div>
+                  <div className="page-title page-title-js">T</div>
+                  <div className="page-title page-title-js">U</div>
+                  <div className="page-title page-title-js">A</div>
+                  <div className="page-title page-title-js">L</div>
                 </div>
                 <div className="page-title-container spiritual-title mobile-only">
                   <h2 className="page-title page-title-js">&nbsp;</h2>
-                  <div class="page-title page-title-js">S</div>
-                  <div class="page-title page-title-js">A</div>
-                  <div class="page-title page-title-js">U</div>
-                  <div class="page-title page-title-js">N</div>
-                  <div class="page-title page-title-js">A</div>
+                  <div className="page-title page-title-js">S</div>
+                  <div className="page-title page-title-js">A</div>
+                  <div className="page-title page-title-js">U</div>
+                  <div className="page-title page-title-js">N</div>
+                  <div className="page-title page-title-js">A</div>
                 </div>
               </div>
             </div>
-            <div class="background-container">
-              <div class="bg-segment spiritual"></div>
-              <div class="bg-segment spiritual"></div>
-              <div class="bg-segment spiritual"></div>
+            <div className="background-container">
+              <div className="bg-segment spiritual"></div>
+              <div className="bg-segment spiritual"></div>
+              <div className="bg-segment spiritual"></div>
             </div>
-            <div class="images-well spiritual">
-              <div class="images-palette">
+            <div className="images-well spiritual">
+              <div className="images-palette">
                 <div
-                  class="targetClass poster ss-poster inactive-card"
+                  className="targetClass poster ss-poster inactive-card"
                   loading="eager"
                 >
                   {/* <img src="./assets/3_Spirtual_Sauna/19_Poster_Tarot.jpg" /> */}
                 </div>
-                <div class="targetClass ss-1 inactive-card" loading="eager">
+                <div className="targetClass ss-1 inactive-card" loading="eager">
                   {/* <img src="./assets/3_Spirtual_Sauna/20_NightSnackClub_AugustTarot_Spread.png" /> */}
-                  <div class="project-title">
+                  <div className="project-title">
                     Tarot Spread Guide <br />
                     for August 2020
                   </div>
                 </div>
-                <div class="targetClass ss-2 inactive-card" loading="eager">
+                <div className="targetClass ss-2 inactive-card" loading="eager">
                   {/* <img src="./assets/3_Spirtual_Sauna/21_NightSnackClub_JulyTarot_Spread.png" /> */}
-                  <div class="project-title">
+                  <div className="project-title">
                     Tarot Spread Guide <br />
                     for July 2020
                   </div>
                 </div>
-                <div class="targetClass ss-3 inactive-card" loading="eager">
+                <div className="targetClass ss-3 inactive-card" loading="eager">
                   {/* <img src="./assets/3_Spirtual_Sauna/22_NightSnackClub_SeptemberTarot_Spread.png" /> */}
-                  <div class="project-title">
+                  <div className="project-title">
                     Tarot Spread Guide <br />
                     for September 2020
                   </div>
@@ -174,13 +174,13 @@ export default function SpiritualSauna() {
             </div>
           </main>
 
-          <div class="nav-row__btn back-btn spiritual">
+          <div className="nav-row__btn back-btn spiritual">
             <Link to="/draw-and-tell">
               <BackButton />
             </Link>
           </div>
 
-          <div class="nav-row__btn forward-btn spiritual">
+          <div className="nav-row__btn forward-btn spiritual">
             <Link to="/blog-worms">
               <NextButton />
             </Link>

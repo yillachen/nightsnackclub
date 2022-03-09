@@ -1,4 +1,5 @@
-import React from "react";
+import React, { Component, useEffect } from "react";
+import { gsap } from "gsap";
 import { Switch, Route } from "react-router-dom";
 import "./styles/styles.scss";
 import {
@@ -11,7 +12,6 @@ import {
   BlogWorms,
   Outro,
 } from "./components/index";
-import PageTransition from './js/pages'
 
 const routes = [
   { path: "/", name: "Home", component: Intro },
@@ -25,7 +25,7 @@ const routes = [
   },
   { path: "/blog-worms", name: "Blog Worms", component: BlogWorms },
   {
-    path: "/health-and-wellness",
+    path: "/health-wellness",
     name: "Health and Wellness",
     component: HealthWellness,
   },

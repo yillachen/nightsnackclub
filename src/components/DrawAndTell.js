@@ -13,7 +13,7 @@ export default function DrawAndTell() {
       const imageGroup = document.querySelectorAll(".images-well .targetClass");
 
       imageGroup.forEach((el) => {
-        el.classNameList.remove(targetClass);
+        el.classList.remove(targetClass);
       });
     }
 
@@ -22,11 +22,11 @@ export default function DrawAndTell() {
       window.location.assign("/");
     });
 
-    function getBgColor() {
-      const bgColor = gsap.to.dataset.page;
-      document.body.classNameName = "";
-      document.body.classNameList.add("body-" + bgColor);
-    }
+    // function getBgColor() {
+    //   const bgColor = 'illustrators';
+    //   document.body.className = "";
+    //   document.body.classList.add("body-" + bgColor);
+    // }
 
     function projectTooltip() {
       var tooltip = document.querySelectorAll(".project-title");
@@ -44,15 +44,30 @@ export default function DrawAndTell() {
 
     const tl = gsap.timeline({
       onComplete: () => {
-        getBgColor();
+        // getBgColor();
         removeClass("inactive-card");
         // followTheMouse();
         projectTooltip();
-        // done();
+        // gsap.done();
       },
     });
 
     tl
+      // BG SEGMENTS
+      .from(
+        ".bg-segment",
+        {
+          width: "0%",
+        },
+        {
+          duration: 2.5,
+          width: "100%",
+          ease: "power3",
+          stagger: 0.25,
+        },
+        0.0
+      )
+
       // GENERAL TITLE->IN
       .from(
         ".page-title-js",
@@ -62,21 +77,6 @@ export default function DrawAndTell() {
           yPercent: -120,
           stagger: 0.045,
           delay: 0.3,
-        },
-        0.0
-      )
-
-      // BG SEGMENTS
-      .fromTo(
-        ".bg-segment",
-        {
-          width: "0%",
-        },
-        {
-          duration: 2.5,
-          width: "100%",
-          ease: "power4",
-          stagger: 0.25,
         },
         0.0
       )
@@ -135,9 +135,9 @@ export default function DrawAndTell() {
               </div>
             </div>
             <div className="background-container">
-              <div className="bg-segment illustrators"></div>
-              <div className="bg-segment illustrators"></div>
-              <div className="bg-segment illustrators"></div>
+              <div className="bg-segment illustrators" />
+              <div className="bg-segment illustrators" />
+              <div className="bg-segment illustrators" />
             </div>
             <div className="images-well illustrators">
               <div className="images-palette">

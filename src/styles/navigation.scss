@@ -51,23 +51,30 @@
 
       &.begin-again {
         svg {
-          width: 114px;
-
-          @include respond-max($bp-lap) {
-            width: 137px;
+          @include respond-max($bp-lg-desk) {
+            width: 182px;
+          }
+          @include respond-max($bp-desk) {
+            width: 150px;
           }
 
-          @include respond-max($bp-desk) {
-            width: 182px;
+          @include respond-max($bp-lg-lap) {
+            width: 136.27px;
+          }
+          @include respond-max($bp-lap) {
+            width: 136.27px;
+          }
+
+          @include respond-max($bp-tab) {
+            width: 136.27px;
+          }
+          @include respond-max($bp-mob) {
+            width: 114px;
           }
         }
       }
     }
-    // $bp-tab: 768px;
-    // $bp-lap: 1280px;
-    // $bp-lg-lap: 1440px;
-    // $bp-desk: 1680px;
-    // $bp-lg-desk: 1920px;
+
     &.back-btn {
       left: 20px;
 

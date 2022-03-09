@@ -1,7 +1,7 @@
 @use "sass:math";
 
 // breakpoints
-$bp-mob: 500px;
+$bp-mob: 650px;
 $bp-tab: 768px;
 $bp-lap: 1280px;
 $bp-lg-lap: 1440px;
@@ -33,6 +33,5 @@ $bp-lg-desk: 1920px;
 @include respond($bp-tab) {
   .mobile-only {
     display: block !important;
-    // margin-top: -20% !important;
   }
 }
