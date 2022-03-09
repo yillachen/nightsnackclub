@@ -26,6 +26,7 @@ $bp-lg-desk: 1920px;
 
 @include respond($bp-tab) {
   .mobile-only {
-    display: none !important;
+    display: block !important;
+    margin-top: -20% !important;
   }
 }

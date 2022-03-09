@@ -116,6 +116,7 @@ main {
   margin: 0;
   position: relative;
   word-spacing: 0.72px;
+  letter-spacing: -0.04em;
 
   @include respond-max($bp-lg-desk) {
     font-size: 195px;
@@ -228,18 +229,27 @@ main {
     font-size: 32px;
     font-weight: 200;
     text-align: center;
+    padding-bottom: 15px;
 
-    @include respond-max($bp-tab) {
-      font-size: 46px;
-      margin: 0px 0 15px;
+    @include respond-max($bp-lg-desk) {
+      font-size: 60px;
     }
-
-    @include respond-max($bp-lap) {
+    @include respond-max($bp-desk) {
       font-size: 60px;
     }
 
-    @include respond-max($bp-desk) {
-      margin: 0px 0 21px;
+    @include respond-max($bp-lg-lap) {
+      font-size: 52px;
+    }
+    @include respond-max($bp-lap) {
+      font-size: 46px;
+    }
+
+    @include respond-max($bp-tab) {
+      font-size: 46px;
+    }
+    @include respond-max($bp-mob) {
+      font-size: 32px;
     }
   }
 
@@ -324,13 +334,29 @@ main {
   padding-top: 168px;
   padding-bottom: 3px;
 
-  @include respond-max($bp-tab) {
-    padding-top: 24%;
+  @include respond-max($bp-lg-desk) {
+    padding-top: 110px;
+    padding-bottom: 0;
+  }
+  @include respond-max($bp-desk) {
+    padding-top: 95px;
+    padding-bottom: 0;
   }
 
-  @include respond-max($bp-lap) {
-    padding-top: 74px;
+  @include respond-max($bp-lg-lap) {
+    padding-top: 110px;
     padding-bottom: 0;
+  }
+  @include respond-max($bp-lap) {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  @include respond-max($bp-tab) {
+    padding-top: 30%;
+  }
+  @include respond-max($bp-mob) {
+    padding-top: 50%;
   }
 }
 
@@ -347,12 +373,25 @@ main {
   z-index: -1;
   font-size: 32px;
 
-  @include respond-max($bp-mob) {
+  @include respond-max($bp-lg-desk) {
+    font-size: 60px;
+  }
+  @include respond-max($bp-desk) {
+    font-size: 60px;
+  }
+
+  @include respond-max($bp-lg-lap) {
+    font-size: 52px;
+  }
+  @include respond-max($bp-lap) {
     font-size: 46px;
   }
 
-  @include respond-max($bp-lap) {
-    font-size: 60px;
+  @include respond-max($bp-tab) {
+    font-size: 46px;
+  }
+  @include respond-max($bp-mob) {
+    font-size: 32px;
   }
 }
 
@@ -393,12 +432,16 @@ main {
   clip-path: inset(0 0 0 0);
   min-height: 38px;
 
-  @include respond-max($bp-tab) {
-    min-height: 52px;
+  @include respond-max($bp-lg-desk) {
+    min-height: 85px;
   }
 
   @include respond-max($bp-lap) {
-    min-height: 72px;
+    min-height: 70px;
+  }
+
+  @include respond-max($bp-tab) {
+    min-height: 55px;
   }
 
   .current-title {

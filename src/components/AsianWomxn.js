@@ -4,7 +4,6 @@ import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 import BackButton from "./BackButton";
 import NextButton from "./NextButton";
-import PageTransition from "../js/pages";
 
 // Images
 import Jeannie from "../assets/images/1_Asian_Womxn/5_Jeannie.jpg";
@@ -136,11 +135,11 @@ export default function AsianWomxn() {
                   <h2 className="page-title page-title-js">
                     <span>N</span>
                   </h2>
+                {/* </div>
+                <div className="page-title-container asian-title mobile-only"> */}
                   <h2 className="page-title page-title-js mobile-only">
-                    <span>&nbsp;</span>
+                    &nbsp;
                   </h2>
-                </div>
-                <div className="page-title-container asian-title">
                   <h2 className="page-title page-title-js">
                     <span>W</span>
                   </h2>
