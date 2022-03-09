@@ -90,7 +90,7 @@ export default function Outro(props) {
           <main className="scene-wrapper">
             <div className=" nsc-page-title">
               <div className="anim-nsc">
-                <div className="intro-container-spacing">
+                <div className="outro-container-spacing">
                   <div className="anim-nsc">
                     <div className="anim-container">
                       <span className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
@@ -166,7 +166,7 @@ export default function Outro(props) {
                   </div>
                 </div>
 
-                {/* <div className="mail-signup">
+                <div className="mail-signup">
                   <div id="mc_embed_signup">
                     <form
                       action="https://nightsnackclub.us20.list-manage.com/subscribe/post?u=5490e1d0a99db7f49bde09b5e&amp;id=f055921875"
@@ -223,7 +223,7 @@ export default function Outro(props) {
                       </div>
                     </form>
                   </div>
-                </div> */}
+                </div>
 
                 <ul className="social-links">
                   <li>WEBSITE</li>

@@ -4,5 +4,11 @@
   font-weight: 200;
 }
 
+@font-face {
+  font-family: "Helvetica Roman";
+  src: url("../assets/fonts/HelveticaLTStd-Roman.otf");
+  font-weight: 200;
+}
+
 $font-serif: "NSC-BigCaslon", Times, serif;
 $font-sans: Helvetica, Arial, sans-serif;
