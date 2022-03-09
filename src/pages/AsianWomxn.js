@@ -158,11 +158,11 @@ export default function AsianWomxn(props) {
             <div className="images-well asian-womxn">
               <div className="images-palette">
                 <div className="targetclassName aw-1 inactive-card">
-                  {/* <img src={AW_Caitlin} alt="Cookie Do" /> */}
+                  {/* <a href="https://www.nightsnackclub.com/blog/cookie-do" target="_blank" rel="noreferrer"><img src={AW_Caitlin} alt="Cookie Do" /></a> */}
                   <div className="project-title">COOKIE DO</div>
                 </div>
                 <div className="targetclassName aw-2 inactive-card">
-                  {/* <img src={AW_Jenn} alt="Jenn Chen" /> */}
+                  {/* <a href="https://www.nightsnackclub.com/blog/the-contemplative-art-of-suminagashi-with-jenn-chen" target="_blank" rel="noreferrer"><img src={AW_Jenn} alt="Jenn Chen" /></a> */}
                   <div className="project-title">
                     The Contemplative <br />
                     Art of Suminagashi with <br />
@@ -170,7 +170,7 @@ export default function AsianWomxn(props) {
                   </div>
                 </div>
                 <div className="targetclassName aw-3 inactive-card">
-                  {/* <img src={AW_Jeannie} alt="Jeannie Huang" /> */}
+                  {/* <a href="https://www.nightsnackclub.com/blog/jeannie-huang" target="_blank" rel="noreferrer"><img src={AW_Jeannie} alt="Jeannie Huang" /></a> */}
                   <div className="project-title">
                     The Ephemeral AND Intangible <br />
                     Art of Wearable Florals with <br />
@@ -178,14 +178,14 @@ export default function AsianWomxn(props) {
                   </div>
                 </div>
                 <div className="targetclassName aw-4 inactive-card">
-                  {/* <img src={AW_JudyOscar} alt="Judy & Oscar" /> */}
+                  {/* <a href="https://www.nightsnackclub.com/blog/creative-couple-series-judy-and-oscar" target="_blank" rel="noreferrer"><img src={AW_JudyOscar} alt="Judy & Oscar" /></a> */}
                   <div className="project-title">
                     Creative Couple Series: <br />
                     Judy & Oscar
                   </div>
                 </div>
                 <div className="targetclassName aw-5 inactive-card">
-                  {/* <img src={AW_Nicole} alt="Nicole Liao" /> */}
+                  {/* <a href="https://www.nightsnackclub.com/blog/sewing-circle-with-nicole-liao" target="_blank" rel="noreferrer"><img src={AW_Nicole} alt="Nicole Liao" /></a> */}
                   <div className="project-title">
                     Sewing Circle <br />
                     with Nicole Liao
@@ -194,14 +194,14 @@ export default function AsianWomxn(props) {
                   </div>
                 </div>
                 <div className="targetclassName aw-6 inactive-card">
-                  {/* <img src={AW_Robyn} alt="Corners in Clay" /> */}
+                  {/* <a href="https://www.nightsnackclub.com/blog/smoothing-out-hard-corners-in-clay" target="_blank" rel="noreferrer"><img src={AW_Robyn} alt="Corners in Clay" /></a> */}
                   <div className="project-title">
                     Smoothing Out Hard <br />
                     Corners in Clay
                   </div>
                 </div>
                 <div className="targetclassName poster aw-poster inactive-card">
-                  {/* <img src={AW_Poster} alt="Asian Womxn" /> */}
+                  <img src={AW_Poster} alt="Asian Womxn" />
                 </div>
               </div>
             </div>

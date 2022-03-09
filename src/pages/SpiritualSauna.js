@@ -6,7 +6,12 @@ import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 
 // Images
-import {SS_August, SS_July, SS_Poster, SS_Sept} from '../assets/images/allPhotos'
+import {
+  SS_August,
+  SS_July,
+  SS_Poster,
+  SS_Sept,
+} from "../assets/images/allPhotos";
 
 export default function SpiritualSauna() {
   useEffect(() => {
@@ -24,7 +29,7 @@ export default function SpiritualSauna() {
     });
 
     function getBgColor() {
-      const bgColor = '#0b1676';
+      const bgColor = "#0b1676";
       document.body.class = "";
       document.body.classList.add("body-" + bgColor);
     }
@@ -148,24 +153,44 @@ export default function SpiritualSauna() {
                   className="targetClass poster ss-poster inactive-card"
                   loading="eager"
                 >
-                  {/* <img src={SS_Poster} alt="Spiritual Sauna" /> */}
+                  <img src={SS_Poster} alt="Spiritual Sauna" />
                 </div>
                 <div className="targetClass ss-1 inactive-card" loading="eager">
-                  {/* <img src={SS_August} alt="Tarot Spread Guide for August 2020" /> */}
+                  <a
+                    href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-august-2020"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src={SS_August}
+                      alt="Tarot Spread Guide for August 2020"
+                    />
+                  </a>
                   <div className="project-title">
                     Tarot Spread Guide <br />
                     for August 2020
                   </div>
                 </div>
                 <div className="targetClass ss-2 inactive-card" loading="eager">
-                  {/* <img src={SS_July} alt="Tarot Spread Guide for July 2020" /> */}
+                  <a
+                    href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-july-2020"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={SS_July} alt="Tarot Spread Guide for July 2020" />
+                  </a>
                   <div className="project-title">
                     Tarot Spread Guide <br />
                     for July 2020
                   </div>
                 </div>
                 <div className="targetClass ss-3 inactive-card" loading="eager">
-                  {/* <img src=src={SS_September} alt="Tarot Spread Guide for September 2020" /> */}
+                  <a href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-september-2020" target="_blank" rel="noreferrer">
+                    <img
+                      src={SS_Sept}
+                      alt="Tarot Spread Guide for September 2020"
+                    />
+                  </a>
                   <div className="project-title">
                     Tarot Spread Guide <br />
                     for September 2020

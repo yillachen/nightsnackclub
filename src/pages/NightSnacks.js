@@ -145,25 +145,25 @@ export default function NightSnacks(props) {
                   <img src={NS_Poster} alt="Night Snacks" />
                 </div>
                 <div className="targetClass ns-1 inactive-card">
-                  <img src={NS_Shirley} alt="Pansy Orange Fin Cordial" />
+                  <a href="https://www.nightsnackclub.com/blog/pansy-orange-gin-cordial" rel="noreferrer" target="_blank"><img src={NS_Shirley} alt="Pansy Orange Fin Cordial" /></a>
                   <div className="project-title">Pansy Orange Gin Cordial</div>
                 </div>
                 <div className="targetClass ns-2 inactive-card">
-                  <img src={NS_Jenn} alt="Hong Kong meets Philly Egg Tarts" />
+                  <a href="https://www.nightsnackclub.com/blog/egg-tarts" rel="noreferrer" target="_blank"><img src={NS_Jenn} alt="Hong Kong meets Philly Egg Tarts" /></a>
                   <div className="project-title">
                     My Mom’s HK Style Egg Tarts <br />
                     with A Touch of Philly
                   </div>
                 </div>
                 <div className="targetClass ns-3 inactive-card">
-                  <img src={NS_Johana} alt="Finding Inspiration, Dessert Edition" />
+                  <a href="https://www.nightsnackclub.com/blog/finding-inspiration-dessert-edition" rel="noreferrer" target="_blank"><img src={NS_Johana} alt="Finding Inspiration, Dessert Edition" /></a>
                   <div className="project-title">
                     Finding Inspiration, <br />
                     Dessert Edition
                   </div>
                 </div>
                 <div className="targetClass ns-4 inactive-card">
-                  <img src={NS_Shirley2} alt="Anh Anh's   Salted Eggs" />
+                  <a href="https://www.nightsnackclub.com/blog/anh-anhs-salted-eggs" rel="noreferrer" target="_blank"><img src={NS_Shirley2} alt="Anh Anh's   Salted Eggs" /></a>
                   <div className="project-title">Anh Anh’s Salted Eggs</div>
                 </div>
               </div>

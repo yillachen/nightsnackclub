@@ -146,67 +146,67 @@ export default function DrawAndTell() {
                   className="targetClass poster ii-poster inactive-card"
                   loading="eager"
                 >
-                  {/* <img src={DT_Poster} alt="Draw and Tell" /> */}
+                  <img src={DT_Poster} alt="Draw and Tell" />
                 </div>
                 <div className="targetClass ii-1 inactive-card" loading="eager">
-                  {/* <img src={DT_Liz} alt="Liz and Enle" /> */}
+                  <a href="https://www.nightsnackclub.com/blog/creative-couple-series-liz-and-enle" target="_blank" rel="noreferrer"><img src={DT_Liz} alt="Liz and Enle" /></a>
                   <div className="project-title">
                     Creative Couple Series: <br />
                     Liz & Enle
                   </div>
                 </div>
                 <div className="targetClass ii-2 inactive-card" loading="eager">
-                  {/* <img src={DT_Caitlin} alt="Caitlin" /> */}
+                  <a href="https://www.nightsnackclub.com/blog/cookie-do" target="_blank" rel="noreferrer"><img src={DT_Caitlin} alt="Caitlin" /></a>
                   <div className="project-title">COOKIE DO</div>
                 </div>
                 <div className="targetClass ii-3 inactive-card" loading="eager">
-                  {/* <img src={DT_Ale} alt="Alejandro Chen Li" /> */}
+                  <a href="https://www.nightsnackclub.com/blog/meet-alejandro-chen-li" target="_blank" rel="noreferrer"><img src={DT_Ale} alt="Alejandro Chen Li" /></a>
                   <div className="project-title">
                     Meet Alejandro <br />
                     Chen Li
                   </div>
                 </div>
                 <div className="targetClass ii-4 inactive-card" loading="eager">
-                  {/* <img src={DT_Monica} alt="Eunji" /> */}
+                  <a href="https://www.nightsnackclub.com/blog/tattooing-as-a-form-of-ritual" target="_blank" rel="noreferrer"><img src={DT_Monica} alt="Eunji" /></a>
                   <div className="project-title">
                     Tattooing As a Form of <br />
                     Ritual with Eunji
                   </div>
                 </div>
                 <div className="targetClass ii-5 inactive-card" loading="eager">
-                  {/* <img src={DT_Tiffany} alt="Tiffany" /> */}
+                   <a href="https://www.nightsnackclub.com/blog/abc-for-abcs" target="_blank" rel="noreferrer"><img src={DT_Tiffany} alt="Tiffany" /></a>
                   <div className="project-title">Abc for Abcs</div>
                 </div>
                 <div className="targetClass ii-6 inactive-card" loading="eager">
-                  {/* <img src={DT_Emily} alt="Emily" /> */}
+                  <a href="https://www.nightsnackclub.com/blog/the-meandering-path-of-emily" target="_blank" rel="noreferrer"><img src={DT_Emily} alt="Emily" /></a>
                   <div className="project-title">
                     The meandering <br />
                     path of emily
                   </div>
                 </div>
                 <div className="targetClass ii-7 inactive-card" loading="eager">
-                  {/* <img src={DT_Leah} alt="Leah Maldonado" /> */}
+                  <a href="https://www.nightsnackclub.com/blog/leah-maldonado-invites-you-to-her-digital-playground" target="_blank" rel="noreferrer"><img src={DT_Leah} alt="Leah Maldonado" /></a>
                   <div className="project-title">
                     Leah Maldonado Invites You to <br />
                     Her Digital Playground
                   </div>
                 </div>
                 <div className="targetClass ii-8 inactive-card" loading="eager">
-                  {/* <img src={DT_Enle} alt="Liz and Enle 2" /> */}
+                  <a href="https://www.nightsnackclub.com/blog/creative-couple-series-liz-and-enle" target="_blank" rel="noreferrer"><img src={DT_Enle} alt="Liz and Enle 2" /></a>
                   <div className="project-title">
                     Creative Couple Series: <br />
                     Liz & Enle
                   </div>
                 </div>
                 <div className="targetClass ii-9 inactive-card" loading="eager">
-                  {/* <img src={DT_Jocelyn} alt="Jocelyn" /> */}
+                  <a href="https://www.nightsnackclub.com/blog/behind-the-murals" target="_blank" rel="noreferrer"><img src={DT_Jocelyn} alt="Jocelyn" /></a>
                   <div className="project-title">Behind the Murals</div>
                 </div>
                 <div
                   className="targetClass ii-10 inactive-card"
                   loading="eager"
                 >
-                  {/* <img src={DT_Nicolet} alt="Nicolet" /> */}
+                  <a href="https://www.nightsnackclub.com/blog/drawing-a-sacai-with-nicolet" target="_blank" rel="noreferrer"><img src={DT_NicoleT} alt="Nicolet" /></a>
                   <div className="project-title">
                     Drawing a Sacai <br />
                     with Nicolet
@@ -216,7 +216,7 @@ export default function DrawAndTell() {
                   className="targetClass ii-11 drop-shadow inactive-card"
                   loading="eager"
                 >
-                  {/* <img src={DT_Header} alt="From NYC to NOLA" /> */}
+                  <a href="https://www.nightsnackclub.com/blog/from-nyc-to-nola" target="_blank" rel="noreferrer"><img src={DT_Header} alt="From NYC to NOLA" /></a>
                   <div className="project-title">From NYC to NOLA</div>
                 </div>
               </div>

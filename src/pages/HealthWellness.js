@@ -151,25 +151,25 @@ export default function HealthWellness() {
             <div className="images-well health">
               <div className="images-palette">
                 <div className="targetClass poster hw-poster inactive-card">
-                  {/* <img src={HW_Poster} alt="Health and Wellness" /> */}
+                  <img src={HW_Poster} alt="Health and Wellness" />
                 </div>
                 <div className="targetClass hw-1 inactive-card">
-                  {/* <img src={HW_Yilla} alt="Facial Massage with Yilla" /> */}
+                  <a href="https://www.nightsnackclub.com/blog/sculpt-your-way-to-glowy-skin-with-yilla2112222" rel="noreferrer" target="_blank"><img src={HW_Yilla} alt="Facial Massage with Yilla" /></a>
                   <div className="project-title">
                     Sculpt Your Way to <br />
                     Glowy Skin with Yilla
                   </div>
                 </div>
                 <div className="targetClass hw-2 inactive-card">
-                  {/* <img src={HW_Ying} alt="Yoga with Ying" /> */}
+                  <a href="https://www.nightsnackclub.com/blog/yoga-journey-with-ying" rel="noreferrer" target="_blank"><img src={HW_Ying} alt="Yoga with Ying" /></a>
                   <div className="project-title">Yoga Journey with Ying</div>
                 </div>
                 <div className="targetClass hw-3 inactive-card">
-                  {/* <img src={HW_Anna} alt="Kombucha Dabbles with Anna" /> */}
+                  <a href="https://www.nightsnackclub.com/blog/kombucha-dabbles" rel="noreferrer" target="_blank"><img src={HW_Anna} alt="Kombucha Dabbles with Anna" /></a>
                   <div className="project-title">Kombucha Dabbles</div>
                 </div>
                 <div className="targetClass hw-4 inactive-card">
-                  {/* <img src={HW_Jenn} alt="Suminagashi with Jenn" /> */}
+                  <a href="https://www.nightsnackclub.com/blog/the-contemplative-art-of-suminagashi-with-jenn-chen" rel="noreferrer" target="_blank"><img src={HW_Jenn} alt="Suminagashi with Jenn" /></a>
                   <div className="project-title">
                     The Contemplative <br />
                     Art of Suminagashi with <br />
@@ -177,7 +177,7 @@ export default function HealthWellness() {
                   </div>
                 </div>
                 <div className="targetClass hw-5 inactive-card">
-                  {/* <img src={HW_Hui} alt="Herbalism with Hui" /> */}
+                  <a href="https://www.nightsnackclub.com/blog/the-unqualified-herbalist-chamomile" rel="noreferrer" target="_blank"><img src={HW_Hui} alt="Herbalism with Hui" /></a>
                   <div className="project-title">
                     The Unqualified <br />
                     Herbalist: Chamomile
