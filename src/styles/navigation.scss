@@ -127,31 +127,25 @@
     }
 
     &.start-btn {
-      right: 50%;
-      transform: translateX(50%);
+      transform: translateX(0%);
+      right: 20px;
 
       @include respond-max($bp-desk) {
-        right: 10%;
+        right: 50px;
       }
-
       @include respond-max($bp-lg-desk) {
-        right: 10%;
+        right: 65px;
       }
 
-      @include respond-max($bp-lap) {
-        right: 10%;
-      }
       @include respond-max($bp-lg-lap) {
-        right: 10%;
+        right: 55px;
+      }
+      @include respond-max($bp-lap) {
+        right: 33px;
       }
 
       @include respond-max($bp-tab) {
-        bottom: 10%;
-        right: 50%;
-      }
-      @include respond-max($bp-mob) {
-        right: 50%;
-        bottom: 10%;
+        left: 45%;
       }
     }
 
