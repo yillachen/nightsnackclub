@@ -17,19 +17,19 @@ const routes = [
   { path: "/", name: "Home", component: Intro },
   { path: "/home", name: "Home", component: Intro },
   { path: "/asian-womxn", name: "Asian Womxn", component: AsianWomxn },
-  { path: "/draw-and-tell", name: "Draw and Tell", component: DrawAndTell },
+  { path: "/illustrators", name: "Draw and Tell", component: DrawAndTell },
   {
-    path: "/spiritual-sauna",
+    path: "/spiritual",
     name: "Spiritual Sauna",
     component: SpiritualSauna,
   },
-  { path: "/blog-worms", name: "Blog Worms", component: BlogWorms },
+  { path: "/blog", name: "Blog Worms", component: BlogWorms },
   {
-    path: "/health-wellness",
+    path: "/health",
     name: "Health and Wellness",
     component: HealthWellness,
   },
-  { path: "/night-snacks", name: "Night Snacks", component: NightSnacks },
+  { path: "/nightsnack", name: "Night Snacks", component: NightSnacks },
   { path: "/thank-you", name: "Thank you", component: Outro },
 ];
 

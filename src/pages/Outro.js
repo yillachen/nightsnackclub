@@ -239,7 +239,7 @@ export default function Outro(props) {
           </main>
 
           <div className="nav-row__btn back-btn asian-womxn">
-            <Link to="/night-snacks">
+            <Link to="/nightsnack">
               <BackButton />
             </Link>
           </div>

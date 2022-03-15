@@ -6,7 +6,15 @@ import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 
 // Images
-import {AW_Caitlin, AW_Jeannie, AW_Jenn, AW_JudyOscar, AW_Nicole, AW_Poster, AW_Robyn} from '../assets/images/allPhotos'
+import {
+  AW_Caitlin,
+  AW_Jeannie,
+  AW_Jenn,
+  AW_JudyOscar,
+  AW_Nicole,
+  AW_Poster,
+  AW_Robyn,
+} from "../assets/images/allPhotos";
 
 export default function AsianWomxn(props) {
   useEffect(() => {
@@ -24,8 +32,10 @@ export default function AsianWomxn(props) {
     });
 
     function getBgColor() {
-      const bgColor = "#0b1676";
-      document.body.class = "";
+      const el = document.querySelector('body-');
+      // const bgColor = el.dataset.page;
+      const bgColor = 'asian-womxn';
+      document.body.className = "";
       document.body.classList.add("body-" + bgColor);
     }
 
@@ -105,6 +115,11 @@ export default function AsianWomxn(props) {
             <div className="nsc-page-title">
               <div className="anim-nsc">
                 <div className="anim-container page-title-container page-container-spacing">
+                  <div className="background-container">
+                    <div className="bg-segment asian-womxn" />
+                    <div className="bg-segment asian-womxn" />
+                    <div className="bg-segment asian-womxn" />
+                  </div>
                   <div className="title-container">
                     <div id="nsc-anim-wipe" className="title-swipe-effect">
                       <h3 className="current-title nsc-title-small anim-title asian-title">
@@ -149,11 +164,6 @@ export default function AsianWomxn(props) {
                   </h2>
                 </div>
               </div>
-            </div>
-            <div className="background-container">
-              <div className="bg-segment asian-womxn" />
-              <div className="bg-segment asian-womxn" />
-              <div className="bg-segment asian-womxn" />
             </div>
             <div className="images-well asian-womxn">
               <div className="images-palette">
@@ -201,7 +211,7 @@ export default function AsianWomxn(props) {
                   </div>
                 </div>
                 <div className="targetclassName poster aw-poster inactive-card">
-                  <img src={AW_Poster} alt="Asian Womxn" />
+                  {/* <img src={AW_Poster} alt="Asian Womxn" /> */}
                 </div>
               </div>
             </div>
@@ -214,7 +224,7 @@ export default function AsianWomxn(props) {
           </div>
 
           <div className="nav-row__btn forward-btn asian-womxn">
-            <Link to="/draw-and-tell">
+            <Link to="/illustrators">
               <NextButton />
             </Link>
           </div>

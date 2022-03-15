@@ -188,13 +188,13 @@ export default function HealthWellness() {
           </main>
 
           <div className="nav-row__btn back-btn health">
-            <Link to="/blog-worms">
+            <Link to="/blog">
               <BackButton />
             </Link>
           </div>
 
           <div className="nav-row__btn forward-btn health">
-            <Link to="/night-snacks">
+            <Link to="/nightsnack">
               <NextButton />
             </Link>
           </div>

@@ -21,22 +21,26 @@ main {
     background-color: #ffd9b7;
   }
   &.body-asian-womxn {
-    background-color: #fff0dc;
+    background-color: #ffd9b7;
   }
   &.body-illustrators {
+    // background-color: #fff0dc;
     background-color: #0b1676;
   }
   &.body-spiritual {
-    background-color: #ddd2f5;
+    background-color: #0b1676;
   }
   &.body-blog {
-    background-color: #0a4d4d;
+    background-color: #ddd2f5;
+    // background-color: #0a4d4d;
   }
   &.body-health {
-    background-color: #ffe2b7;
+    background-color: #0a4d4d;
+    // background-color: #ffe2b7;
   }
   &.body-nightsnack {
-    background-color: #c6d2cf;
+    background-color: #ffe2b7;
+    // background-color: #c6d2cf;
   }
 }
 
@@ -46,38 +50,38 @@ main {
   height: 100vh;
   top: 0;
   position: fixed;
-  z-index: -1;
+  z-index: 0;
 }
 
 // background segments
 .background-container .bg-segment {
   height: 33.3333vh;
   width: 0%;
-  max-width: 100%;
+  // max-width: 100%;
 
   &.index {
-    background: #ffe3c9;
+    background-color: #ffe3c9;
   }
   &.asian-womxn {
-    background: #fff1de;
+    background-color: #fff1de;
   }
   &.illustrators {
-    background: #0a1772;
+    background-color: #0a1772;
   }
   &.spiritual {
-    background: #ddd3f3;
+    background-color: #ddd3f3;
   }
   &.blog {
-    background: #0f4d4d;
+    background-color: #0f4d4d;
   }
   &.health {
-    background: #fee3ba;
+    background-color: #fee3ba;
   }
   &.nightsnack-club {
-    background: #c6d2cf;
+    background-color: #c6d2cf;
   }
   &.thanks {
-    background: #ffe3c9;
+    background-color: #ffe3c9;
   }
 }
 

@@ -76,7 +76,7 @@ export default function SpiritualSauna() {
       .fromTo(
         ".bg-segment",
         {
-          width: "100%",
+          width: "0%",
         },
         {
           duration: 2.5,
@@ -110,6 +110,11 @@ export default function SpiritualSauna() {
             <div className="nsc-page-title">
               <div className="anim-nsc">
                 <div className="anim-container page-title-container page-container-spacing">
+                  <div className="background-container">
+                    <div className="bg-segment spiritual"></div>
+                    <div className="bg-segment spiritual"></div>
+                    <div className="bg-segment spiritual"></div>
+                  </div>
                   <div className="title-container">
                     <div id="nsc-anim-wipe" className="title-swipe-effect">
                       <h3 className="current-title nsc-title-small anim-title spiritual-title">
@@ -141,11 +146,6 @@ export default function SpiritualSauna() {
                   <div className="page-title page-title-js">A</div>
                 </div>
               </div>
-            </div>
-            <div className="background-container">
-              <div className="bg-segment spiritual"></div>
-              <div className="bg-segment spiritual"></div>
-              <div className="bg-segment spiritual"></div>
             </div>
             <div className="images-well spiritual">
               <div className="images-palette">
@@ -185,7 +185,11 @@ export default function SpiritualSauna() {
                   </div>
                 </div>
                 <div className="targetClass ss-3 inactive-card" loading="eager">
-                  <a href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-september-2020" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-september-2020"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img
                       src={SS_Sept}
                       alt="Tarot Spread Guide for September 2020"
@@ -201,13 +205,13 @@ export default function SpiritualSauna() {
           </main>
 
           <div className="nav-row__btn back-btn spiritual">
-            <Link to="/draw-and-tell">
+            <Link to="/illustrators">
               <BackButton />
             </Link>
           </div>
 
           <div className="nav-row__btn forward-btn spiritual">
-            <Link to="/blog-worms">
+            <Link to="/blog">
               <NextButton />
             </Link>
           </div>

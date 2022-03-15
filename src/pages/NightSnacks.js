@@ -171,7 +171,7 @@ export default function NightSnacks(props) {
           </main>
 
           <div className="nav-row__btn back-btn snack-attack">
-            <Link to="/health-wellness">
+            <Link to="/health">
               <BackButton />
             </Link>
           </div>
