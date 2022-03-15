@@ -60,7 +60,7 @@ export default function Outro(props) {
           duration: 1,
           ease: "power4",
           yPercent: -120,
-          stagger: 0.045,
+          stagger: 0.075,
           delay: 0.3,
         },
         0.0
@@ -93,15 +93,15 @@ export default function Outro(props) {
                 <div className="outro-container-spacing">
                   <div className="anim-nsc">
                     <div className="anim-container">
-                      <span className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
+                      <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
                         Night
-                      </span>
-                      <span className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
+                      </div>
+                      <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
                         Snack
-                      </span>
-                      <span className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
+                      </div>
+                      <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
                         Club
-                      </span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -111,58 +111,58 @@ export default function Outro(props) {
               <div className=" year-in-review">
                 <div className="anim-yir">
                   <div className="anim-container thanks-cont">
-                    <span className="page-title-container">
+                    <div className="page-title-container">
                       <h3 className="thanks-title thanks-content page-title-js content-desk">
                         THANK YOU FOR
                       </h3>
-                    </span>
-                    <span className="page-title-container">
+                    </div>
+                    <div className="page-title-container">
                       <h3 className="thanks-title thanks-content page-title-js content-desk">
                         YOUR SUPPORT
                       </h3>
-                    </span>
-                    <span className="page-title-container">
+                    </div>
+                    <div className="page-title-container">
                       <h3 className="thanks-title thanks-content page-title-js content-desk">
-                        AND WE'LL SEE
+                        AND LET'S KEEP
                       </h3>
-                    </span>
-                    <span className="page-title-container">
+                    </div>
+                    <div className="page-title-container">
                       <h3 className="thanks-title thanks-content page-title-js content-desk">
-                        YOU SOON
+                        IN TOUCH
                       </h3>
-                    </span>
+                    </div>
 
                     {/* MOBILE TEXT FORMAT */}
-                    <span className="page-title-container">
+                    <div className="page-title-container">
                       <h3 className="thanks-title thanks-content page-title-js content-mobile">
                         THANK YOU
                       </h3>
-                    </span>
-                    <span className="page-title-container">
+                    </div>
+                    <div className="page-title-container">
                       <h3 className="thanks-title thanks-content page-title-js content-mobile">
                         FOR YOUR
                       </h3>
-                    </span>
-                    <span className="page-title-container">
+                    </div>
+                    <div className="page-title-container">
                       <h3 className="thanks-title thanks-content page-title-js content-mobile">
                         SUPPORT
                       </h3>
-                    </span>
-                    <span className="page-title-container">
+                    </div>
+                    <div className="page-title-container">
                       <h3 className="thanks-title thanks-content page-title-js content-mobile">
                         AND LET'S
                       </h3>
-                    </span>
-                    <span className="page-title-container">
+                    </div>
+                    <div className="page-title-container">
                       <h3 className="thanks-title thanks-content page-title-js content-mobile">
                         KEEP IN
                       </h3>
-                    </span>
-                    <span className="page-title-container">
+                    </div>
+                    <div className="page-title-container">
                       <h3 className="thanks-title thanks-content page-title-js content-mobile">
                         TOUCH
                       </h3>
-                    </span>
+                    </div>
                   </div>
                 </div>
 

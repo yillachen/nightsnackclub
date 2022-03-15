@@ -14,6 +14,8 @@ body {
 main {
   position: relative;
   margin: 0;
+  height: 100vh;
+  overflow: hidden;
 
   &.body-index {
     background-color: #ffd9b7;
@@ -161,21 +163,21 @@ main {
 
 .intro-video {
   text-align: center;
-  margin: 9px auto;
-  width: 100%;
+  margin: 10px auto;
+  width: 75%;
 
-  @include respond-max($bp-tab) {
-    margin: 9px auto 12px;
-    width: 85%;
+  @include respond-max($bp-desk) {
+    width: 82%;
+    margin: 21px auto;
   }
 
   @include respond-max($bp-lap) {
     width: 78%;
   }
 
-  @include respond-max($bp-desk) {
-    width: 82%;
-    margin: 21px auto;
+  @include respond-max($bp-tab) {
+    margin: 9px auto 12px;
+    width: 85%;
   }
 }
 
@@ -215,7 +217,7 @@ main {
     }
   }
 
-  .thanks-title {
+  thanks-title {
     position: relative;
     display: block;
     margin: 0;
@@ -257,7 +259,7 @@ main {
 
   .nsc-title-medium {
     font-family: $font-serif;
-    font-size: 36px;
+    font-size: 102px;
     font-weight: 200;
     line-height: 1.25;
     vertical-align: middle;
@@ -283,16 +285,18 @@ main {
     @include respond-max($bp-tab) {
       font-size: 69px;
       letter-spacing: -1.38;
+      padding-bottom: 30px;
     }
 
     @include respond-max($bp-mob) {
       font-size: 36px;
       letter-spacing: -1.38;
+      padding-bottom: 30px;
     }
   }
 
   .nsc-title-large {
-    font-size: 70px;
+    font-size: 262px;
     line-height: 0.9;
     letter-spacing: -4px;
 
@@ -333,25 +337,10 @@ main {
 }
 
 .intro-container-spacing {
-  padding-top: 168px;
-  padding-bottom: 3px;
+  padding-top: 2%;
 
   @include respond-max($bp-lg-desk) {
-    padding-top: 110px;
-    padding-bottom: 0;
-  }
-  @include respond-max($bp-desk) {
-    padding-top: 95px;
-    padding-bottom: 0;
-  }
-
-  @include respond-max($bp-lg-lap) {
-    padding-top: 110px;
-    padding-bottom: 0;
-  }
-  @include respond-max($bp-lap) {
-    padding-top: 60px;
-    padding-bottom: 0;
+    padding-top: 5%;
   }
 
   @include respond-max($bp-tab) {
@@ -494,28 +483,22 @@ main {
     &.thanks-content {
       color: #5e7017;
       font-size: 170px;
-      line-height: 1;
-      letter-spacing: -0.04em;
-
-      @include respond-max($bp-lg-desk) {
-        font-size: 170px;
-      }
-      @include respond-max($bp-desk) {
-        font-size: 170px;
-      }
+      line-height: 0.9;
+      letter-spacing: -4%;
 
       @include respond-max($bp-lg-lap) {
         font-size: 136px;
+        letter-spacing: -4%;
       }
       @include respond-max($bp-lap) {
         font-size: 112px;
+        letter-spacing: -4%;
       }
 
-      @include respond-max($bp-tab) {
-        font-size: 112px;
-      }
       @include respond-max($bp-mob) {
         font-size: 60px;
+        letter-spacing: -0.04em;
+        line-height: 100%;
       }
 
       &.content-desk {

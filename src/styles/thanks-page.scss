@@ -3,18 +3,18 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  margin: 28px 0 20px;
-
-  @include respond-max($bp-lap) {
-    margin: 40px 21px;
-  }
+  margin: 54px 0 29px;
 
   @include respond-max($bp-lg-lap) {
-    margin: 44px 0 22px;
+    margin: 44px 0 22px 0;
   }
 
-  @include respond-max($bp-desk) {
-    margin: 54px 0 29px;
+  @include respond-max($bp-lap) {
+    margin: 40px 0 21px 0;
+  }
+
+  @include respond-max($bp-mob) {
+    margin: 28px 0 20px 0;
   }
 
   .form-subscribe {
@@ -79,7 +79,7 @@
 
     &:hover {
       color: #ff4c24;
-      cursor: crosshair;
+      cursor: pointer;
     }
   }
 
@@ -89,31 +89,16 @@
 }
 
 .outro-container-spacing {
-  padding-top: 168px;
-  padding-bottom: 3px;
+  padding-top: 2%;
 
   @include respond-max($bp-lg-desk) {
-    padding-top: 110px;
-    padding-bottom: 0;
-  }
-  @include respond-max($bp-desk) {
-    padding-top: 95px;
-    padding-bottom: 0;
-  }
-
-  @include respond-max($bp-lg-lap) {
-    padding-top: 110px;
-    padding-bottom: 0;
-  }
-  @include respond-max($bp-lap) {
-    padding-top: 60px;
-    padding-bottom: 0;
+    padding-top: 5%;
   }
 
   @include respond-max($bp-tab) {
-    padding-top: 90px;
+    padding-top: 10%;
   }
   @include respond-max($bp-mob) {
-    padding-top: 120px;
+    padding-top: 35%;
   }
 }
