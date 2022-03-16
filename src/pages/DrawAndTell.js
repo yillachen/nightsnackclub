@@ -21,41 +21,37 @@ import {
   DT_Tiffany,
 } from "../assets/images/allPhotos";
 
-export default function DrawAndTell() {
-  useEffect(() => {
-    function removeClass(targetClass) {
-      const imageGroup = document.querySelectorAll(".images-well .targetClass");
+export default function DrawAndTell(props) {
+  function removeClass(targetClass) {
+    const imageGroup = document.querySelectorAll(".images-well .targetClass");
 
-      imageGroup.forEach((el) => {
-        el.classList.remove(targetClass);
-      });
-    }
-
-    const title = document.querySelector(".current-title.nsc-title-small");
-    title.addEventListener("click", (e) => {
-      window.location.assign("/");
+    imageGroup.forEach((el) => {
+      el.classList.remove(targetClass);
     });
+  }
 
-    function getBgColor() {
-      const bgColor = 'asn-';
-      document.body.className = "";
-      document.body.classList.add("body-" + bgColor);
-    }
+  function getBgColor() {
+    const bgColor = props.location.from;
+    document.body.className = "";
+    document.body.classList.add("body-" + bgColor);
+    return bgColor ? "body-" + bgColor : "body-asian-womxn";
+  }
 
-    function projectTooltip() {
-      var tooltip = document.querySelectorAll(".project-title");
-      document.addEventListener("mousemove", fn, false);
+  function projectTooltip() {
+    var tooltip = document.querySelectorAll(".project-title");
+    document.addEventListener("mousemove", fn, false);
 
-      function fn(e) {
-        for (var i = tooltip.length; i--; ) {
-          let offset_x = e.offsetX;
-          let offset_y = e.offsetY + 45;
-          tooltip[i].style.left = offset_x + "px";
-          tooltip[i].style.top = offset_y + "px";
-        }
+    function fn(e) {
+      for (var i = tooltip.length; i--; ) {
+        let offset_x = e.offsetX;
+        let offset_y = e.offsetY + 45;
+        tooltip[i].style.left = offset_x + "px";
+        tooltip[i].style.top = offset_y + "px";
       }
     }
+  }
 
+  useEffect(() => {
     const tl = gsap.timeline({
       onComplete: () => {
         getBgColor();
@@ -111,7 +107,7 @@ export default function DrawAndTell() {
   });
 
   return (
-    <main className="body-illustrators">
+    <main className={getBgColor()}>
       <div data-router-wrapper>
         <div data-router-view data-page="illustrators">
           <main className="scene-wrapper">
@@ -303,13 +299,23 @@ export default function DrawAndTell() {
           </main>
 
           <div className="nav-row__btn back-btn illustrators">
-            <Link to="/asian-womxn">
+            <Link
+              to={{
+                pathname: "/asian-womxn",
+                from: "illustrators",
+              }}
+            >
               <BackButton />
             </Link>
           </div>
 
           <div className="nav-row__btn forward-btn illustrators">
-            <Link to="/spiritual">
+            <Link
+              to={{
+                pathname: "/spiritual",
+                from: "illustrators"
+              }}
+            >
               <NextButton />
             </Link>
           </div>

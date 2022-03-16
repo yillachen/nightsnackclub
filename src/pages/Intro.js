@@ -76,7 +76,13 @@ export default function Intro(props) {
           </main>
 
           <div className="nav-row__btn start-btn">
-            <Link to="/asian-womxn">
+            <Link
+              to={{
+                pathname: "/asian-womxn",
+                from: "index",
+              }}
+            >
+              {/* <Link to="/asian-womxn" params={{ from: 'index' }}> */}
               <StartButton />
             </Link>
           </div>

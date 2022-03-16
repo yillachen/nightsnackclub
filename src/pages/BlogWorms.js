@@ -15,41 +15,37 @@ import {
   BW_Poster,
 } from "../assets/images/allPhotos";
 
-export default function BlogWorms() {
-  useEffect(() => {
-    function removeClass(targetClass) {
-      const imageGroup = document.querySelectorAll(".images-well .targetClass");
+export default function BlogWorms(props) {
+  function removeClass(targetClass) {
+    const imageGroup = document.querySelectorAll(".images-well .targetClass");
 
-      imageGroup.forEach((el) => {
-        el.classList.remove(targetClass);
-      });
-    }
-
-    const title = document.querySelector(".current-title.nsc-title-small");
-    title.addEventListener("click", (e) => {
-      window.location.assign("/");
+    imageGroup.forEach((el) => {
+      el.classList.remove(targetClass);
     });
+  }
 
-    function getBgColor() {
-      const bgColor = "#0b1676";
-      document.body.class = "";
-      document.body.classList.add("body-" + bgColor);
-    }
+  function getBgColor() {
+    const bgColor = props.location.from;
+    document.body.className = "";
+    document.body.classList.add("body-" + bgColor);
+    return bgColor ? "body-" + bgColor : "body-spiritual";
+  }
 
-    function projectTooltip() {
-      var tooltip = document.querySelectorAll(".project-title");
-      document.addEventListener("mousemove", fn, false);
+  function projectTooltip() {
+    var tooltip = document.querySelectorAll(".project-title");
+    document.addEventListener("mousemove", fn, false);
 
-      function fn(e) {
-        for (var i = tooltip.length; i--; ) {
-          let offset_x = e.offsetX;
-          let offset_y = e.offsetY + 45;
-          tooltip[i].style.left = offset_x + "px";
-          tooltip[i].style.top = offset_y + "px";
-        }
+    function fn(e) {
+      for (var i = tooltip.length; i--; ) {
+        let offset_x = e.offsetX;
+        let offset_y = e.offsetY + 45;
+        tooltip[i].style.left = offset_x + "px";
+        tooltip[i].style.top = offset_y + "px";
       }
     }
+  }
 
+  useEffect(() => {
     const tl = gsap.timeline({
       onComplete: () => {
         getBgColor();
@@ -105,7 +101,7 @@ export default function BlogWorms() {
   });
 
   return (
-    <main className="body-blog">
+    <main className={getBgColor()}>
       <div data-router-wrapper>
         <div data-router-view data-page="blog">
           <main className="scene-wrapper">
@@ -222,13 +218,23 @@ export default function BlogWorms() {
           </main>
 
           <div className="nav-row__btn back-btn blog">
-            <Link to="/spiritual">
+            <Link
+              to={{
+                pathname: "/spiritual",
+                from: "blog",
+              }}
+            >
               <BackButton />
             </Link>
           </div>
 
           <div className="nav-row__btn forward-btn blog">
-            <Link to="/health">
+            <Link
+              to={{
+                pathname: "/health",
+                from: "blog",
+              }}
+            >
               <NextButton />
             </Link>
           </div>

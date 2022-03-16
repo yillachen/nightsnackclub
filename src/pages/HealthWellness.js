@@ -6,46 +6,49 @@ import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 
 // Images
-import {HW_Anna, HW_Hui, HW_Jenn, HW_Poster, HW_Yilla, HW_Ying} from '../assets/images/allPhotos'
+import {
+  HW_Anna,
+  HW_Hui,
+  HW_Jenn,
+  HW_Poster,
+  HW_Yilla,
+  HW_Ying,
+} from "../assets/images/allPhotos";
 
-export default function HealthWellness() {
-  useEffect(() => {
-    function removeClass(targetClass) {
-      const imageGroup = document.querySelectorAll(".images-well .targetClass");
+export default function HealthWellness(props) {
+  console.log("health", props.location.from);
+  function removeClass(targetClass) {
+    const imageGroup = document.querySelectorAll(".images-well .targetClass");
 
-      imageGroup.forEach((el) => {
-        el.classList.remove(targetClass);
-      });
-    }
-
-    const title = document.querySelector(".current-title.nsc-title-small");
-    title.addEventListener("click", (e) => {
-      window.location.assign("/");
+    imageGroup.forEach((el) => {
+      el.classList.remove(targetClass);
     });
+  }
 
-    // function getBgColor() {
-    //   const bgColor = 'illustrators';
-    //   document.body.className = "";
-    //   document.body.classList.add("body-" + bgColor);
-    // }
+  function getBgColor() {
+    const bgColor = props.location.from;
+    document.body.className = "";
+    document.body.classList.add("body-" + bgColor);
+    return bgColor ? "body-" + bgColor : "body-blog";
+  }
 
-    function projectTooltip() {
-      var tooltip = document.querySelectorAll(".project-title");
-      document.addEventListener("mousemove", fn, false);
+  function projectTooltip() {
+    var tooltip = document.querySelectorAll(".project-title");
+    document.addEventListener("mousemove", fn, false);
 
-      function fn(e) {
-        for (var i = tooltip.length; i--; ) {
-          let offset_x = e.offsetX;
-          let offset_y = e.offsetY + 45;
-          tooltip[i].style.left = offset_x + "px";
-          tooltip[i].style.top = offset_y + "px";
-        }
+    function fn(e) {
+      for (var i = tooltip.length; i--; ) {
+        let offset_x = e.offsetX;
+        let offset_y = e.offsetY + 45;
+        tooltip[i].style.left = offset_x + "px";
+        tooltip[i].style.top = offset_y + "px";
       }
     }
+  }
 
+  useEffect(() => {
     const tl = gsap.timeline({
       onComplete: () => {
-        // getBgColor();
         removeClass("inactive-card");
         // followTheMouse();
         projectTooltip();
@@ -55,7 +58,7 @@ export default function HealthWellness() {
 
     tl
       // BG SEGMENTS
-      .from(
+      .fromTo(
         ".bg-segment",
         {
           width: "0%",
@@ -98,13 +101,18 @@ export default function HealthWellness() {
   });
 
   return (
-    <main className="body-health">
+    <main className={getBgColor()}>
       <div data-router-wrapper>
         <div data-router-view data-page="health">
           <main className="scene-wrapper">
             <div className=" nsc-page-title">
               <div className="anim-nsc">
                 <div className="anim-container page-title-container page-container-spacing">
+                  <div className="background-container">
+                    <div className="bg-segment health"></div>
+                    <div className="bg-segment health"></div>
+                    <div className="bg-segment health"></div>
+                  </div>
                   <div className="title-container">
                     <div id="nsc-anim-wipe" className="title-swipe-effect">
                       <h3 className="current-title nsc-title-small anim-title health-title">
@@ -143,33 +151,52 @@ export default function HealthWellness() {
                 </div>
               </div>
             </div>
-            <div className="background-container">
-              <div className="bg-segment health"></div>
-              <div className="bg-segment health"></div>
-              <div className="bg-segment health"></div>
-            </div>
             <div className="images-well health">
               <div className="images-palette">
                 <div className="targetClass poster hw-poster inactive-card">
                   <img src={HW_Poster} alt="Health and Wellness" />
                 </div>
                 <div className="targetClass hw-1 inactive-card">
-                  <a href="https://www.nightsnackclub.com/blog/sculpt-your-way-to-glowy-skin-with-yilla2112222" rel="noreferrer" target="_blank"><img src={HW_Yilla} alt="Facial Massage with Yilla" /></a>
+                  <a
+                    href="https://www.nightsnackclub.com/blog/sculpt-your-way-to-glowy-skin-with-yilla2112222"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img src={HW_Yilla} alt="Facial Massage with Yilla" />
+                  </a>
                   <div className="project-title">
                     Sculpt Your Way to <br />
                     Glowy Skin with Yilla
                   </div>
                 </div>
                 <div className="targetClass hw-2 inactive-card">
-                  <a href="https://www.nightsnackclub.com/blog/yoga-journey-with-ying" rel="noreferrer" target="_blank"><img src={HW_Ying} alt="Yoga with Ying" /></a>
+                  <a
+                    href="https://www.nightsnackclub.com/blog/yoga-journey-with-ying"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img src={HW_Ying} alt="Yoga with Ying" />
+                  </a>
                   <div className="project-title">Yoga Journey with Ying</div>
                 </div>
                 <div className="targetClass hw-3 inactive-card">
-                  <a href="https://www.nightsnackclub.com/blog/kombucha-dabbles" rel="noreferrer" target="_blank"><img src={HW_Anna} alt="Kombucha Dabbles with Anna" /></a>
+                  <a
+                    href="https://www.nightsnackclub.com/blog/kombucha-dabbles"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img src={HW_Anna} alt="Kombucha Dabbles with Anna" />
+                  </a>
                   <div className="project-title">Kombucha Dabbles</div>
                 </div>
                 <div className="targetClass hw-4 inactive-card">
-                  <a href="https://www.nightsnackclub.com/blog/the-contemplative-art-of-suminagashi-with-jenn-chen" rel="noreferrer" target="_blank"><img src={HW_Jenn} alt="Suminagashi with Jenn" /></a>
+                  <a
+                    href="https://www.nightsnackclub.com/blog/the-contemplative-art-of-suminagashi-with-jenn-chen"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img src={HW_Jenn} alt="Suminagashi with Jenn" />
+                  </a>
                   <div className="project-title">
                     The Contemplative <br />
                     Art of Suminagashi with <br />
@@ -177,7 +204,13 @@ export default function HealthWellness() {
                   </div>
                 </div>
                 <div className="targetClass hw-5 inactive-card">
-                  <a href="https://www.nightsnackclub.com/blog/the-unqualified-herbalist-chamomile" rel="noreferrer" target="_blank"><img src={HW_Hui} alt="Herbalism with Hui" /></a>
+                  <a
+                    href="https://www.nightsnackclub.com/blog/the-unqualified-herbalist-chamomile"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img src={HW_Hui} alt="Herbalism with Hui" />
+                  </a>
                   <div className="project-title">
                     The Unqualified <br />
                     Herbalist: Chamomile
@@ -188,13 +221,23 @@ export default function HealthWellness() {
           </main>
 
           <div className="nav-row__btn back-btn health">
-            <Link to="/blog">
+            <Link
+              to={{
+                pathname: "/blog",
+                from: "health",
+              }}
+            >
               <BackButton />
             </Link>
           </div>
 
           <div className="nav-row__btn forward-btn health">
-            <Link to="/nightsnack">
+            <Link
+              to={{
+                pathname: "/nightsnack",
+                from: "health",
+              }}
+            >
               <NextButton />
             </Link>
           </div>

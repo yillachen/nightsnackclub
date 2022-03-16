@@ -17,47 +17,39 @@ import {
 } from "../assets/images/allPhotos";
 
 export default function AsianWomxn(props) {
-  useEffect(() => {
-    function removeClass(targetClass) {
-      const imageGroup = document.querySelectorAll(".images-well .targetClass");
+  function removeClass(targetClass) {
+    const imageGroup = document.querySelectorAll(".images-well .targetClass");
 
-      imageGroup.forEach((el) => {
-        el.classList.remove(targetClass);
-      });
-    }
-
-    const title = document.querySelector(".current-title.nsc-title-small");
-    title.addEventListener("click", (e) => {
-      window.location.assign("/");
+    imageGroup.forEach((el) => {
+      el.classList.remove(targetClass);
     });
+  }
 
-    function getBgColor() {
-      const el = document.querySelector('body-');
-      // const bgColor = el.dataset.page;
-      const bgColor = 'asian-womxn';
-      document.body.className = "";
-      document.body.classList.add("body-" + bgColor);
-    }
+  function getBgColor() {
+    const bgColor = props.location.from;
+    document.body.className = "";
+    document.body.classList.add("body-" + bgColor);
+    return bgColor ? "body-" + bgColor : "body-index";
+  }
 
-    function projectTooltip() {
-      var tooltip = document.querySelectorAll(".project-title");
-      document.addEventListener("mousemove", fn, false);
+  function projectTooltip() {
+    var tooltip = document.querySelectorAll(".project-title");
+    document.addEventListener("mousemove", fn, false);
 
-      function fn(e) {
-        for (var i = tooltip.length; i--; ) {
-          let offset_x = e.offsetX;
-          let offset_y = e.offsetY + 45;
-          tooltip[i].style.left = offset_x + "px";
-          tooltip[i].style.top = offset_y + "px";
-        }
+    function fn(e) {
+      for (var i = tooltip.length; i--; ) {
+        let offset_x = e.offsetX;
+        let offset_y = e.offsetY + 45;
+        tooltip[i].style.left = offset_x + "px";
+        tooltip[i].style.top = offset_y + "px";
       }
     }
+  }
 
+  useEffect(() => {
     const tl = gsap.timeline({
       onComplete: () => {
-        getBgColor();
         removeClass("inactive-card");
-        // followTheMouse();
         projectTooltip();
         // done();
       },
@@ -108,7 +100,7 @@ export default function AsianWomxn(props) {
   });
 
   return (
-    <main className="body-womxn">
+    <main className={getBgColor()}>
       <div data-router-wrapper>
         <div data-router-view data-page="asian-womxn">
           <main className="scene-wrapper">
@@ -122,9 +114,11 @@ export default function AsianWomxn(props) {
                   </div>
                   <div className="title-container">
                     <div id="nsc-anim-wipe" className="title-swipe-effect">
-                      <h3 className="current-title nsc-title-small anim-title asian-title">
-                        Night Snack Club
-                      </h3>
+                      <Link to="/">
+                        <h3 className="current-title nsc-title-small anim-title asian-title">
+                          Night Snack Club
+                        </h3>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -218,13 +212,23 @@ export default function AsianWomxn(props) {
           </main>
 
           <div className="nav-row__btn back-btn asian-womxn">
-            <Link to="/home">
+            <Link
+              to={{
+                pathname: "/",
+                from: "asian-womxn",
+              }}
+            >
               <BackButton />
             </Link>
           </div>
 
           <div className="nav-row__btn forward-btn asian-womxn">
-            <Link to="/illustrators">
+            <Link
+              to={{
+                pathname: "/illustrators",
+                from: "asian-womxn",
+              }}
+            >
               <NextButton />
             </Link>
           </div>

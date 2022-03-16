@@ -8,64 +8,47 @@ import RestartButton from "../components/RestartButton";
 // Images
 
 export default function Outro(props) {
-  useEffect(() => {
-    function removeClass(targetClass) {
-      const imageGroup = document.querySelectorAll(".images-well .targetClass");
+  console.log("outro", props.location.from);
+  function removeClass(targetClass) {
+    const imageGroup = document.querySelectorAll(".images-well .targetClass");
 
-      imageGroup.forEach((el) => {
-        el.classList.remove(targetClass);
-      });
-    }
+    imageGroup.forEach((el) => {
+      el.classList.remove(targetClass);
+    });
+  }
 
-    // const title = document.querySelector(".current-title.nsc-title-small");
-    // title.addEventListener("click", (e) => {
-    //   window.location.assign("/");
-    // });
+  function getBgColor() {
+    const bgColor = props.location.from;
+    document.body.className = "";
+    document.body.classList.add("body-" + bgColor);
+    return bgColor ? "body-" + bgColor : "body-nightsnack";
+  }
 
-    function getBgColor() {
-      const bgColor = "#0b1676";
-      document.body.class = "";
-      document.body.classList.add("body-" + bgColor);
-    }
+  function projectTooltip() {
+    var tooltip = document.querySelectorAll(".project-title");
+    document.addEventListener("mousemove", fn, false);
 
-    function projectTooltip() {
-      var tooltip = document.querySelectorAll(".project-title");
-      document.addEventListener("mousemove", fn, false);
-
-      function fn(e) {
-        for (var i = tooltip.length; i--; ) {
-          let offset_x = e.offsetX;
-          let offset_y = e.offsetY + 45;
-          tooltip[i].style.left = offset_x + "px";
-          tooltip[i].style.top = offset_y + "px";
-        }
+    function fn(e) {
+      for (var i = tooltip.length; i--; ) {
+        let offset_x = e.offsetX;
+        let offset_y = e.offsetY + 45;
+        tooltip[i].style.left = offset_x + "px";
+        tooltip[i].style.top = offset_y + "px";
       }
     }
+  }
 
+  useEffect(() => {
     const tl = gsap.timeline({
       onComplete: () => {
-        getBgColor();
         removeClass("inactive-card");
         // followTheMouse();
         projectTooltip();
-        // done();
+        // gsap.done();
       },
     });
 
     tl
-      // GENERAL TITLE->IN
-      .from(
-        ".page-title-js",
-        {
-          duration: 1,
-          ease: "power4",
-          yPercent: -120,
-          stagger: 0.075,
-          delay: 0.3,
-        },
-        0.0
-      )
-
       // BG SEGMENTS
       .fromTo(
         ".bg-segment",
@@ -75,19 +58,37 @@ export default function Outro(props) {
         {
           duration: 2.5,
           width: "100%",
-          ease: "power4",
+          ease: "power3",
           stagger: 0.25,
+        },
+        0.0
+      )
+
+      // GENERAL TITLE->IN
+      .from(
+        ".page-title-js",
+        {
+          duration: 1,
+          ease: "power4",
+          yPercent: -120,
+          stagger: 0.045,
+          delay: 0.3,
         },
         0.0
       );
   });
 
   return (
-    <main className="body-index">
+    <main className={getBgColor()}>
       <div data-router-wrapper>
         <div data-router-view data-page="index">
-          <div className="top-gradient"></div>
           <main className="scene-wrapper">
+            <div className="background-container">
+              <div className="bg-segment index" />
+              <div className="bg-segment index" />
+              <div className="bg-segment index" />
+            </div>
+            <div className="top-gradient"></div>
             <div className=" nsc-page-title">
               <div className="anim-nsc">
                 <div className="outro-container-spacing">
@@ -223,29 +224,53 @@ export default function Outro(props) {
                       </div>
                     </form>
                   </div>
-                </div>
 
-                <ul className="social-links">
-                  <li><a href="https://nightsnackclub.com" target="_blank" rel="noreferrer">WEBSITE</a></li>
-                  <li><a href="https://instagram.com/nightsnackclub" target="_blank" rel="noreferrer">INSTAGRAM</a></li>
-                </ul>
+                  <div className="social-bar">
+                    <ul className="social-links">
+                      <li>
+                        <a
+                          href="https://nightsnackclub.com"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          WEBSITE
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://instagram.com/nightsnackclub"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          INSTAGRAM
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="background-container">
-              <div className="bg-segment index" />
-              <div className="bg-segment index" />
-              <div className="bg-segment index" />
             </div>
           </main>
 
           <div className="nav-row__btn back-btn asian-womxn">
-            <Link to="/nightsnack">
+            <Link
+              to={{
+                pathname: "/nightsnack",
+                from: "index",
+              }}
+            >
               <BackButton />
             </Link>
           </div>
 
           <div className="nav-row__btn forward-btn lg-forward-btn">
-            <Link to="/" className="begin-again">
+            <Link
+              to={{
+                pathname: "/",
+                from: "index",
+              }}
+              className="begin-again"
+            >
               <RestartButton />
             </Link>
           </div>

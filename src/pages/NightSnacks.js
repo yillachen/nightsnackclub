@@ -6,67 +6,56 @@ import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 
 // Images
-import {NS_Jenn, NS_Johana, NS_Poster, NS_Shirley, NS_Shirley2} from '../assets/images/allPhotos'
+import {
+  NS_Jenn,
+  NS_Johana,
+  NS_Poster,
+  NS_Shirley,
+  NS_Shirley2,
+} from "../assets/images/allPhotos";
 
 export default function NightSnacks(props) {
-  useEffect(() => {
-    function removeClass(targetClass) {
-      const imageGroup = document.querySelectorAll(".images-well .targetClass");
+  console.log("night snack", props.location.from);
+  function removeClass(targetClass) {
+    const imageGroup = document.querySelectorAll(".images-well .targetClass");
 
-      imageGroup.forEach((el) => {
-        el.classList.remove(targetClass);
-      });
-    }
-
-    const title = document.querySelector(".current-title.nsc-title-small");
-    title.addEventListener("click", (e) => {
-      window.location.assign("/");
+    imageGroup.forEach((el) => {
+      el.classList.remove(targetClass);
     });
+  }
 
-    function getBgColor() {
-      const bgColor = "#0b1676";
-      document.body.class = "";
-      document.body.classList.add("body-" + bgColor);
-    }
+  function getBgColor() {
+    const bgColor = props.location.from;
+    document.body.className = "";
+    document.body.classList.add("body-" + bgColor);
+    return bgColor ? "body-" + bgColor : "body-health";
+  }
 
-    function projectTooltip() {
-      var tooltip = document.querySelectorAll(".project-title");
-      document.addEventListener("mousemove", fn, false);
+  function projectTooltip() {
+    var tooltip = document.querySelectorAll(".project-title");
+    document.addEventListener("mousemove", fn, false);
 
-      function fn(e) {
-        for (var i = tooltip.length; i--; ) {
-          let offset_x = e.offsetX;
-          let offset_y = e.offsetY + 45;
-          tooltip[i].style.left = offset_x + "px";
-          tooltip[i].style.top = offset_y + "px";
-        }
+    function fn(e) {
+      for (var i = tooltip.length; i--; ) {
+        let offset_x = e.offsetX;
+        let offset_y = e.offsetY + 45;
+        tooltip[i].style.left = offset_x + "px";
+        tooltip[i].style.top = offset_y + "px";
       }
     }
+  }
 
+  useEffect(() => {
     const tl = gsap.timeline({
       onComplete: () => {
-        getBgColor();
         removeClass("inactive-card");
         // followTheMouse();
         projectTooltip();
-        // done();
+        // gsap.done();
       },
     });
 
     tl
-      // GENERAL TITLE->IN
-      .from(
-        ".page-title-js",
-        {
-          duration: 1,
-          ease: "power4",
-          yPercent: -120,
-          stagger: 0.045,
-          delay: 0.3,
-        },
-        0.0
-      )
-
       // BG SEGMENTS
       .fromTo(
         ".bg-segment",
@@ -76,8 +65,21 @@ export default function NightSnacks(props) {
         {
           duration: 2.5,
           width: "100%",
-          ease: "power4",
+          ease: "power3",
           stagger: 0.25,
+        },
+        0.0
+      )
+
+      // GENERAL TITLE->IN
+      .from(
+        ".page-title-js",
+        {
+          duration: 1,
+          ease: "power4",
+          yPercent: -120,
+          stagger: 0.045,
+          delay: 0.3,
         },
         0.0
       )
@@ -98,13 +100,18 @@ export default function NightSnacks(props) {
   });
 
   return (
-    <main className="body-nightsnack">
+    <main className={getBgColor()}>
       <div data-router-wrapper>
         <div data-router-view data-page="nightsnack-club">
           <main className="scene-wrapper">
             <div className="nsc-page-title">
               <div className="anim-nsc">
                 <div className="anim-container page-title-container page-container-spacing">
+                  <div className="background-container">
+                    <div className="bg-segment nightsnack-club"></div>
+                    <div className="bg-segment nightsnack-club"></div>
+                    <div className="bg-segment nightsnack-club"></div>
+                  </div>
                   <div className="title-container">
                     <div id="nsc-anim-wipe" className="title-swipe-effect">
                       <h3 className="current-title nsc-title-small anim-title nightsnack-title">
@@ -134,36 +141,58 @@ export default function NightSnacks(props) {
                 </div>
               </div>
             </div>
-            <div className="background-container">
-              <div className="bg-segment nightsnack-club"></div>
-              <div className="bg-segment nightsnack-club"></div>
-              <div className="bg-segment nightsnack-club"></div>
-            </div>
             <div className="images-well nightsnack">
               <div className="images-palette">
                 <div className="targetClass poster ns-poster inactive-card">
                   <img src={NS_Poster} alt="Night Snacks" />
                 </div>
                 <div className="targetClass ns-1 inactive-card">
-                  <a href="https://www.nightsnackclub.com/blog/pansy-orange-gin-cordial" rel="noreferrer" target="_blank"><img src={NS_Shirley} alt="Pansy Orange Fin Cordial" /></a>
+                  <a
+                    href="https://www.nightsnackclub.com/blog/pansy-orange-gin-cordial"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img src={NS_Shirley} alt="Pansy Orange Fin Cordial" />
+                  </a>
                   <div className="project-title">Pansy Orange Gin Cordial</div>
                 </div>
                 <div className="targetClass ns-2 inactive-card">
-                  <a href="https://www.nightsnackclub.com/blog/egg-tarts" rel="noreferrer" target="_blank"><img src={NS_Jenn} alt="Hong Kong meets Philly Egg Tarts" /></a>
+                  <a
+                    href="https://www.nightsnackclub.com/blog/egg-tarts"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img src={NS_Jenn} alt="Hong Kong meets Philly Egg Tarts" />
+                  </a>
                   <div className="project-title">
                     My Mom’s HK Style Egg Tarts <br />
                     with A Touch of Philly
                   </div>
                 </div>
                 <div className="targetClass ns-3 inactive-card">
-                  <a href="https://www.nightsnackclub.com/blog/finding-inspiration-dessert-edition" rel="noreferrer" target="_blank"><img src={NS_Johana} alt="Finding Inspiration, Dessert Edition" /></a>
+                  <a
+                    href="https://www.nightsnackclub.com/blog/finding-inspiration-dessert-edition"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      src={NS_Johana}
+                      alt="Finding Inspiration, Dessert Edition"
+                    />
+                  </a>
                   <div className="project-title">
                     Finding Inspiration, <br />
                     Dessert Edition
                   </div>
                 </div>
                 <div className="targetClass ns-4 inactive-card">
-                  <a href="https://www.nightsnackclub.com/blog/anh-anhs-salted-eggs" rel="noreferrer" target="_blank"><img src={NS_Shirley2} alt="Anh Anh's   Salted Eggs" /></a>
+                  <a
+                    href="https://www.nightsnackclub.com/blog/anh-anhs-salted-eggs"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img src={NS_Shirley2} alt="Anh Anh's   Salted Eggs" />
+                  </a>
                   <div className="project-title">Anh Anh’s Salted Eggs</div>
                 </div>
               </div>
@@ -171,13 +200,23 @@ export default function NightSnacks(props) {
           </main>
 
           <div className="nav-row__btn back-btn snack-attack">
-            <Link to="/health">
+            <Link
+              to={{
+                pathname: "/health",
+                from: "nightsnack",
+              }}
+            >
               <BackButton />
             </Link>
           </div>
 
           <div className="nav-row__btn forward-btn snack-attack">
-            <Link to="/thank-you">
+            <Link
+              to={{
+                pathname: "/thank-you",
+                from: "index",
+              }}
+            >
               <NextButton />
             </Link>
           </div>

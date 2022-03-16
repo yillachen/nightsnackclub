@@ -1,7 +1,8 @@
 .mail-signup {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   margin: 54px 0 29px;
 
@@ -58,6 +59,12 @@
     }
   }
 }
+
+.social-bar {
+  display: block;
+  z-index: 1;
+}
+
 .social-links {
   display: flex;
   flex-direction: row;
