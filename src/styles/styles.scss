@@ -125,18 +125,11 @@ main {
   @include respond-max($bp-lg-desk) {
     font-size: 195px;
   }
-  @include respond-max($bp-desk) {
-    font-size: 195px;
-  }
 
   @include respond-max($bp-lg-lap) {
     font-size: 165px;
   }
   @include respond-max($bp-lap) {
-    font-size: 150px;
-  }
-
-  @include respond-max($bp-tab) {
     font-size: 150px;
   }
 
@@ -367,9 +360,6 @@ main {
   @include respond-max($bp-lg-desk) {
     font-size: 60px;
   }
-  @include respond-max($bp-desk) {
-    font-size: 60px;
-  }
 
   @include respond-max($bp-lg-lap) {
     font-size: 52px;
@@ -378,9 +368,6 @@ main {
     font-size: 46px;
   }
 
-  @include respond-max($bp-tab) {
-    font-size: 46px;
-  }
   @include respond-max($bp-mob) {
     font-size: 32px;
   }
