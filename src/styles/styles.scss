@@ -247,11 +247,11 @@ main {
     margin: 0;
 
     @include respond-max($bp-lg-lap) {
-      font-size: 81px;
-    }
-    @include respond-max($bp-lap) {
       font-size: 69px;
     }
+    // @include respond-max($bp-lap) {
+    //   font-size: 69px;
+    // }
 
     @include respond-max($bp-tab) {
       letter-spacing: -1.38;
@@ -271,10 +271,6 @@ main {
     letter-spacing: -4px;
 
     @include respond-max($bp-lg-lap) {
-      font-size: 208px;
-      letter-spacing: -7.4px;
-    }
-    @include respond-max($bp-lap) {
       font-size: 185px;
       letter-spacing: -7.4px;
     }
@@ -431,21 +427,15 @@ main {
     &.thanks-content {
       color: #5e7017;
       font-size: 170px;
-      line-height: 0.9;
-      letter-spacing: -4%;
+      letter-spacing: -0.04em;
+      line-height: 90%;
 
       @include respond-max($bp-lg-lap) {
-        font-size: 136px;
-        letter-spacing: -4%;
-      }
-      @include respond-max($bp-lap) {
         font-size: 112px;
-        letter-spacing: -4%;
       }
 
       @include respond-max($bp-mob) {
         font-size: 60px;
-        letter-spacing: -0.04em;
         line-height: 100%;
       }
 

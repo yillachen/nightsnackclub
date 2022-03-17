@@ -1,9 +1,9 @@
 import "../styles/styles.scss";
 import { useEffect } from "react";
-import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
+import { appTransitions } from "../js/transitions";
 
 // Images
 import {
@@ -14,86 +14,15 @@ import {
 } from "../assets/images/allPhotos";
 
 export default function SpiritualSauna(props) {
-  function removeClass(targetClass) {
-    const imageGroup = document.querySelectorAll(".images-well .targetClass");
-
-    imageGroup.forEach((el) => {
-      el.classList.remove(targetClass);
-    });
-  }
-
   function getBgColor() {
-    const bgColor = props.location.from;
+    let bgColor = props.location.from;
     document.body.className = "";
     document.body.classList.add("body-" + bgColor);
-    return bgColor ? "body-" + bgColor : "body-illustrators";
+    return "body-" + bgColor;
   }
 
-  function projectTooltip() {
-    var tooltip = document.querySelectorAll(".project-title");
-    document.addEventListener("mousemove", fn, false);
-
-    function fn(e) {
-      for (var i = tooltip.length; i--; ) {
-        let offset_x = e.offsetX;
-        let offset_y = e.offsetY + 45;
-        tooltip[i].style.left = offset_x + "px";
-        tooltip[i].style.top = offset_y + "px";
-      }
-    }
-  }
   useEffect(() => {
-    const tl = gsap.timeline({
-      onComplete: () => {
-        removeClass("inactive-card");
-        // followTheMouse();
-        projectTooltip();
-        // done();
-      },
-    });
-
-    tl
-      // GENERAL TITLE->IN
-      .from(
-        ".page-title-js",
-        {
-          duration: 1,
-          ease: "power4",
-          yPercent: -120,
-          stagger: 0.045,
-          delay: 0.3,
-        },
-        0.0
-      )
-
-      // BG SEGMENTS
-      .fromTo(
-        ".bg-segment",
-        {
-          width: "0%",
-        },
-        {
-          duration: 2.5,
-          width: "100%",
-          ease: "power4",
-          stagger: 0.25,
-        },
-        0.0
-      )
-
-      // PAGE TITLE SWIPE
-      .fromTo(
-        "#nsc-anim-wipe",
-        {
-          width: "0%",
-        },
-        {
-          duration: 2.5,
-          width: "100%",
-          ease: "power4",
-        },
-        0.0
-      );
+    appTransitions();
   });
 
   return (

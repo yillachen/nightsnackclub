@@ -1,9 +1,9 @@
 import "../styles/styles.scss";
 import { useEffect } from "react";
-import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
+import { appTransitions } from "../js/transitions";
 
 // Images
 import {
@@ -17,86 +17,15 @@ import {
 } from "../assets/images/allPhotos";
 
 export default function AsianWomxn(props) {
-  function removeClass(targetClass) {
-    const imageGroup = document.querySelectorAll(".images-well .targetClass");
-
-    imageGroup.forEach((el) => {
-      el.classList.remove(targetClass);
-    });
-  }
-
   function getBgColor() {
-    const bgColor = props.location.from;
+    let bgColor = props.location.from;
     document.body.className = "";
     document.body.classList.add("body-" + bgColor);
-    return bgColor ? "body-" + bgColor : "body-index";
-  }
-
-  function projectTooltip() {
-    var tooltip = document.querySelectorAll(".project-title");
-    document.addEventListener("mousemove", fn, false);
-
-    function fn(e) {
-      for (var i = tooltip.length; i--; ) {
-        let offset_x = e.offsetX;
-        let offset_y = e.offsetY + 45;
-        tooltip[i].style.left = offset_x + "px";
-        tooltip[i].style.top = offset_y + "px";
-      }
-    }
+    return "body-" + bgColor;
   }
 
   useEffect(() => {
-    const tl = gsap.timeline({
-      onComplete: () => {
-        removeClass("inactive-card");
-        projectTooltip();
-        // done();
-      },
-    });
-
-    tl
-      // GENERAL TITLE->IN
-      .from(
-        ".page-title-js",
-        {
-          duration: 1,
-          ease: "power4",
-          yPercent: -120,
-          stagger: 0.045,
-          delay: 0.3,
-        },
-        0.0
-      )
-
-      // BG SEGMENTS
-      .fromTo(
-        ".bg-segment",
-        {
-          width: "0%",
-        },
-        {
-          duration: 2.5,
-          width: "100%",
-          ease: "power4",
-          stagger: 0.25,
-        },
-        0.0
-      )
-
-      // PAGE TITLE SWIPE
-      .fromTo(
-        "#nsc-anim-wipe",
-        {
-          width: "0%",
-        },
-        {
-          duration: 2.5,
-          width: "100%",
-          ease: "power4",
-        },
-        0.0
-      );
+    appTransitions();
   });
 
   return (
@@ -161,25 +90,47 @@ export default function AsianWomxn(props) {
             </div>
             <div className="images-well asian-womxn">
               <div className="images-palette">
-
-                <div className="targetClass poster aw-poster inactive-card" loading="eager">
+                <div
+                  className="targetClass poster aw-poster inactive-card"
+                  loading="eager"
+                >
                   <img src={AW_Poster} alt="Asian Womxn" />
                 </div>
 
                 <div className="targetClass aw-1 inactive-card">
-                  <a href="https://www.nightsnackclub.com/blog/cookie-do" target="_blank" rel="noreferrer"><img src={AW_Caitlin} alt="Cookie Do" /></a>
+                  <a
+                    href="https://www.nightsnackclub.com/blog/cookie-do"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={AW_Caitlin} alt="Cookie Do" />
+                  </a>
                   <div className="project-title">COOKIE DO</div>
                 </div>
                 <div className="targetClass aw-2 inactive-card">
-                  <a href="https://www.nightsnackclub.com/blog/the-contemplative-art-of-suminagashi-with-jenn-chen" target="_blank" rel="noreferrer"><img src={AW_Jenn} alt="Jenn Chen" /></a>
+                  <a
+                    href="https://www.nightsnackclub.com/blog/the-contemplative-art-of-suminagashi-with-jenn-chen"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={AW_Jenn} alt="Jenn Chen" />
+                  </a>
                   <div className="project-title">
-                    The Contemplative <br />
-                    Art of Suminagashi with <br />
-                    Jenn Chen
+                    The Contemplative
+                    <br />
+                    Art of Suminagashi
+                    <br />
+                    with Jenn Chen
                   </div>
                 </div>
                 <div className="targetClass aw-3 inactive-card">
-                  <a href="https://www.nightsnackclub.com/blog/jeannie-huang" target="_blank" rel="noreferrer"><img src={AW_Jeannie} alt="Jeannie Huang" /></a>
+                  <a
+                    href="https://www.nightsnackclub.com/blog/jeannie-huang"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={AW_Jeannie} alt="Jeannie Huang" />
+                  </a>
                   <div className="project-title">
                     The Ephemeral AND Intangible <br />
                     Art of Wearable Florals with <br />
@@ -187,14 +138,26 @@ export default function AsianWomxn(props) {
                   </div>
                 </div>
                 <div className="targetClass aw-4 inactive-card">
-                  <a href="https://www.nightsnackclub.com/blog/creative-couple-series-judy-and-oscar" target="_blank" rel="noreferrer"><img src={AW_JudyOscar} alt="Judy & Oscar" /></a>
+                  <a
+                    href="https://www.nightsnackclub.com/blog/creative-couple-series-judy-and-oscar"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={AW_JudyOscar} alt="Judy & Oscar" />
+                  </a>
                   <div className="project-title">
                     Creative Couple Series: <br />
                     Judy & Oscar
                   </div>
                 </div>
                 <div className="targetClass aw-5 inactive-card">
-                  <a href="https://www.nightsnackclub.com/blog/sewing-circle-with-nicole-liao" target="_blank" rel="noreferrer"><img src={AW_Nicole} alt="Nicole Liao" /></a>
+                  <a
+                    href="https://www.nightsnackclub.com/blog/sewing-circle-with-nicole-liao"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={AW_Nicole} alt="Nicole Liao" />
+                  </a>
                   <div className="project-title">
                     Sewing Circle <br />
                     with Nicole Liao
@@ -203,7 +166,13 @@ export default function AsianWomxn(props) {
                   </div>
                 </div>
                 <div className="targetClass aw-6 inactive-card">
-                  <a href="https://www.nightsnackclub.com/blog/smoothing-out-hard-corners-in-clay" target="_blank" rel="noreferrer"><img src={AW_Robyn} alt="Corners in Clay" /></a>
+                  <a
+                    href="https://www.nightsnackclub.com/blog/smoothing-out-hard-corners-in-clay"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={AW_Robyn} alt="Corners in Clay" />
+                  </a>
                   <div className="project-title">
                     Smoothing Out Hard <br />
                     Corners in Clay

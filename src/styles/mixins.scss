@@ -1,12 +1,12 @@
 @use "sass:math";
 
 // breakpoints
-$bp-mob: 650px;
-$bp-tab: 768px;
-$bp-lap: 1280px;
-$bp-lg-lap: 1440px;
-$bp-desk: 1680px;
 $bp-lg-desk: 1920px;
+$bp-desk: 1680px;
+$bp-lg-lap: 1440px;
+$bp-lap: 1280px;
+$bp-tab: 768px;
+$bp-mob: 650px;
 
 @mixin respond($width) {
   @media screen and (max-width: $width) {
