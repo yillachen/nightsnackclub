@@ -127,41 +127,6 @@
         }
       }
 
-      // @include respond-max($bp-tab) {
-      //   // height: 44%;
-      //   top: 55%;
-
-      //   img {
-      //     width: 307px;
-      //   }
-      // }
-
-      // @include respond-max($bp-lap) {
-      //   // height: 60%;
-      //   left: 50%;
-      //   top: 57%;
-
-      //   img {
-      //     width: 367px;
-      //   }
-      // }
-
-      // @include respond-max($bp-desk) {
-      //   // height: 56%;
-      //   left: 50%;
-      //   top: 53%;
-
-      //   img {
-      //     width: 424px;
-      //   }
-      // }
-
-      // @include respond-max($bp-lg-desk) {
-      //   img {
-      //     width: 460px;
-      //   }
-      // }
-
       &.aw-poster.inactive-card {
         top: -28%;
       }
@@ -201,15 +166,6 @@
         img {
           width: 127px;
         }
-
-        // @include respond-max($bp-mob) {
-        //   left: 16%;
-        //   top: 34%;
-
-        //   img {
-        //     width: 127px;
-        //   }
-        // }
 
         @include respond-max($bp-tab) {
           left: 22%;

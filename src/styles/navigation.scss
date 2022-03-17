@@ -47,22 +47,17 @@
     }
 
     &.back-btn {
-      left: 20px;
+      left: 65px;
 
       @include respond-max($bp-desk) {
         left: 50px;
       }
-      @include respond-max($bp-lg-desk) {
-        left: 65px;
-      }
-
       @include respond-max($bp-lg-lap) {
         left: 55px;
       }
       @include respond-max($bp-lap) {
         left: 33px;
       }
-
       @include respond-max($bp-mob) {
         left: 20px;
       }
@@ -70,11 +65,7 @@
 
     &.forward-btn {
       transform: translateX(0%);
-      right: 50px;
-
-      @include respond-max($bp-lg-desk) {
-        right: 65px;
-      }
+      right: 65px;
 
       @include respond-max($bp-lg-lap) {
         right: 55px;
@@ -90,13 +81,10 @@
 
     &.start-btn {
       transform: translateX(0%);
-      right: 20px;
+      right: 65px;
 
       @include respond-max($bp-desk) {
         right: 50px;
-      }
-      @include respond-max($bp-lg-desk) {
-        right: 65px;
       }
 
       @include respond-max($bp-lg-lap) {
