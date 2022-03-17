@@ -82,7 +82,6 @@ export default function Intro(props) {
                 from: "index",
               }}
             >
-              {/* <Link to="/asian-womxn" params={{ from: 'index' }}> */}
               <StartButton />
             </Link>
           </div>
