@@ -90,10 +90,7 @@ export default function AsianWomxn(props) {
             </div>
             <div className="images-well asian-womxn">
               <div className="images-palette">
-                <div
-                  className="targetClass poster aw-poster inactive-card"
-                  loading="eager"
-                >
+                <div className="targetClass poster aw-poster inactive-card">
                   <img src={AW_Poster} alt="Asian Womxn" />
                 </div>
 
