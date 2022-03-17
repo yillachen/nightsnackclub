@@ -106,49 +106,61 @@
     &.poster {
       left: 50%;
       z-index: 999;
-      // height: 300px;
-      // width: auto;
       top: 55%;
       transform: translate(-50%, -50%) scale(1.1);
 
       img {
-        width: 212px;
-      }
+        height: 650px;
+        width: auto;
 
-      @include respond-max($bp-tab) {
-        // height: 44%;
-        top: 55%;
-
-        img {
-          width: 307px;
+        @include respond-max($bp-desk) {
+          height: 600px;
+        }
+        @include respond-max($bp-lg-lap) {
+          height: 520px;
+        }
+        @include respond-max($bp-lap) {
+          height: 435px;
+        }
+        @include respond-max($bp-mob) {
+          height: 300px;
         }
       }
 
-      @include respond-max($bp-lap) {
-        // height: 60%;
-        left: 50%;
-        top: 57%;
+      // @include respond-max($bp-tab) {
+      //   // height: 44%;
+      //   top: 55%;
 
-        img {
-          width: 367px;
-        }
-      }
+      //   img {
+      //     width: 307px;
+      //   }
+      // }
 
-      @include respond-max($bp-desk) {
-        // height: 56%;
-        left: 50%;
-        top: 53%;
+      // @include respond-max($bp-lap) {
+      //   // height: 60%;
+      //   left: 50%;
+      //   top: 57%;
 
-        img {
-          width: 424px;
-        }
-      }
+      //   img {
+      //     width: 367px;
+      //   }
+      // }
 
-      @include respond-max($bp-lg-desk) {
-        img {
-          width: 460px;
-        }
-      }
+      // @include respond-max($bp-desk) {
+      //   // height: 56%;
+      //   left: 50%;
+      //   top: 53%;
+
+      //   img {
+      //     width: 424px;
+      //   }
+      // }
+
+      // @include respond-max($bp-lg-desk) {
+      //   img {
+      //     width: 460px;
+      //   }
+      // }
 
       &.aw-poster.inactive-card {
         top: -28%;
