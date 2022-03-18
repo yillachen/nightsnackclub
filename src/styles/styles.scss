@@ -83,7 +83,6 @@ main {
 .scene-wrapper {
   height: 100vh;
   width: 100vw;
-  width: 100%;
   overflow: hidden;
 }
 
@@ -435,7 +434,7 @@ main {
       }
 
       @include respond-max($bp-mob) {
-        font-size: 60px;
+        font-size: 56px;
         line-height: 100%;
       }
 

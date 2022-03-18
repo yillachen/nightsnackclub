@@ -1,11 +1,12 @@
-import { removeClass, projectTooltip } from './helperFunc'
-import gsap from 'gsap';
+import { removeClass, projectTooltip, parallax } from "./helperFunc";
+import gsap from "gsap";
 
 export function appTransitions() {
   const tl = gsap.timeline({
     onComplete: () => {
       removeClass("inactive-card");
       projectTooltip();
+      parallax();
       // done();
     },
   });
