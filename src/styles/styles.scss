@@ -179,9 +179,9 @@ main {
     padding-top: 51px;
     padding-bottom: 14px;
 
-    @include respond-max($bp-desk) {
-      padding-top: 69px;
-      padding-bottom: 21px;
+    @include respond-max($bp-tab) {
+      padding-top: 10%;
+      padding-bottom: 15px;
     }
   }
 

@@ -3,6 +3,10 @@
     bottom: 8%;
     position: absolute;
 
+    @include respond-max($bp-mob) {
+      bottom: 3.75%;
+    }
+
     a {
       display: inline-block;
       position: relative;
