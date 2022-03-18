@@ -23,7 +23,7 @@ export default function Outro(props) {
     <main className={getBgColor()}>
       <div data-router-wrapper>
         <div data-router-view data-page="index">
-          <main className="scene-wrapper">
+          <main id="outro-scene-wrapper">
             <div className="background-container">
               <div className="bg-segment index" />
               <div className="bg-segment index" />

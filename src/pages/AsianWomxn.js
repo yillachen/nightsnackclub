@@ -158,8 +158,6 @@ export default function AsianWomxn(props) {
                   <div className="project-title">
                     Sewing Circle <br />
                     with Nicole Liao
-                    <br />
-                    Third line test
                   </div>
                 </div>
                 <div className="targetClass aw-6 inactive-card">

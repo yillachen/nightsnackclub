@@ -41,9 +41,11 @@ export default function NightSnacks(props) {
                   </div>
                   <div className="title-container">
                     <div id="nsc-anim-wipe" className="title-swipe-effect">
-                      <h3 className="current-title nsc-title-small anim-title nightsnack-title">
+
+                     <Link to="/"><h3 className="current-title nsc-title-small anim-title nightsnack-title">
                         Night Snack Club
                       </h3>
+                        </Link>
                     </div>
                     <h3 className="previous-title health-title">
                       Night Snack Club

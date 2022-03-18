@@ -42,9 +42,11 @@ export default function HealthWellness(props) {
                   </div>
                   <div className="title-container">
                     <div id="nsc-anim-wipe" className="title-swipe-effect">
+                      <Link to="/">
                       <h3 className="current-title nsc-title-small anim-title health-title">
                         Night Snack Club
-                      </h3>
+                        </h3>
+                        </Link>
                     </div>
                     <h3 className="previous-title blog-title">
                       Night Snack Club
@@ -85,7 +87,7 @@ export default function HealthWellness(props) {
                 </div>
                 <div className="targetClass hw-1 inactive-card">
                   <a
-                    href="https://www.nightsnackclub.com/blog/sculpt-your-way-to-glowy-skin-with-yilla2112222"
+                    href="https://www.nightsnackclub.com/blog/sculpt-your-way-to-glowy-skin-with-yilla"
                     rel="noreferrer"
                     target="_blank"
                   >

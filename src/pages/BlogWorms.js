@@ -42,9 +42,11 @@ export default function BlogWorms(props) {
                   </div>
                   <div className="title-container">
                     <div id="nsc-anim-wipe" className="title-swipe-effect">
+                      <Link to="/">
                       <h3 className="current-title nsc-title-small anim-title blog-title">
                         Night Snack Club
-                      </h3>
+                        </h3>
+                        </Link>
                     </div>
                     <h3 className="previous-title spiritual-title">
                       Night Snack Club
