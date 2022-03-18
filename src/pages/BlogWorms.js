@@ -158,7 +158,7 @@ export default function BlogWorms(props) {
           <div className="nav-row__btn forward-btn blog">
             <Link
               to={{
-                pathname: "/nightsnack",
+                pathname: "/health",
                 from: "blog",
               }}
             >
