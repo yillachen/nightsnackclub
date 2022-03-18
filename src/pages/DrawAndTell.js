@@ -80,11 +80,11 @@ export default function DrawAndTell(props) {
               <div className="images-palette">
                 <div
                   className="targetClass poster ii-poster inactive-card"
-                  loading="eager"
+
                 >
                   <img src={DT_Poster} alt="Draw and Tell" />
                 </div>
-                <div className="targetClass ii-1 inactive-card" loading="eager">
+                <div className="targetClass ii-1 inactive-card">
                   <a
                     href="https://www.nightsnackclub.com/blog/creative-couple-series-liz-and-enle"
                     target="_blank"
@@ -97,7 +97,7 @@ export default function DrawAndTell(props) {
                     Liz & Enle
                   </div>
                 </div>
-                <div className="targetClass ii-2 inactive-card" loading="eager">
+                <div className="targetClass ii-2 inactive-card">
                   <a
                     href="https://www.nightsnackclub.com/blog/cookie-do"
                     target="_blank"
@@ -107,7 +107,7 @@ export default function DrawAndTell(props) {
                   </a>
                   <div className="project-title">COOKIE DO</div>
                 </div>
-                <div className="targetClass ii-3 inactive-card" loading="eager">
+                <div className="targetClass ii-3 inactive-card">
                   <a
                     href="https://www.nightsnackclub.com/blog/meet-alejandro-chen-li"
                     target="_blank"
@@ -120,7 +120,7 @@ export default function DrawAndTell(props) {
                     Chen Li
                   </div>
                 </div>
-                <div className="targetClass ii-4 inactive-card" loading="eager">
+                <div className="targetClass ii-4 inactive-card">
                   <a
                     href="https://www.nightsnackclub.com/blog/tattooing-as-a-form-of-ritual"
                     target="_blank"
@@ -133,7 +133,7 @@ export default function DrawAndTell(props) {
                     Ritual with Eunji
                   </div>
                 </div>
-                <div className="targetClass ii-5 inactive-card" loading="eager">
+                <div className="targetClass ii-5 inactive-card">
                   <a
                     href="https://www.nightsnackclub.com/blog/abc-for-abcs"
                     target="_blank"
@@ -143,7 +143,7 @@ export default function DrawAndTell(props) {
                   </a>
                   <div className="project-title">Abc for Abcs</div>
                 </div>
-                <div className="targetClass ii-6 inactive-card" loading="eager">
+                <div className="targetClass ii-6 inactive-card">
                   <a
                     href="https://www.nightsnackclub.com/blog/the-meandering-path-of-emily"
                     target="_blank"
@@ -156,7 +156,7 @@ export default function DrawAndTell(props) {
                     path of emily
                   </div>
                 </div>
-                <div className="targetClass ii-7 inactive-card" loading="eager">
+                <div className="targetClass ii-7 inactive-card">
                   <a
                     href="https://www.nightsnackclub.com/blog/leah-maldonado-invites-you-to-her-digital-playground"
                     target="_blank"
@@ -169,7 +169,7 @@ export default function DrawAndTell(props) {
                     Her Digital Playground
                   </div>
                 </div>
-                <div className="targetClass ii-8 inactive-card" loading="eager">
+                <div className="targetClass ii-8 inactive-card">
                   <a
                     href="https://www.nightsnackclub.com/blog/creative-couple-series-liz-and-enle"
                     target="_blank"
@@ -182,7 +182,7 @@ export default function DrawAndTell(props) {
                     Liz & Enle
                   </div>
                 </div>
-                <div className="targetClass ii-9 inactive-card" loading="eager">
+                <div className="targetClass ii-9 inactive-card">
                   <a
                     href="https://www.nightsnackclub.com/blog/behind-the-murals"
                     target="_blank"
@@ -194,7 +194,7 @@ export default function DrawAndTell(props) {
                 </div>
                 <div
                   className="targetClass ii-10 inactive-card"
-                  loading="eager"
+
                 >
                   <a
                     href="https://www.nightsnackclub.com/blog/drawing-a-sacai-with-nicolet"
@@ -210,7 +210,7 @@ export default function DrawAndTell(props) {
                 </div>
                 <div
                   className="targetClass ii-11 drop-shadow inactive-card"
-                  loading="eager"
+
                 >
                   <a
                     href="https://www.nightsnackclub.com/blog/from-nyc-to-nola"
