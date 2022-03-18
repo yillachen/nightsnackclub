@@ -373,26 +373,25 @@
         left: 28%;
         top: 29%;
         height: 200px;
-        width: 269px;
 
         @include respond-max($bp-desk) {
-          width: 250px;
+          height: 185px;
         }
 
         @include respond-max($bp-lg-lap) {
-          width: 214px;
+          height: 214px;
         }
 
         @include respond-max($bp-lap) {
-          width: 181px;
+          height: 160px;
         }
 
         @include respond-max($bp-tab) {
-          width: 181px;
+          height: 160px;
         }
 
         @include respond-max($bp-mob) {
-          width: 135px;
+          height: 101px;
         }
 
         &.inactive-card {
@@ -404,69 +403,57 @@
       &-2 {
         left: 13%;
         top: 36%;
-        width: 210px;
+        height: 210px;
 
         @include respond-max($bp-desk) {
-          width: 195px;
+          height: 195px;
         }
 
         @include respond-max($bp-lg-lap) {
-          width: 167px;
+          height: 167px;
         }
 
         @include respond-max($bp-lap) {
-          width: 141px;
+          height: 141px;
         }
 
         @include respond-max($bp-tab) {
-          width: 141px;
+          height: 141px;
         }
 
         @include respond-max($bp-mob) {
-          width: 108px;
+          height: 108px;
         }
 
         &.inactive-card {
           left: -8%;
           top: 2%;
         }
-
-        @include respond-max($bp-mob) {
-          height: 13%;
-          left: 2%;
-          top: 48%;
-        }
-
-        @include respond-max($bp-tab) {
-          height: 21%;
-          left: 13%;
-          top: 36%;
-        }
       }
 
       &-3 {
         left: 72%;
         top: 58%;
-        width: 295px;
+        height: 218px;
 
         @include respond-max($bp-desk) {
-          width: 273px;
+          height: 202px;
         }
 
         @include respond-max($bp-lg-lap) {
-          width: 235px;
+          height: 174px;
         }
 
         @include respond-max($bp-lap) {
-          width: 194px;
+          height: 143px;
         }
 
         @include respond-max($bp-tab) {
-          width: 194px;
+          height: 143px;
         }
 
         @include respond-max($bp-mob) {
-          width: 149px;
+          height: 111px;
         }
 
         &.inactive-card {
@@ -478,26 +465,26 @@
       &-4 {
         right: 18%;
         top: 83%;
-        width: 193.26px;
+        height: 193.26px;
 
         @include respond-max($bp-desk) {
-          width: 179px;
+          height: 179px;
         }
 
         @include respond-max($bp-lg-lap) {
-          width: 154px;
+          height: 154px;
         }
 
         @include respond-max($bp-lap) {
-          width: 127px;
+          height: 127px;
         }
 
         @include respond-max($bp-tab) {
-          width: 127px;
+          height: 127px;
         }
 
         @include respond-max($bp-mob) {
-          width: 97px;
+          height: 97px;
         }
 
         &.inactive-card {
@@ -509,73 +496,56 @@
       &-5 {
         left: 32%;
         bottom: 36%;
-        width: 142.52px;
+        height: 142.52px;
 
         @include respond-max($bp-desk) {
-          width: 132px;
+          height: 132px;
         }
 
         @include respond-max($bp-lg-lap) {
-          width: 114px;
+          height: 114px;
         }
 
         @include respond-max($bp-lap) {
-          width: 96px;
+          height: 96px;
         }
 
         @include respond-max($bp-tab) {
-          width: 96px;
+          height: 96px;
         }
 
         @include respond-max($bp-mob) {
-          width: 73px;
+          height: 73px;
         }
 
         &.inactive-card {
           bottom: 103%;
-        }
-
-        @include respond-max($bp-mob) {
-          height: 9%;
-          left: 20%;
-          bottom: 37%;
-        }
-
-        @include respond-max($bp-tab) {
-          height: 14%;
-          left: 33%;
-          bottom: 37%;
-
-          &.inactive-card {
-            left: 41%;
-            bottom: 95%;
-          }
         }
       }
 
       &-6 {
         bottom: -1%;
         left: 19%;
-        width: 166.27px;
+        height: 190px;
 
         @include respond-max($bp-desk) {
-          width: 154px;
+          height: 176px;
         }
 
         @include respond-max($bp-lg-lap) {
-          width: 132px;
+          height: 151px;
         }
 
         @include respond-max($bp-lap) {
-          width: 112px;
+          height: 128px;
         }
 
         @include respond-max($bp-tab) {
-          width: 112px;
+          height: 128px;
         }
 
         @include respond-max($bp-mob) {
-          width: 86px;
+          height: 98px;
         }
 
         &.inactive-card {
@@ -587,26 +557,26 @@
       &-7 {
         left: 17%;
         top: 59%;
-        width: 307px;
+        height: 174px;
 
         @include respond-max($bp-desk) {
-          width: 284px;
+          height: 161px;
         }
 
         @include respond-max($bp-lg-lap) {
-          width: 244px;
+          height: 138px;
         }
 
         @include respond-max($bp-lap) {
-          width: 206px;
+          height: 117px;
         }
 
         @include respond-max($bp-tab) {
-          width: 206px;
+          height: 117px;
         }
 
         @include respond-max($bp-mob) {
-          width: 158px;
+          height: 89px;
         }
 
         &.inactive-card {
@@ -617,26 +587,26 @@
       &-8 {
         left: 72%;
         top: 31%;
-        width: 196px;
+        height: 258px;
 
         @include respond-max($bp-desk) {
-          width: 181px;
+          height: 238px;
         }
 
         @include respond-max($bp-lg-lap) {
-          width: 156px;
+          height: 205px;
         }
 
         @include respond-max($bp-lap) {
-          width: 129px;
+          height: 168px;
         }
 
         @include respond-max($bp-tab) {
-          width: 129px;
+          height: 168px;
         }
 
         @include respond-max($bp-mob) {
-          width: 99px;
+          height: 131px;
         }
 
         &.inactive-card {
@@ -648,26 +618,26 @@
       &-9 {
         right: 1%;
         bottom: 6%;
-        width: 250px;
+        height: 167px;
 
         @include respond-max($bp-desk) {
-          width: 231px;
+          height: 154px;
         }
 
         @include respond-max($bp-lg-lap) {
-          width: 199px;
+          height: 132px;
         }
 
         @include respond-max($bp-lap) {
-          width: 165px;
+          height: 109px;
         }
 
         @include respond-max($bp-tab) {
-          width: 165px;
+          height: 109px;
         }
 
         @include respond-max($bp-mob) {
-          width: 126px;
+          height: 84px;
         }
 
         &.inactive-card {
@@ -678,26 +648,26 @@
       &-10 {
         top: 42%;
         right: 6%;
-        width: 149px;
+        height: 194px;
 
         @include respond-max($bp-desk) {
-          width: 138px;
+          height: 179px;
         }
 
         @include respond-max($bp-lg-lap) {
-          width: 119px;
+          height: 154px;
         }
 
         @include respond-max($bp-lap) {
-          width: 97px;
+          height: 127px;
         }
 
         @include respond-max($bp-tab) {
-          width: 97px;
+          height: 127px;
         }
 
         @include respond-max($bp-mob) {
-          width: 74px;
+          height: 96px;
         }
 
         &.inactive-card {
@@ -708,26 +678,26 @@
       &-11 {
         bottom: 1%;
         left: 31%;
-        width: 187px;
+        height: 254px;
 
         @include respond-max($bp-desk) {
-          width: 173px;
+          height: 235px;
         }
 
         @include respond-max($bp-lg-lap) {
-          width: 149px;
+          height: 202px;
         }
 
         @include respond-max($bp-lap) {
-          width: 126px;
+          height: 171px;
         }
 
         @include respond-max($bp-tab) {
-          width: 126px;
+          height: 171px;
         }
 
         @include respond-max($bp-mob) {
-          width: 96px;
+          height: 130px;
         }
 
         &.inactive-card {
