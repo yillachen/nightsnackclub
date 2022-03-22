@@ -21,26 +21,25 @@ export default function Intro(props) {
       <div data-router-wrapper>
         <div data-router-view data-page="index">
           <div className="top-gradient"></div>
-          <main className="scene-wrapper">
+          <main className="scene-wrapper intro">
             <div className="background-container">
               <div className="bg-segment index"></div>
             </div>
             <div className="scene-container">
-              <div className="intro-container-spacing">
-                <div className="anim-nsc">
-                  <div className="anim-container">
-                    <span className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
-                      Night
-                    </span>
-                    <span className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
-                      Snack
-                    </span>
-                    <span className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
-                      Club
-                    </span>
-                  </div>
+              <div className="anim-nsc">
+                <div className="anim-container">
+                  <span className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
+                    Night
+                  </span>
+                  <span className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
+                    Snack
+                  </span>
+                  <span className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
+                    Club
+                  </span>
                 </div>
               </div>
+
               <div className="intro-video">
                 <video
                   muted

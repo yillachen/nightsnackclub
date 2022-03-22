@@ -23,7 +23,7 @@ export default function Outro(props) {
     <main className={getBgColor()}>
       <div data-router-wrapper>
         <div data-router-view data-page="index">
-          <main id="outro-scene-wrapper">
+          <main className="scene-wrapper intro">
             <div className="background-container">
               <div className="bg-segment index" />
               <div className="bg-segment index" />
@@ -32,18 +32,16 @@ export default function Outro(props) {
             <div className="top-gradient"></div>
             <div className=" nsc-page-title">
               <div className="anim-nsc">
-                <div className="outro-container-spacing">
-                  <div className="anim-nsc">
-                    <div className="anim-container">
-                      <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
-                        Night
-                      </div>
-                      <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
-                        Snack
-                      </div>
-                      <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
-                        Club
-                      </div>
+                <div className="anim-nsc">
+                  <div className="anim-container">
+                    <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
+                      Night
+                    </div>
+                    <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
+                      Snack
+                    </div>
+                    <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
+                      Club
                     </div>
                   </div>
                 </div>

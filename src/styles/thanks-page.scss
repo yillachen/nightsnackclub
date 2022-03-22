@@ -103,14 +103,3 @@
     font-size: 14px;
   }
 }
-
-.outro-container-spacing {
-  padding-top: 8%;
-
-  @include respond-max($bp-tab) {
-    padding-top: 10%;
-  }
-  @include respond-max($bp-mob) {
-    padding-top: 25%;
-  }
-}

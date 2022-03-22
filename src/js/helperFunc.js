@@ -4,7 +4,7 @@ export function removeClass(targetClass) {
 
   for (var i = 0; i < imageGroup.length; i++) {
     var toggleItemMove = getToggleItemMove(i);
-    setTimeout(toggleItemMove, i * 75);
+    setTimeout(toggleItemMove, i * 100);
   }
 
   function getToggleItemMove(i) {
