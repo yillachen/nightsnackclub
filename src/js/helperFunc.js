@@ -2,9 +2,17 @@
 export function removeClass(targetClass) {
   const imageGroup = document.querySelectorAll(".images-well .targetClass");
 
-  imageGroup.forEach((el) => {
-    setTimeout(el.classList.remove(targetClass), 10000);
-  });
+  for (var i = 0; i < imageGroup.length; i++) {
+    var toggleItemMove = getToggleItemMove(i);
+    setTimeout(toggleItemMove, i * 75);
+  }
+
+  function getToggleItemMove(i) {
+    var item = imageGroup[i];
+    return function () {
+      item.classList.remove(targetClass);
+    };
+  }
 }
 
 // for mouseover hover text

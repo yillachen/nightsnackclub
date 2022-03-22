@@ -154,7 +154,6 @@
         top: 35%;
         transform: translate(-50%, -50%);
         height: 308px;
-        transition-delay: 0.025s;
 
         @include respond-max($bp-desk) {
           height: 268px;
@@ -187,7 +186,6 @@
         top: 68%;
         z-index: 2;
         height: 253px;
-        transition-delay: calc(0.025s * 2);
 
         @include respond-max($bp-desk) {
           height: 235px;
@@ -225,7 +223,6 @@
         top: 73.5%;
         z-index: 0;
         height: 462px;
-        transition-delay: calc(0.025s * 3);
 
         @include respond-max($bp-desk) {
           height: 428px;
@@ -263,7 +260,6 @@
         top: 35%;
         transform: translate(-50%, -50%);
         height: 260px;
-        transition-delay: calc(0.025s * 4);
 
         @include respond-max($bp-desk) {
           height: 240px;
@@ -302,7 +298,6 @@
         transform: translate(-50%, -50%);
         z-index: 2;
         height: 339px;
-        transition-delay: calc(0.025s * 5);
 
         @include respond-max($bp-desk) {
           height: 314px;
@@ -340,7 +335,6 @@
         right: 0%;
         z-index: 0;
         height: 270px;
-        transition-delay: calc(0.025s * 6);
 
         @include respond-max($bp-desk) {
           height: 250px;
@@ -379,7 +373,6 @@
         left: 28%;
         top: 29%;
         height: 200px;
-        transition-delay: 0.025s;
 
         @include respond-max($bp-desk) {
           height: 185px;
@@ -411,7 +404,6 @@
         left: 13%;
         top: 36%;
         height: 210px;
-        transition-delay: calc(0.025s * 2);
 
         @include respond-max($bp-desk) {
           height: 195px;
@@ -443,7 +435,6 @@
         left: 72%;
         top: 58%;
         height: 218px;
-        transition-delay: calc(0.025s * 3);
 
         @include respond-max($bp-desk) {
           height: 202px;
@@ -475,7 +466,6 @@
         right: 18%;
         top: 83%;
         height: 193.26px;
-        transition-delay: calc(0.025s * 4);
 
         @include respond-max($bp-desk) {
           height: 179px;
@@ -507,7 +497,6 @@
         left: 32%;
         bottom: 36%;
         height: 142.52px;
-        transition-delay: calc(0.025s * 5);
 
         @include respond-max($bp-desk) {
           height: 132px;
@@ -538,7 +527,6 @@
         bottom: -1%;
         left: 19%;
         height: 190px;
-        transition-delay: calc(0.025s * 6);
 
         @include respond-max($bp-desk) {
           height: 176px;
@@ -570,7 +558,6 @@
         left: 17%;
         top: 59%;
         height: 174px;
-        transition-delay: calc(0.025s * 7);
 
         @include respond-max($bp-desk) {
           height: 161px;
@@ -601,7 +588,6 @@
         left: 72%;
         top: 31%;
         height: 258px;
-        transition-delay: calc(0.025s * 8);
 
         @include respond-max($bp-desk) {
           height: 238px;
@@ -633,7 +619,6 @@
         right: 1%;
         bottom: 6%;
         height: 167px;
-        transition-delay: calc(0.025s * 9);
 
         @include respond-max($bp-desk) {
           height: 154px;
@@ -664,7 +649,6 @@
         top: 42%;
         right: 6%;
         height: 194px;
-        transition-delay: calc(0.025s * 10);
 
         @include respond-max($bp-desk) {
           height: 179px;
