@@ -290,9 +290,13 @@ main {
   }
 
   .nsc-title-kerning {
-    margin-right: 4px;
+    margin-right: 14px;
 
     @include respond-max($bp-tab) {
+      margin-right: 10px;
+    }
+
+    @include respond-max($bp-mob) {
       margin-right: 8px;
     }
   }
