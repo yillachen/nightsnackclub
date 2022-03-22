@@ -1,12 +1,9 @@
-import gsap from 'gsap';
-import $ from "jquery";
-
 // for image well animations coming in
 export function removeClass(targetClass) {
   const imageGroup = document.querySelectorAll(".images-well .targetClass");
 
   imageGroup.forEach((el) => {
-    el.classList.remove(targetClass);
+    setTimeout(el.classList.remove(targetClass), 10000);
   });
 }
 
@@ -27,20 +24,20 @@ export function projectTooltip() {
 
 // for parallax mousehover effect
 export function parallax() {
-  const palette = document.querySelector('.images-palette');
-  const imageWell = document.querySelector('.images-well');
+  const palette = document.querySelector(".images-palette");
+  const imageWell = document.querySelector(".images-well");
 
   const sFront = 200;
 
-  palette.addEventListener('mousemove', e => {
+  palette.addEventListener("mousemove", (e) => {
     const x = e.clientX;
     const y = e.clientY;
 
     imageWell.style.transform = `
       translate(
-        ${x/sFront}%,
-        ${y/sFront}%
+        ${x / sFront}%,
+        ${y / sFront}%
       )
-    `
-  })
+    `;
+  });
 }

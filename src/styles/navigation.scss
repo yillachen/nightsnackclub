@@ -66,6 +66,10 @@
       transform: translateX(0%);
       right: 65px;
 
+      @include respond-max($bp-desk) {
+        right: 50px;
+      }
+
       @include respond-max($bp-lg-lap) {
         right: 55px;
       }

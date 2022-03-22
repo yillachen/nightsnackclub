@@ -6,8 +6,8 @@ export function appTransitions() {
     onComplete: () => {
       removeClass("inactive-card");
       projectTooltip();
-      parallax();
-      // done();
+      // parallax();
+      return;
     },
   });
 
