@@ -1,7 +1,11 @@
 .nav-row {
   &__btn {
-    bottom: 4%;
+    bottom: 8%;
     position: absolute;
+
+    @include respond-max($bp-tab) {
+      bottom: 5%;
+    }
 
     a {
       display: inline-block;
