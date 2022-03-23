@@ -115,7 +115,7 @@ main {
 
 .page-title {
   font-family: $font-sans;
-  font-size: 195px;
+  font-size: 250px;
   font-style: normal;
   font-weight: 400;
   line-height: 0.85;
@@ -127,6 +127,9 @@ main {
   word-spacing: 0.72px;
   letter-spacing: -0.04em;
 
+  @include respond-max($bp-lg-desk) {
+    font-size: 195px;
+  }
   @include respond-max($bp-lg-lap) {
     font-size: 165px;
   }
@@ -182,12 +185,16 @@ main {
   text-align: center;
 
   &.page-container-spacing {
-    padding-top: 51px;
-    padding-bottom: 14px;
+    padding-top: 85px;
+    padding-bottom: 15px;
 
+    @include respond-max($bp-lg-desk) {
+      padding-top: 51px;
+      padding-bottom: 14px;
+    }
     @include respond-max($bp-tab) {
-      padding-top: 10%;
-      padding-bottom: 15px;
+      padding-top: 5%;
+      padding-bottom: 25px;
     }
   }
 
@@ -224,11 +231,14 @@ main {
   }
 
   .nsc-title-small {
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 200;
     text-align: center;
     padding-bottom: 15px;
 
+    @include respond-max($bp-lg-desk) {
+      font-size: 60px;
+    }
     @include respond-max($bp-lg-lap) {
       font-size: 52px;
     }
@@ -318,16 +328,20 @@ main {
 }
 
 .previous-title {
-  width: 100%;
   display: inline-block;
-  margin: 0;
-  font-weight: 200;
   position: absolute;
-  left: 50%;
-  top: 0;
   transform: translateX(-50%);
   z-index: -1;
-  font-size: 60px;
+  width: 100%;
+  left: 50%;
+  top: 0;
+  margin: 0;
+  font-weight: 200;
+  font-size: 80px;
+
+  @include respond-max($bp-lg-desk) {
+    font-size: 60px;
+  }
 
   @include respond-max($bp-lg-lap) {
     font-size: 52px;
@@ -376,7 +390,11 @@ main {
 #nsc-anim-wipe {
   width: 0%;
   clip-path: inset(0 0 0 0);
-  min-height: 85px;
+  min-height: 105px;
+
+  @include respond-max($bp-lg-desk) {
+    min-height: 85px;
+  }
 
   @include respond-max($bp-lap) {
     min-height: 70px;

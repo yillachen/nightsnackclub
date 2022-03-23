@@ -1,5 +1,4 @@
-import React, { Component, useEffect } from "react";
-import { gsap } from "gsap";
+import React from "react";
 import { Switch, Route } from "react-router-dom";
 import "./styles/styles.scss";
 import {

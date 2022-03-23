@@ -1,11 +1,7 @@
 .nav-row {
   &__btn {
-    bottom: 8%;
+    bottom: 4%;
     position: absolute;
-
-    @include respond-max($bp-mob) {
-      bottom: 3.75%;
-    }
 
     a {
       display: inline-block;
@@ -15,8 +11,12 @@
 
       svg {
         display: inline-block;
-        width: 150px;
+        width: 200px;
         height: 100%;
+
+        @include respond-max($bp-lg-desk) {
+          width: 150px;
+        }
 
         @include respond-max($bp-lg-lap) {
           width: 110px;
