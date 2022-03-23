@@ -18,73 +18,64 @@ export default function Intro(props) {
 
   return (
     <main className="body-index">
-      <div data-router-wrapper>
-        <div data-router-view data-page="index">
-          <div className="top-gradient"></div>
-          <main className="scene-wrapper intro">
-            <div className="background-container">
-              <div className="bg-segment index"></div>
+      <div className="top-gradient"></div>
+      <main className="scene-wrapper intro">
+        <div className="background-container">
+          <div className="bg-segment index"></div>
+        </div>
+        <div className="scene-container">
+          <div className="anim-nsc">
+            <div className="anim-container">
+              <span className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
+                Night
+              </span>
+              <span className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
+                Snack
+              </span>
+              <span className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
+                Club
+              </span>
             </div>
-            <div className="scene-container">
-              <div className="anim-nsc">
-                <div className="anim-container">
-                  <span className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
-                    Night
-                  </span>
-                  <span className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
-                    Snack
-                  </span>
-                  <span className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
-                    Club
-                  </span>
-                </div>
-              </div>
+          </div>
 
-              <div className="intro-video">
-                <video
-                  muted
-                  autoPlay
-                  playsInline
-                  style={{ pointerEvents: "none" }}
-                >
-                  <source src={Animation} type="video/mp4" />
-                  <source src={Animation2} type="video/mp4" />
-                </video>
+          <div className="intro-video">
+            <video muted autoPlay playsInline style={{ pointerEvents: "none" }}>
+              <source src={Animation} type="video/mp4" />
+              <source src={Animation2} type="video/mp4" />
+            </video>
+          </div>
+          <div className="year-in-review">
+            <div className="anim-yir">
+              <div className="anim-container yir-cont">
+                <h3 className="anim-subtitle nsc-title-large page-title-js">
+                  YEAR
+                </h3>
+                <h3 className="anim-subtitle nsc-title-large page-title-js">
+                  &nbsp;
+                </h3>
+                <h3 className="anim-subtitle nsc-title-large page-title-js">
+                  IN
+                </h3>
               </div>
-              <div className="year-in-review">
-                <div className="anim-yir">
-                  <div className="anim-container yir-cont">
-                    <h3 className="anim-subtitle nsc-title-large page-title-js">
-                      YEAR
-                    </h3>
-                    <h3 className="anim-subtitle nsc-title-large page-title-js">
-                      &nbsp;
-                    </h3>
-                    <h3 className="anim-subtitle nsc-title-large page-title-js">
-                      IN
-                    </h3>
-                  </div>
-                  <div className="anim-container yir-cont">
-                    <h3 className="anim-subtitle nsc-title-large page-title-js">
-                      REVIEW
-                    </h3>
-                  </div>
-                </div>
+              <div className="anim-container yir-cont">
+                <h3 className="anim-subtitle nsc-title-large page-title-js">
+                  REVIEW
+                </h3>
               </div>
             </div>
-          </main>
-
-          <div className="nav-row__btn start-btn">
-            <Link
-              to={{
-                pathname: "/asian-womxn",
-                from: "index",
-              }}
-            >
-              <StartButton />
-            </Link>
           </div>
         </div>
+      </main>
+
+      <div className="nav-row__btn start-btn">
+        <Link
+          to={{
+            pathname: "/asian-womxn",
+            from: "index",
+          }}
+        >
+          <StartButton />
+        </Link>
       </div>
       <script src="js/app.js" type="module"></script>
     </main>

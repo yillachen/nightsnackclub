@@ -26,7 +26,7 @@ export default function DrawAndTell(props) {
     let bgColor = props.location.from;
     document.body.className = "";
     document.body.classList.add("body-" + bgColor);
-        return bgColor ? "body-" + bgColor : "body-asian-womxn";
+    return bgColor ? "body-" + bgColor : "body-asian-womxn";
   }
 
   useEffect(() => {
