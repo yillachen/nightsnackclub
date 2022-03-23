@@ -36,3 +36,9 @@ $bp-mob: 600px;
     display: block !important;
   }
 }
+
+@include respond($bp-desk) {
+  .ss-mobile-only {
+    display: block !important;
+  }
+}

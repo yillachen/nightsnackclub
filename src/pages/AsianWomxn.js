@@ -21,7 +21,7 @@ export default function AsianWomxn(props) {
     let bgColor = props.location.from;
     document.body.className = "";
     document.body.classList.add("body-" + bgColor);
-    return "body-" + bgColor;
+    return bgColor ? "body-" + bgColor : "body-index";
   }
 
   useEffect(() => {

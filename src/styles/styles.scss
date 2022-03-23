@@ -196,6 +196,10 @@ main {
       padding-top: 5%;
       padding-bottom: 25px;
     }
+    @include respond-max($bp-mob) {
+      padding-top: 11%;
+      padding-bottom: 2px;
+    }
   }
 
   .anim-title {
