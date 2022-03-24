@@ -10,9 +10,7 @@ import { appTransitions } from "../js/transitions";
 export default function Outro(props) {
   function getBgColor() {
     let bgColor = props.location.from;
-    document.body.className = "";
-    document.body.classList.add("body-" + bgColor);
-    return "body-" + bgColor;
+    return bgColor ? `body-${bgColor}` : "body-nightsnack";
   }
 
   useEffect(() => {
@@ -193,7 +191,7 @@ export default function Outro(props) {
         <Link
           to={{
             pathname: "/nightsnack",
-            from: "index",
+            from: "thanks",
           }}
         >
           <BackButton />
@@ -204,7 +202,7 @@ export default function Outro(props) {
         <Link
           to={{
             pathname: "/",
-            from: "index",
+            from: "thanks",
           }}
           className="begin-again"
         >

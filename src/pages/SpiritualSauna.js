@@ -16,9 +16,7 @@ import {
 export default function SpiritualSauna(props) {
   function getBgColor() {
     let bgColor = props.location.from;
-    document.body.className = "";
-    document.body.classList.add("body-" + bgColor);
-    return bgColor ? "body-" + bgColor : "body-illustrators";
+    return bgColor ? `body-${bgColor}` : "body-illustrators";
   }
 
   useEffect(() => {
