@@ -27,7 +27,5 @@ npm i
 npm start
 ```
 
-Tech Stack:
-* React
-* Sass
-* gsap
+— Designed by Shirley Huong and Hui Oy of <a href="https://nightsnackclub.com" target="_blank">night snack club</a><br />
+— Legacy code built by <a href="https://github.com/kemtopher" target="_blank">Christopher Kemeza</a>
