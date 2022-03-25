@@ -1,4 +1,5 @@
-## night snack club — year in review
+# night snack club — year in review
+
 <table>
   <tr>
     <td width="50%">
@@ -10,10 +11,16 @@
   </tr>
 </table>
 
+### Features to be implemented
+
+- [ ] Full mobile optimization for image wells
+- [ ] Parallax effect on images
+- [ ] Subscription email fix
+
 Currently deployed on https://nsc-yir.netlify.app
 
 
-To get started:
+**To get started:**
 
 ```
 npm i
