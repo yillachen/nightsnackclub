@@ -492,11 +492,9 @@ main {
 .yir-cont {
   &:first-child {
     padding-bottom: 0;
-    padding-top: 0;
   }
   &:last-child {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 16px;
   }
 }
 

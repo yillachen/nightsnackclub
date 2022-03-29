@@ -61,7 +61,7 @@ export default function Outro(props) {
                 </div>
                 <div className="page-title-container">
                   <h3 className="thanks-title thanks-content page-title-js content-desk">
-                    AND LET'S KEEP
+                    AND LET&#8217;S KEEP
                   </h3>
                 </div>
                 <div className="page-title-container">
@@ -88,7 +88,7 @@ export default function Outro(props) {
                 </div>
                 <div className="page-title-container">
                   <h3 className="thanks-title thanks-content page-title-js content-mobile">
-                    AND LET'S
+                    AND LET&#8217;S
                   </h3>
                 </div>
                 <div className="page-title-container">
