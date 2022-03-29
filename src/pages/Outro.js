@@ -121,8 +121,8 @@ export default function Outro(props) {
                         type="email"
                         value=""
                         name="EMAIL"
-                        className="required email"
-                        id="mce-EMAIL"
+                        className="email__submit"
+                        id="email__submit"
                         placeholder="EMAIL ADDRESS"
                       />
                       <input

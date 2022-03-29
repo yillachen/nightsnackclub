@@ -2,11 +2,12 @@
   &.begin-again-btn svg {
     bottom: 8%;
     position: absolute;
-    width: 183px;
+    width: 285px;
     right: 65px;
 
     @include respond-max($bp-lg-desk) {
       right: 55px;
+      width: 183px;
     }
 
     @include respond-max($bp-desk) {
@@ -47,7 +48,7 @@
 
       svg {
         display: inline-block;
-        width: 200px;
+        width: 285px;
         height: 100%;
 
         @include respond-max($bp-lg-desk) {
