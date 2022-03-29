@@ -40,5 +40,6 @@ $bp-mob: 600px;
 @include respond($bp-desk) {
   .ss-mobile-only {
     display: block !important;
+    margin-left: -25px;
   }
 }

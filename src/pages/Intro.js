@@ -1,24 +1,18 @@
 import { useEffect } from "react";
-import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 import StartButton from "../components/StartButton";
 import Animation from "../assets/images/2020_original-hevc-safari.mp4";
 import Animation2 from "../assets/images/2020_original-vp9-chrome.webm";
+import { introTransitions } from "../js/transitions";
 
 export default function Intro(props) {
   useEffect(() => {
-    gsap.from(".page-title-js", {
-      duration: 1,
-      ease: "power4",
-      yPercent: -120,
-      stagger: 0.045,
-      delay: 0.3,
-    });
+    introTransitions();
   });
 
   return (
     <main className="body-index">
-      <div className="top-gradient"></div>
+      <div className="top-gradient" />
       <main className="scene-wrapper intro">
         <div className="background-container">
           <div className="bg-segment index"></div>

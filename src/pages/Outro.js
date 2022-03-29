@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import RestartButton from "../components/RestartButton";
-import { appTransitions } from "../js/transitions";
+import { outroTransitions } from "../js/transitions";
 
 // Images
 
@@ -14,31 +14,33 @@ export default function Outro(props) {
   }
 
   useEffect(() => {
-    appTransitions();
+    outroTransitions();
   });
 
   return (
     <main className={getBgColor()}>
       <main className="scene-wrapper intro">
         <div className="background-container">
-          <div className="bg-segment index" />
-          <div className="bg-segment index" />
-          <div className="bg-segment index" />
+          <div className="bg-segment thanks" />
+          <div className="bg-segment thanks" />
+          <div className="bg-segment thanks" />
         </div>
         <div className="top-gradient"></div>
         <div className=" nsc-page-title">
           <div className="anim-nsc">
             <div className="anim-nsc">
               <div className="anim-container">
-                <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
-                  Night
-                </div>
-                <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
-                  Snack
-                </div>
-                <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
-                  Club
-                </div>
+                <Link to="/">
+                  <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
+                    Night
+                  </div>
+                  <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
+                    Snack
+                  </div>
+                  <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
+                    Club
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -198,7 +200,7 @@ export default function Outro(props) {
         </Link>
       </div>
 
-      <div className="nav-row__btn forward-btn lg-forward-btn">
+      <div className="nav-row lg-forward-btn">
         <Link
           to={{
             pathname: "/",

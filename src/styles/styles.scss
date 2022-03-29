@@ -122,12 +122,10 @@ main {
   font-style: normal;
   font-weight: 400;
   line-height: 0.85;
-  vertical-align: middle;
   text-align: center;
   display: inline-block;
   margin: 0;
   position: relative;
-  word-spacing: 0.72px;
   letter-spacing: -0.04em;
 
   @include respond-max($bp-lg-desk) {
@@ -142,18 +140,6 @@ main {
 
   @include respond-max($bp-mob) {
     font-size: 64px;
-  }
-
-  .character-in {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  span.blank-char {
-    min-width: 50px;
-    display: inline-block;
   }
 }
 
@@ -270,6 +256,10 @@ main {
     margin: 0;
 
     @include respond-max($bp-lg-lap) {
+      font-size: 81px;
+    }
+
+    @include respond-max($bp-lap) {
       font-size: 69px;
     }
 
@@ -435,17 +425,22 @@ main {
   .thanks-cont {
     padding-top: 30px;
 
-    @include respond-max($bp-tab) {
-      padding-top: 42px;
+    @include respond-max($bp-desk) {
+      padding-top: 15px;
     }
 
     @include respond-max($bp-lg-lap) {
-      padding-top: 46px;
+      padding-top: 15px;
     }
 
-    @include respond-max($bp-desk) {
-      // padding-top: 56px;
+    @include respond-max($bp-mob) {
+      padding-top: 30px;
+      padding-bottom: 28px;
+    }
+
+    @media (max-height: 670px) {
       padding-top: 0;
+      padding-bottom: 0;
     }
   }
 
@@ -463,6 +458,10 @@ main {
       line-height: 90%;
 
       @include respond-max($bp-lg-lap) {
+        font-size: 136px;
+      }
+
+      @include respond-max($bp-lap) {
         font-size: 112px;
       }
 

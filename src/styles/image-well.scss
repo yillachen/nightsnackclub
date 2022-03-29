@@ -1180,6 +1180,7 @@
 
         @include respond-max($bp-tab) {
           height: 201px;
+          right: -2%;
         }
 
         @include respond-max($bp-mob) {
@@ -1234,14 +1235,18 @@
 
         @include respond-max($bp-lg-lap) {
           height: 243px;
+          right: 16%;
         }
 
         @include respond-max($bp-lap) {
           height: 205px;
+          right: 18%;
         }
 
         @include respond-max($bp-tab) {
           height: 205px;
+          right: 3%;
+          top: 80%;
         }
 
         @include respond-max($bp-mob) {
@@ -1273,6 +1278,7 @@
 
         @include respond-max($bp-tab) {
           height: 253px;
+          right: -18%;
         }
 
         @include respond-max($bp-mob) {
@@ -1303,6 +1309,8 @@
 
         @include respond-max($bp-tab) {
           height: 247px;
+          bottom: 4%;
+          left: 14%;
         }
 
         @include respond-max($bp-mob) {
@@ -1328,14 +1336,17 @@
 
         @include respond-max($bp-lg-lap) {
           height: 203px;
+          left: 24%;
         }
 
         @include respond-max($bp-lap) {
           height: 172px;
+          left: 25%;
         }
 
         @include respond-max($bp-tab) {
           height: 172px;
+          left: 16%;
         }
 
         @include respond-max($bp-mob) {
@@ -1366,6 +1377,8 @@
 
         @include respond-max($bp-tab) {
           height: 217px;
+          left: 8%;
+          top: 49%;
         }
 
         @include respond-max($bp-mob) {
@@ -1396,6 +1409,8 @@
 
         @include respond-max($bp-tab) {
           height: 305px;
+          top: 48%;
+          right: -18%;
         }
 
         @include respond-max($bp-mob) {
@@ -1427,6 +1442,8 @@
 
         @include respond-max($bp-tab) {
           height: 145px;
+          right: -16%;
+          top: 79%;
         }
 
         @include respond-max($bp-mob) {

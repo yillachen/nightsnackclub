@@ -1,4 +1,33 @@
 .nav-row {
+  &.lg-forward-btn svg {
+    bottom: 4%;
+    position: absolute;
+    width: 182px;
+    right: 65px;
+
+    @include respond-max($bp-lg-desk) {
+      width: 182px;
+      right: 55px;
+    }
+
+    @include respond-max($bp-desk) {
+      right: 50px;
+    }
+
+    @include respond-max($bp-lg-lap) {
+      width: 136px;
+    }
+
+    @include respond-max($bp-lap) {
+      right: 33px;
+    }
+
+    @include respond-max($bp-mob) {
+      width: 114px;
+      right: 20px;
+    }
+  }
+
   &__btn {
     bottom: 8%;
     position: absolute;
@@ -107,10 +136,6 @@
         justify-content: center;
         right: 0;
       }
-    }
-
-    &.lg-forward-btn svg {
-      width: auto;
     }
 
     &.asian-womxn {
