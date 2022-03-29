@@ -109,7 +109,7 @@
       z-index: 999;
       top: 55%;
       transform: translate(-50%, -50%);
-      height: 1080px;
+      height: 940px;
 
       @include respond-max($bp-lg-desk) {
         height: 600px;
@@ -156,7 +156,7 @@
         transform: translate(-50%, -50%);
         left: 19%;
         top: 35%;
-        height: 500px;
+        height: 420px;
 
         @include respond-max($bp-lg-desk) {
           left: 21%;
@@ -198,8 +198,8 @@
       &-2 {
         z-index: 2;
         left: 8.5%;
-        top: 70%;
-        height: 350px;
+        top: 68%;
+        height: 332px;
 
         @include respond-max($bp-lg-desk) {
           left: 11.5%;
@@ -242,7 +242,7 @@
         z-index: 0;
         left: 24.5%;
         bottom: -15%;
-        height: 635px;
+        height: 596px;
 
         @include respond-max($bp-lg-desk) {
           left: 27%;
@@ -279,9 +279,9 @@
       }
 
       &-4 {
-        right: -5%;
-        top: 30%;
-        height: 398px;
+        right: 0%;
+        top: 33.5%;
+        height: 355px;
 
         @include respond-max($bp-lg-desk) {
           height: 240px;
@@ -321,9 +321,9 @@
 
       &-5 {
         z-index: 2;
-        right: 9%;
-        bottom: -11%;
-        height: 501px;
+        right: 13%;
+        bottom: -8%;
+        height: 474px;
 
         @include respond-max($bp-lg-desk) {
           right: 13%;
@@ -363,9 +363,9 @@
 
       &-6 {
         z-index: 0;
-        bottom: 14%;
-        right: -5%;
-        height: 426px;
+        bottom: 11%;
+        right: -1%;
+        height: 392px;
 
         @include respond-max($bp-lg-desk) {
           bottom: 12%;
@@ -408,9 +408,9 @@
 
     &.ii {
       &-1 {
-        left: 25%;
-        top: 27%;
-        height: 285px;
+        left: 27.75%;
+        top: 28%;
+        height: 231px;
 
         @include respond-max($bp-lg-desk) {
           left: 28%;
@@ -450,9 +450,9 @@
       }
 
       &-2 {
-        left: 10%;
-        top: 32%;
-        height: 272px;
+        left: 15%;
+        top: 33%;
+        height: 233px;
 
         @include respond-max($bp-lg-desk) {
           left: 13%;
@@ -492,9 +492,9 @@
       }
 
       &-3 {
-        left: 76%;
+        left: 73%;
         top: 57%;
-        height: 301px;
+        height: 296px;
 
         @include respond-max($bp-lg-desk) {
           left: 72%;
@@ -530,9 +530,9 @@
       }
 
       &-4 {
-        right: 14%;
-        top: 86%;
-        height: 262px;
+        right: 18%;
+        top: 83%;
+        height: 243px;
 
         @include respond-max($bp-lg-desk) {
           height: 194px;
@@ -571,9 +571,9 @@
       }
 
       &-5 {
-        left: 28%;
-        bottom: 36%;
-        height: 240px;
+        left: 31%;
+        bottom: 38%;
+        height: 213px;
 
         @include respond-max($bp-lg-desk) {
           left: 32%;
@@ -611,9 +611,9 @@
       }
 
       &-6 {
-        bottom: -2%;
-        left: 12%;
-        height: 290px;
+        bottom: 4%;
+        left: 17%;
+        height: 255px;
 
         @include respond-max($bp-lg-desk) {
           bottom: -1%;
@@ -649,9 +649,9 @@
       }
 
       &-7 {
-        left: 12%;
+        left: 17%;
         top: 53%;
-        height: 244px;
+        height: 212px;
 
         @include respond-max($bp-lg-desk) {
           left: 17%;
@@ -688,9 +688,9 @@
       }
 
       &-8 {
-        left: 78%;
+        left: 74%;
         top: 31%;
-        height: 410px;
+        height: 359px;
 
         @include respond-max($bp-lg-desk) {
           left: 72%;
@@ -730,9 +730,9 @@
       }
 
       &-9 {
-        right: -6%;
+        right: 0%;
         bottom: 5%;
-        height: 268px;
+        height: 240px;
 
         @include respond-max($bp-lg-desk) {
           right: 1%;
@@ -771,8 +771,8 @@
 
       &-10 {
         top: 42%;
-        right: -1%;
-        height: 322px;
+        right: 4%;
+        height: 278px;
 
         @include respond-max($bp-lg-desk) {
           top: 42%;
@@ -809,9 +809,9 @@
       }
 
       &-11 {
-        bottom: 2%;
-        left: 25%;
-        height: 398px;
+        bottom: 4%;
+        left: 29%;
+        height: 356px;
 
         @include respond-max($bp-lg-desk) {
           bottom: 1%;
@@ -851,9 +851,9 @@
 
     &.ss {
       &-1 {
-        right: -3%;
-        top: 59%;
-        height: 565px;
+        right: 2%;
+        top: 60%;
+        height: 516px;
 
         @include respond-max($bp-lg-desk) {
           right: 2%;
@@ -889,9 +889,9 @@
       }
 
       &-2 {
-        left: 19.5%;
+        left: 22.5%;
         top: 35%;
-        height: 535px;
+        height: 440px;
 
         @include respond-max($bp-lg-desk) {
           left: 22.5%;
@@ -927,9 +927,9 @@
       }
 
       &-3 {
-        left: 23%;
-        top: 80%;
-        height: 415px;
+        left: 27%;
+        top: 79%;
+        height: 330px;
 
         @include respond-max($bp-lg-desk) {
           left: 28%;
@@ -963,9 +963,9 @@
 
     &.bw {
       &-1 {
-        right: 13%;
+        right: 19%;
         top: 44%;
-        height: 418px;
+        height: 335px;
 
         @include respond-max($bp-lg-desk) {
           right: 19%;
@@ -1003,9 +1003,9 @@
       }
 
       &-2 {
-        left: 18%;
-        top: 72%;
-        height: 375px;
+        left: 22%;
+        top: 74%;
+        height: 336px;
 
         @include respond-max($bp-lg-desk) {
           left: 21%;
@@ -1039,9 +1039,9 @@
       }
 
       &-3 {
-        right: -5%;
+        right: 1%;
         top: 36%;
-        height: 480px;
+        height: 443px;
 
         @include respond-max($bp-lg-desk) {
           right: 1.5%;
@@ -1078,9 +1078,9 @@
       }
 
       &-4 {
-        left: 19%;
-        top: 37%;
-        height: 550px;
+        left: 23%;
+        top: 40%;
+        height: 465px;
 
         @include respond-max($bp-lg-desk) {
           left: 23%;
@@ -1118,9 +1118,9 @@
       }
 
       &-5 {
-        right: -3%;
+        right: 2%;
         bottom: 1%;
-        height: 404px;
+        height: 366px;
 
         @include respond-max($bp-lg-desk) {
           right: 1%;
@@ -1162,9 +1162,15 @@
 
     &.hw {
       &-1 {
-        right: 17%;
-        top: 35%;
-        height: 300px;
+        right: 16%;
+        top: 34%;
+        height: 402px;
+
+        @include respond-max($bp-lg-desk) {
+          right: 17%;
+          top: 35%;
+          height: 300px;
+        }
 
         @include respond-max($bp-desk) {
           height: 278px;
@@ -1194,9 +1200,15 @@
       }
 
       &-2 {
-        left: 20%;
-        top: 37%;
-        height: 310px;
+        left: 21%;
+        top: 41%;
+        height: 377px;
+
+        @include respond-max($bp-lg-desk) {
+          left: 20%;
+          top: 37%;
+          height: 310px;
+        }
 
         @include respond-max($bp-desk) {
           height: 287px;
@@ -1225,9 +1237,15 @@
       }
 
       &-3 {
-        right: 18%;
-        top: 77%;
-        height: 304px;
+        right: 17%;
+        top: 79%;
+        height: 415px;
+
+        @include respond-max($bp-lg-desk) {
+          height: 304px;
+          right: 19%;
+          top: 73%;
+        }
 
         @include respond-max($bp-desk) {
           height: 282px;
@@ -1260,10 +1278,15 @@
       }
 
       &-4 {
-        right: -2%;
+        right: -4%;
         top: 55%;
-        height: 376px;
+        height: 528px;
 
+        @include respond-max($bp-lg-desk) {
+          right: -2%;
+          top: 55%;
+          height: 376px;
+        }
         @include respond-max($bp-desk) {
           height: 348px;
         }
@@ -1292,8 +1315,14 @@
 
       &-5 {
         left: 27%;
-        bottom: -8%;
-        height: 368px;
+        bottom: -5%;
+        height: 444px;
+
+        @include respond-max($bp-lg-desk) {
+          left: 27%;
+          bottom: -8%;
+          height: 368px;
+        }
 
         @include respond-max($bp-desk) {
           height: 340px;
@@ -1328,7 +1357,13 @@
       &-1 {
         left: 25%;
         top: 76%;
-        height: 255px;
+        height: 311px;
+
+        @include respond-max($bp-lg-desk) {
+          left: 25%;
+          top: 76%;
+          height: 255px;
+        }
 
         @include respond-max($bp-desk) {
           height: 236px;
@@ -1359,9 +1394,13 @@
       }
 
       &-2 {
-        left: 21%;
-        top: 41%;
-        height: 322px;
+        left: 20%;
+        top: 45%;
+        height: 406px;
+
+        @include respond-max($bp-lg-desk) {
+          height: 323px;
+        }
 
         @include respond-max($bp-desk) {
           height: 298px;
@@ -1392,8 +1431,12 @@
 
       &-3 {
         right: 10%;
-        top: 42%;
-        height: 453px;
+        top: 40%;
+        height: 590px;
+
+        @include respond-max($bp-lg-desk) {
+          height: 453px;
+        }
 
         @include respond-max($bp-desk) {
           height: 420px;
@@ -1425,8 +1468,14 @@
 
       &-4 {
         right: 4%;
-        top: 80%;
-        height: 216px;
+        top: 75%;
+        height: 276px;
+
+        @include respond-max($bp-lg-desk) {
+          right: 4%;
+          top: 80%;
+          height: 216px;
+        }
 
         @include respond-max($bp-desk) {
           height: 199px;
