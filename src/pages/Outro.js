@@ -200,7 +200,7 @@ export default function Outro(props) {
         </Link>
       </div>
 
-      <div className="nav-row lg-forward-btn">
+      <div className="nav-row begin-again-btn">
         <Link
           to={{
             pathname: "/",

@@ -2,8 +2,6 @@ import * as React from "react";
 
 const RestartButton = (props) => (
   <svg
-    width="137"
-    height="87"
     viewBox="0 0 137 87"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

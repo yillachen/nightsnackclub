@@ -1,12 +1,11 @@
 .nav-row {
-  &.lg-forward-btn svg {
-    bottom: 4%;
+  &.begin-again-btn svg {
+    bottom: 8%;
     position: absolute;
-    width: 182px;
+    width: 183px;
     right: 65px;
 
     @include respond-max($bp-lg-desk) {
-      width: 182px;
       right: 55px;
     }
 
@@ -15,11 +14,15 @@
     }
 
     @include respond-max($bp-lg-lap) {
-      width: 136px;
+      width: 137px;
     }
 
     @include respond-max($bp-lap) {
       right: 33px;
+    }
+
+    @include respond-max($bp-tab) {
+      bottom: 5%;
     }
 
     @include respond-max($bp-mob) {
@@ -57,23 +60,6 @@
 
         @include respond-max($bp-mob) {
           width: 95px;
-        }
-      }
-
-      &.begin-again {
-        svg {
-          @include respond-max($bp-lg-desk) {
-            width: 182px;
-          }
-          @include respond-max($bp-desk) {
-            width: 150px;
-          }
-          @include respond-max($bp-lg-lap) {
-            width: 136.27px;
-          }
-          @include respond-max($bp-mob) {
-            width: 114px;
-          }
         }
       }
     }
