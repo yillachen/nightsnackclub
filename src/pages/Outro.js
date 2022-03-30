@@ -1,13 +1,17 @@
 import "../styles/styles.scss";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import RestartButton from "../components/RestartButton";
+import MailchimpForm from "../components/Mailchimp";
 import { outroTransitions } from "../js/transitions";
 
 // Images
 
 export default function Outro(props) {
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(true);
+
   function getBgColor() {
     let bgColor = props.location.from;
     return bgColor ? `body-${bgColor}` : "body-nightsnack";
@@ -105,62 +109,7 @@ export default function Outro(props) {
             </div>
 
             <div className="mail-signup">
-              <div id="mc_embed_signup">
-                <form
-                  action="https://nightsnackclub.us20.list-manage.com/subscribe/post?u=5490e1d0a99db7f49bde09b5e&amp;id=f055921875"
-                  method="post"
-                  id="mc-embedded-subscribe-form"
-                  name="mc-embedded-subscribe-form"
-                  className="validate"
-                  target="_blank"
-                  novalidate
-                >
-                  <div id="mc_embed_signup_scroll">
-                    <div className="form-subscribe mc-field-group">
-                      <input
-                        type="email"
-                        value=""
-                        name="EMAIL"
-                        className="email__submit"
-                        id="email__submit"
-                        placeholder="EMAIL ADDRESS"
-                      />
-                      <input
-                        type="submit"
-                        value="Subscribe"
-                        name="subscribe"
-                        id="mc-embedded-subscribe"
-                        className="button__submit"
-                      />
-                    </div>
-
-                    <div id="mce-responses" className="clear foot">
-                      <div
-                        className="response"
-                        id="mce-error-response"
-                        style={{ display: "none" }}
-                      ></div>
-                      <div
-                        className="response"
-                        id="mce-success-response"
-                        style={{ display: "none" }}
-                      ></div>
-                    </div>
-
-                    <div
-                      style={{ position: "absolute", left: "-5000px" }}
-                      aria-hidden="true"
-                    >
-                      <input
-                        type="text"
-                        name="b_ad09e19e83571392805e04cf6_c135f5f7e4"
-                        tabIndex="-1"
-                        value=""
-                      />
-                    </div>
-                  </div>
-                </form>
-              </div>
+              <MailchimpForm />
 
               <div className="social-bar">
                 <ul className="social-links">
