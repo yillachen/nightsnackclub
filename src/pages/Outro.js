@@ -1,5 +1,5 @@
 import "../styles/styles.scss";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import RestartButton from "../components/RestartButton";
@@ -9,9 +9,6 @@ import { outroTransitions } from "../js/transitions";
 // Images
 
 export default function Outro(props) {
-  const [email, setEmail] = useState("");
-  const [loading, setLoading] = useState(true);
-
   function getBgColor() {
     let bgColor = props.location.from;
     return bgColor ? `body-${bgColor}` : "body-nightsnack";
@@ -23,7 +20,7 @@ export default function Outro(props) {
 
   return (
     <main className={getBgColor()}>
-      <main className="scene-wrapper intro">
+      <main className="scene-wrapper outro">
         <div className="background-container">
           <div className="bg-segment thanks" />
           <div className="bg-segment thanks" />
