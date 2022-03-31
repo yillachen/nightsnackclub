@@ -65,7 +65,9 @@ export default function AsianWomxn(props) {
               </h2>
             </div>
             <div className="page-title-container asian-title mobile-only">
-              <h2 className="page-title page-title-js">&nbsp;</h2>
+              <h2 className="page-title page-title-js">
+                <span className="space">&nbsp;</span>
+              </h2>
               <h2 className="page-title page-title-js">
                 <span>W</span>
               </h2>

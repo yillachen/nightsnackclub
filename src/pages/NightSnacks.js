@@ -56,7 +56,9 @@ export default function NightSnacks(props) {
               <div className="page-title page-title-js">K</div>
             </div>
             <div className="page-title-container nightsnack-title mobile-only">
-              <h2 className="page-title page-title-js">&nbsp;</h2>
+              <h2 className="page-title page-title-js">
+                <span className="space">&nbsp;</span>
+              </h2>
               <div className="page-title page-title-js">A</div>
               <div className="page-title page-title-js">T</div>
               <div className="page-title page-title-js">T</div>

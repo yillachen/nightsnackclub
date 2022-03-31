@@ -56,7 +56,9 @@ export default function BlogWorms(props) {
               <div className="page-title page-title-js">G</div>
             </div>
             <div className="page-title-container blog-title mobile-only">
-              <h2 className="page-title page-title-js">&nbsp;</h2>
+              <h2 className="page-title page-title-js">
+                <span className="space">&nbsp;</span>
+              </h2>
               <div className="page-title page-title-js">W</div>
               <div className="page-title page-title-js">O</div>
               <div className="page-title page-title-js">R</div>

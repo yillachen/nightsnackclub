@@ -34,12 +34,18 @@ $bp-mob: 600px;
 @include respond($bp-tab) {
   .mobile-only {
     display: block !important;
+
+    .space {
+      display: none;
+    }
   }
 }
 
 @include respond($bp-desk) {
   .ss-mobile-only {
     display: block !important;
-    margin-left: -25px;
+    .space {
+      display: none;
+    }
   }
 }

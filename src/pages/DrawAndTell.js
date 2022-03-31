@@ -60,7 +60,9 @@ export default function DrawAndTell(props) {
               <span className="page-title page-title-js">W</span>
             </div>
             <div className="page-title-container illustrators-title mobile-only">
-              <h2 className="page-title page-title-js">&nbsp;</h2>
+              <h2 className="page-title page-title-js">
+                <span className="space">&nbsp;</span>
+              </h2>
               <span className="page-title page-title-js">A</span>
               <span className="page-title page-title-js">N</span>
               <span className="page-title page-title-js">D</span>

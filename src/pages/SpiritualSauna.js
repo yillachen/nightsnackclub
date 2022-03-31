@@ -59,8 +59,8 @@ export default function SpiritualSauna(props) {
               <div className="page-title page-title-js">A</div>
               <div className="page-title page-title-js">L</div>
             </div>
-            <div className="page-title-container spiritual-title ss-mobile-only">
-              <h2 className="page-title page-title-js">&nbsp;</h2>
+            <div className="page-title-container spiritual-title ss-mobile-only space">
+              <h2 className="page-title page-title-js"><span className='space'>&nbsp;</span></h2>
               <div className="page-title page-title-js">S</div>
               <div className="page-title page-title-js">A</div>
               <div className="page-title page-title-js">U</div>
