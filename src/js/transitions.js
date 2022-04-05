@@ -2,7 +2,9 @@ import { removeClass, projectTooltip, parallax } from "./helperFunc";
 import gsap from "gsap";
 
 export function appTransitions() {
-  removeClass("inactive-card");
+  setTimeout(() => {
+    removeClass("inactive-card");
+  }, 1250);
 
   const tl = gsap.timeline({
     onComplete: () => {
@@ -88,7 +90,7 @@ export function outroTransitions() {
         duration: 1.5,
         ease: "power4",
         yPercent: 0,
-        delay: 0.5
+        delay: 0.5,
       },
       0.0
     )
@@ -126,6 +128,18 @@ export function introTransitions() {
         yPercent: -120,
         stagger: 0.1,
         delay: 0.1,
+      },
+      0.0
+    )
+
+    .fromTo(
+      ".svg-content",
+      {
+        scale: 0
+      },
+      {
+        scale: 1,
+        duration: 1
       },
       0.0
     );
