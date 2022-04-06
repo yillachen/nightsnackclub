@@ -185,7 +185,7 @@
         }
         @include respond-max($bp-mob) {
           height: 158px;
-          top: 279px;
+          top: 230px;
           left: 59px;
         }
 
@@ -228,7 +228,7 @@
 
         @include respond-max($bp-mob) {
           left: 35px;
-          top: 455px;
+          top: 390px;
           height: 133px;
         }
 
@@ -269,7 +269,7 @@
         @include respond-max($bp-mob) {
           height: 196px;
           left: 90px;
-          bottom: 0px;
+          bottom: -53px;
         }
 
         &.inactive-card {
@@ -309,7 +309,7 @@
         }
         @include respond-max($bp-mob) {
           right: -162px;
-          top: 315px;
+          top: 232px;
           height: 137px;
         }
 
@@ -351,7 +351,7 @@
 
         @include respond-max($bp-mob) {
           right: -55px;
-          bottom: 60px;
+          bottom: 5px;
           height: 156px;
         }
 
@@ -394,7 +394,7 @@
         }
 
         @include respond-max($bp-mob) {
-          bottom: 208px;
+          bottom: 148px;
           right: -72px;
           height: 138px;
         }
