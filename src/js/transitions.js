@@ -133,7 +133,7 @@ export function introTransitions() {
     )
 
     .fromTo(
-      ".svg-content",
+      ".start-btn-scale",
       {
         scale: 0
       },

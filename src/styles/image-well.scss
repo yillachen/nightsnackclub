@@ -185,8 +185,8 @@
         }
         @include respond-max($bp-mob) {
           height: 158px;
-          top: 37%;
-          left: 12%;
+          top: 279px;
+          left: 59px;
         }
 
         &.inactive-card {
@@ -227,8 +227,8 @@
         }
 
         @include respond-max($bp-mob) {
-          left: 6.5%;
-          top: 61%;
+          left: 35px;
+          top: 455px;
           height: 133px;
         }
 
@@ -268,8 +268,8 @@
         }
         @include respond-max($bp-mob) {
           height: 196px;
-          left: 22%;
-          bottom: -2%;
+          left: 90px;
+          bottom: 0px;
         }
 
         &.inactive-card {
@@ -308,8 +308,8 @@
           top: 35%;
         }
         @include respond-max($bp-mob) {
-          right: -41%;
-          top: 39%;
+          right: -162px;
+          top: 315px;
           height: 137px;
         }
 
@@ -350,8 +350,8 @@
         }
 
         @include respond-max($bp-mob) {
-          right: -13%;
-          bottom: 7%;
+          right: -55px;
+          bottom: 60px;
           height: 156px;
         }
 
@@ -394,8 +394,8 @@
         }
 
         @include respond-max($bp-mob) {
-          bottom: 25%;
-          right: -17%;
+          bottom: 208px;
+          right: -72px;
           height: 138px;
         }
 
