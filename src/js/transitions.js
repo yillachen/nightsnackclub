@@ -1,4 +1,4 @@
-import { removeClass, projectTooltip, parallax } from "./helperFunc";
+import { removeClass, projectTooltip } from "./helperFunc";
 import gsap from "gsap";
 
 export function appTransitions() {
