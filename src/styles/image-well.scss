@@ -346,7 +346,7 @@
         }
         @include respond-max($bp-tab) {
           right: 0%;
-          bottom: 12%;
+          bottom: 6%;
         }
 
         @include respond-max($bp-mob) {
@@ -389,7 +389,7 @@
         }
 
         @include respond-max($bp-tab) {
-          bottom: 31%;
+          bottom: 27%;
           right: -5%;
         }
 
@@ -486,7 +486,7 @@
         }
 
         &.inactive-card {
-          left: -8%;
+          left: -20%;
           top: 2%;
         }
       }
