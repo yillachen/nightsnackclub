@@ -138,8 +138,9 @@ export function introTransitions() {
         scale: 0
       },
       {
+        delay: 1.1,
         scale: 1,
-        duration: 1
+        duration: 0.75
       },
       0.0
     );
