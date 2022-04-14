@@ -52,7 +52,7 @@ main {
 
 // background segments
 .background-container .bg-segment {
-  height: 33.3333vh;
+  height: 30vh;
   width: 0%;
 
   &.index {
@@ -82,7 +82,7 @@ main {
 }
 
 .scene-wrapper {
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
 
   &.intro {
