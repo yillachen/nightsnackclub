@@ -6,20 +6,20 @@ import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
 
 // Images
-import {
-  DT_Ale,
-  DT_Caitlin,
-  DT_Emily,
-  DT_Enle,
-  DT_Header,
-  DT_Jocelyn,
-  DT_Leah,
-  DT_Liz,
-  DT_Monica,
-  DT_NicoleT,
-  DT_Poster,
-  DT_Tiffany,
-} from "../assets/images/allPhotos";
+// import {
+//   DT_Ale,
+//   DT_Caitlin,
+//   DT_Emily,
+//   DT_Enle,
+//   DT_Header,
+//   DT_Jocelyn,
+//   DT_Leah,
+//   DT_Liz,
+//   DT_Monica,
+//   DT_NicoleT,
+//   DT_Poster,
+//   DT_Tiffany,
+// } from "../assets/images/allPhotos";
 
 export default function DrawAndTell(props) {
   function getBgColor() {
