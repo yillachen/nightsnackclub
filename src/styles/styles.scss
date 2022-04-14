@@ -185,8 +185,8 @@ main {
   }
 
   @include respond-max($bp-mob) {
-    margin: 18px 0 16px 0;
-    width: 328px;
+    margin: 18px 22px 16px 22px;
+    width: 400px;
   }
 }
 
@@ -494,7 +494,7 @@ main {
 
     &.thanks-content {
       color: #5e7017;
-      font-size: 250px;
+      font-size: 210px;
       letter-spacing: -0.04em;
       line-height: 90%;
 

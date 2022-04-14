@@ -13,6 +13,14 @@ export default function MailchimpForm(props) {
           required: true,
         },
       ]}
+      messages={{
+        sending: "Sending...",
+        success: "Success!",
+        error: "Error sending. Try again.",
+        empty: "Email required.",
+        duplicate: "Too many attempts. Try another email.",
+        button: "Subscribe",
+      }}
     />
   );
 }
