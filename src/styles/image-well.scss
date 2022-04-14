@@ -6,11 +6,13 @@
   left: 0;
   transform: translate(0px, 0px);
 
-  &.asian-womxn .targetClass:hover:not(.poster), .targetClass:active:not(poster) {
+  &.asian-womxn .targetClass:hover:not(.poster),
+  .targetClass:active:not(poster) {
     -webkit-box-shadow: 0px 0px 24px 12px #ff4c24;
     box-shadow: 0px 0px 24px 12px #ff4c24;
   }
-  &.illustrators .targetClass:hover:not(.poster), .targetClass:active:not(poster) {
+  &.illustrators .targetClass:hover:not(.poster),
+  .targetClass:active:not(poster) {
     -webkit-box-shadow: 0px 0px 24px 12px #ffceb3;
     box-shadow: 0px 0px 24px 12px #ffceb3;
 
@@ -20,19 +22,23 @@
       filter: drop-shadow(0 0 17px #ffceb3);
     }
   }
-  &.blog .targetClass:hover:not(.poster), .targetClass:active:not(poster) {
+  &.blog .targetClass:hover:not(.poster),
+  .targetClass:active:not(poster) {
     -webkit-box-shadow: 0px 0px 24px 12px #c8ffce;
     box-shadow: 0px 0px 24px 12px #c8ffce;
   }
-  &.health .targetClass:hover:not(.poster), .targetClass:active:not(poster) {
+  &.health .targetClass:hover:not(.poster),
+  .targetClass:active:not(poster) {
     -webkit-box-shadow: 0px 0px 24px 12px #34ac5d;
     box-shadow: 0px 0px 24px 12px #34ac5d;
   }
-  &.nightsnack .targetClass:hover:not(.poster), .targetClass:active:not(poster) {
+  &.nightsnack .targetClass:hover:not(.poster),
+  .targetClass:active:not(poster) {
     -webkit-box-shadow: 0px 0px 24px 12px #8667ff;
     box-shadow: 0px 0px 24px 12px #8667ff;
   }
-  &.spiritual .targetClass:hover:not(.poster), .targetClass:active:not(poster) {
+  &.spiritual .targetClass:hover:not(.poster),
+  .targetClass:active:not(poster) {
     -webkit-box-shadow: 0px 0px 24px 12px #0b8639;
     box-shadow: 0px 0px 24px 12px #0b8639;
   }
@@ -141,9 +147,15 @@
         left: 77%;
         top: -33%;
       }
+      &.hw-poster {
+        top: 67%;
+      }
       &.hw-poster.inactive-card {
         left: 37%;
         top: 140%;
+      }
+      &.ns-poster {
+        top: 67%;
       }
       &.ns-poster.inactive-card {
         left: 28%;
@@ -228,7 +240,7 @@
 
         @include respond-max($bp-mob) {
           left: 35px;
-          top: 421px;
+          top: 435px;
           height: 133px;
         }
 
@@ -269,7 +281,7 @@
         @include respond-max($bp-mob) {
           height: 196px;
           left: 90px;
-          bottom: -23px;
+          bottom: -45px;
         }
 
         &.inactive-card {
@@ -351,7 +363,7 @@
 
         @include respond-max($bp-mob) {
           right: -51px;
-          bottom: 15px;
+          bottom: -20px;
           height: 156px;
         }
 
@@ -394,7 +406,7 @@
         }
 
         @include respond-max($bp-mob) {
-          bottom: 142px;
+          bottom: 85px;
           right: -72px;
           height: 138px;
         }
@@ -481,7 +493,7 @@
         }
         @include respond-max($bp-mob) {
           height: 108px;
-          top: 41%;
+          top: 265px;
           left: 3%;
         }
 
@@ -520,7 +532,7 @@
         @include respond-max($bp-mob) {
           height: 111px;
           right: -17%;
-          left: 80%;
+          top: 400px;
         }
 
         &.inactive-card {
@@ -560,7 +572,7 @@
 
         @include respond-max($bp-mob) {
           height: 97px;
-          top: 81%;
+          top: 500px;
           right: 2%;
         }
 
@@ -602,7 +614,7 @@
         @include respond-max($bp-mob) {
           height: 73px;
           left: 16%;
-          bottom: 36.5%;
+          bottom: 225px;
         }
 
         &.inactive-card {
@@ -640,6 +652,7 @@
 
         @include respond-max($bp-mob) {
           height: 98px;
+          bottom: 0;
         }
 
         &.inactive-card {
@@ -678,8 +691,8 @@
         }
         @include respond-max($bp-mob) {
           height: 89px;
-          left: 9%;
-          top: 66%;
+          left: 21px;
+          top: 468px;
         }
 
         &.inactive-card {
@@ -720,7 +733,7 @@
         @include respond-max($bp-mob) {
           height: 131px;
           left: 77%;
-          top: 31%;
+          top: 260px;
         }
 
         &.inactive-card {
@@ -733,6 +746,7 @@
         right: 0%;
         bottom: 5%;
         height: 240px;
+        z-index: -1;
 
         @include respond-max($bp-lg-desk) {
           right: 1%;
@@ -760,7 +774,7 @@
         }
         @include respond-max($bp-mob) {
           height: 84px;
-          bottom: 17%;
+          bottom: 50px;
           right: -27%;
         }
 
@@ -839,7 +853,7 @@
         }
         @include respond-max($bp-mob) {
           height: 130px;
-          bottom: 8%;
+          bottom: 25px;
           left: 37%;
         }
 
@@ -988,7 +1002,7 @@
 
         @include respond-max($bp-tab) {
           height: 178px;
-          top: 56%;
+          top: 415px;
           right: 5%;
         }
 
@@ -1028,7 +1042,7 @@
         }
         @include respond-max($bp-mob) {
           height: 132px;
-          top: 68%;
+          top: 500px;
           left: 7%;
         }
 
@@ -1108,7 +1122,7 @@
         @include respond-max($bp-mob) {
           height: 172px;
           left: 14%;
-          top: 39%;
+          top: 285px;
         }
 
         &.inactive-card {
@@ -1149,8 +1163,8 @@
 
         @include respond-max($bp-mob) {
           height: 133px;
-          bottom: 7%;
-          right: -20%;
+          bottom: -20px;
+          right: -17%;
         }
 
         &.inactive-card {
@@ -1191,6 +1205,8 @@
 
         @include respond-max($bp-mob) {
           height: 141px;
+          top: 216px;
+          right: -28px;
         }
 
         &.inactive-card {
@@ -1228,6 +1244,8 @@
 
         @include respond-max($bp-mob) {
           height: 144px;
+          top: 350px;
+          left: 100px;
         }
 
         &.inactive-card {
@@ -1269,6 +1287,9 @@
 
         @include respond-max($bp-mob) {
           height: 142px;
+          top: 475px;
+          right: -35px;
+          z-index: 100;
         }
 
         &.inactive-card {
@@ -1306,6 +1327,7 @@
 
         @include respond-max($bp-mob) {
           height: 175px;
+          right: -120px;
         }
 
         &.inactive-card {
@@ -1317,6 +1339,7 @@
         left: 27%;
         bottom: -5%;
         height: 444px;
+        z-index: -1;
 
         @include respond-max($bp-lg-desk) {
           left: 27%;
@@ -1344,6 +1367,7 @@
 
         @include respond-max($bp-mob) {
           height: 170px;
+          bottom: -25px;
         }
 
         &.inactive-card {
@@ -1386,6 +1410,7 @@
 
         @include respond-max($bp-mob) {
           height: 133px;
+
         }
 
         &.inactive-card {
@@ -1422,6 +1447,7 @@
 
         @include respond-max($bp-mob) {
           height: 129px;
+          top: 300px;
         }
 
         &.inactive-card {
@@ -1458,6 +1484,8 @@
 
         @include respond-max($bp-mob) {
           height: 191px;
+          right: -50px;
+          top: 350px;
         }
 
         &.inactive-card {
@@ -1497,6 +1525,7 @@
 
         @include respond-max($bp-mob) {
           height: 120px;
+          right: -150px;
         }
 
         &.inactive-card {
