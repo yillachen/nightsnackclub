@@ -77,7 +77,7 @@ export default function DrawAndTell(props) {
         <div className="images-well illustrators">
           <div className="images-palette">
             <div className="targetClass poster ii-poster inactive-card">
-              <img src={DT_Poster} alt="Draw and Tell" />
+              <img src="https://res.cloudinary.com/y-chen/image/upload/v1649951379/2_Draw_And_Tell/8_Poster_Illustrators_izcafc.png" alt="Draw and Tell" />
             </div>
             <div className="targetClass ii-1 inactive-card">
               <a
@@ -85,7 +85,7 @@ export default function DrawAndTell(props) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={DT_Liz} alt="Liz and Enle" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1649951378/2_Draw_And_Tell/10_Liz_hmpgad.jpg" alt="Liz and Enle" />
               </a>
               <div className="project-title">
                 Creative Couple Series: <br />
@@ -98,7 +98,7 @@ export default function DrawAndTell(props) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={DT_Caitlin} alt="Caitlin" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1649951379/2_Draw_And_Tell/17_Caitlin_v6uwf7.png" alt="Caitlin" />
               </a>
               <div className="project-title">COOKIE DO</div>
             </div>
@@ -108,7 +108,7 @@ export default function DrawAndTell(props) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={DT_Ale} alt="Alejandro Chen Li" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1649951379/2_Draw_And_Tell/12_Ale_b7io9j.jpg" alt="Alejandro Chen Li" />
               </a>
               <div className="project-title">
                 Meet Alejandro <br />
@@ -121,7 +121,7 @@ export default function DrawAndTell(props) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={DT_Monica} alt="Eunji" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1649951378/2_Draw_And_Tell/13_Monica_pyzrpy.jpg" alt="Eunji" />
               </a>
               <div className="project-title">
                 Tattooing As a Form of <br />
@@ -134,7 +134,7 @@ export default function DrawAndTell(props) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={DT_Tiffany} alt="Tiffany" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1649951378/2_Draw_And_Tell/14_Tiffany_lblj02.png" alt="Tiffany" />
               </a>
               <div className="project-title">Abc for Abcs</div>
             </div>
@@ -144,7 +144,7 @@ export default function DrawAndTell(props) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={DT_Emily} alt="Emily" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1649951378/2_Draw_And_Tell/15_Emily_yxkc6o.jpg" alt="Emily" />
               </a>
               <div className="project-title">
                 The meandering <br />
@@ -157,7 +157,7 @@ export default function DrawAndTell(props) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={DT_Leah} alt="Leah Maldonado" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1649951379/2_Draw_And_Tell/16_Leah_inb4sk.png" alt="Leah Maldonado" />
               </a>
               <div className="project-title">
                 Leah Maldonado Invites You to <br />
@@ -170,7 +170,7 @@ export default function DrawAndTell(props) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={DT_Enle} alt="Liz and Enle 2" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1649951378/2_Draw_And_Tell/11_Enle_tkvmma.jpg" alt="Liz and Enle 2" />
               </a>
               <div className="project-title">
                 Creative Couple Series: <br />
@@ -183,7 +183,7 @@ export default function DrawAndTell(props) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={DT_Jocelyn} alt="Jocelyn" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1649951378/2_Draw_And_Tell/18_Jocelyn_ow53xy.jpg" alt="Jocelyn" />
               </a>
               <div className="project-title">Behind the Murals</div>
             </div>
@@ -193,7 +193,7 @@ export default function DrawAndTell(props) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={DT_NicoleT} alt="Nicolet" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1649951379/2_Draw_And_Tell/9_Nicolet_iaxeyv.jpg" alt="Nicolet" />
               </a>
               <div className="project-title">
                 Drawing a Sacai <br />
@@ -206,7 +206,7 @@ export default function DrawAndTell(props) {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={DT_Header} alt="From NYC to NOLA" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1649951379/2_Draw_And_Tell/header-image_pccrhu.png" alt="From NYC to NOLA" />
               </a>
               <div className="project-title">From NYC to NOLA</div>
             </div>
