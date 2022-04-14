@@ -23,7 +23,7 @@
     }
 
     @include respond-max($bp-tab) {
-      bottom: 5%;
+      bottom: 12px;
     }
 
     @include respond-max($bp-mob) {

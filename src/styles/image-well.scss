@@ -131,6 +131,19 @@
       }
       @include respond-max($bp-mob) {
         height: 300px;
+
+        &.aw-poster,
+        &.ii-poster,
+        &.ss-poster,
+        &.bw-poster {
+          top: 60%;
+        }
+        &.hw-poster {
+          top: 67%;
+        }
+        &.ns-poster {
+          top: 62%;
+        }
       }
 
       &.aw-poster.inactive-card {
@@ -147,15 +160,9 @@
         left: 77%;
         top: -33%;
       }
-      &.hw-poster {
-        top: 67%;
-      }
       &.hw-poster.inactive-card {
         left: 37%;
         top: 140%;
-      }
-      &.ns-poster {
-        top: 67%;
       }
       &.ns-poster.inactive-card {
         left: 28%;
@@ -412,7 +419,7 @@
         }
 
         &.inactive-card {
-          bottom: -28%;
+          bottom: -48%;
           right: -20%;
         }
       }
@@ -853,8 +860,8 @@
         }
         @include respond-max($bp-mob) {
           height: 130px;
-          bottom: 25px;
-          left: 37%;
+          bottom: 10px;
+          left: 40%;
         }
 
         &.inactive-card {
@@ -893,7 +900,7 @@
         @include respond-max($bp-mob) {
           height: 172px;
           right: -39%;
-          top: 57%;
+          top: 62%;
         }
 
         &.inactive-card {
@@ -931,7 +938,7 @@
         @include respond-max($bp-mob) {
           height: 159px;
           left: 9%;
-          top: 36%;
+          top: 40%;
         }
 
         &.inactive-card {
@@ -967,6 +974,7 @@
         @include respond-max($bp-mob) {
           height: 123px;
           left: 19%;
+          top: 77%;
         }
 
         &.inactive-card {
@@ -1410,7 +1418,6 @@
 
         @include respond-max($bp-mob) {
           height: 133px;
-
         }
 
         &.inactive-card {
