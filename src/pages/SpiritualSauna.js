@@ -1,4 +1,4 @@
-import "../styles/styles.scss";
+import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
@@ -25,6 +25,9 @@ export default function SpiritualSauna(props) {
 
   return (
     <main className={getBgColor()}>
+      <Helmet>
+        <meta name="theme-color" content="#ddd3f3" />
+      </Helmet>
       <div className="scene-wrapper">
         <div className="nsc-page-title">
           <div className="anim-nsc">
@@ -60,7 +63,9 @@ export default function SpiritualSauna(props) {
               <div className="page-title page-title-js">L</div>
             </div>
             <div className="page-title-container spiritual-title ss-mobile-only space">
-              <h2 className="page-title page-title-js"><span className='space'>&nbsp;</span></h2>
+              <h2 className="page-title page-title-js">
+                <span className="space">&nbsp;</span>
+              </h2>
               <div className="page-title page-title-js">S</div>
               <div className="page-title page-title-js">A</div>
               <div className="page-title page-title-js">U</div>

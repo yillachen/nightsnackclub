@@ -1,4 +1,4 @@
-import "../styles/styles.scss";
+import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
@@ -27,6 +27,9 @@ export default function HealthWellness(props) {
 
   return (
     <main className={getBgColor()}>
+      <Helmet>
+        <meta name="theme-color" content="#fee3ba" />
+      </Helmet>
       <main className="scene-wrapper">
         <div className=" nsc-page-title">
           <div className="anim-nsc">

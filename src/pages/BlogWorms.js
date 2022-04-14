@@ -1,4 +1,4 @@
-import "../styles/styles.scss";
+import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
@@ -27,6 +27,10 @@ export default function BlogWorms(props) {
 
   return (
     <main className={getBgColor()}>
+      <Helmet>
+        <meta name="theme-color" content="#0f4d4d" />
+      </Helmet>
+
       <main className="scene-wrapper">
         <div className="nsc-page-title">
           <div className="anim-nsc">

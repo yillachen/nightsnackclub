@@ -1,4 +1,4 @@
-import "../styles/styles.scss";
+import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
@@ -20,6 +20,9 @@ export default function Outro(props) {
 
   return (
     <main className={getBgColor()}>
+      <Helmet>
+        <meta name="theme-color" content="#dddcff" />
+      </Helmet>
       <main className="scene-wrapper outro">
         <div className="background-container">
           <div className="bg-segment thanks" />
