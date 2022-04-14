@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import StartButton from "../components/StartButton";
 import Animation from "../assets/images/2020_original-hevc-safari.mp4";
@@ -12,6 +13,9 @@ export default function Intro(props) {
 
   return (
     <main className="body-index">
+      <Helmet>
+        <meta name="theme-color" content="#dddcff" />
+      </Helmet>
       <div className="top-gradient" />
       <main className="scene-wrapper intro">
         <div className="background-container">

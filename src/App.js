@@ -11,6 +11,7 @@ import {
   BlogWorms,
   Outro,
 } from "./pages/index";
+import "./styles/styles.scss";
 
 const routes = [
   { path: "/", name: "Home", component: Intro },

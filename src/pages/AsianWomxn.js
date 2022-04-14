@@ -1,4 +1,4 @@
-import "../styles/styles.scss";
+import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
@@ -28,6 +28,9 @@ export default function AsianWomxn(props) {
 
   return (
     <main className={getBgColor()}>
+      <Helmet>
+        <meta name="theme-color" content="#fff1de" />
+      </Helmet>
       <main className="scene-wrapper">
         <div className="nsc-page-title">
           <div className="anim-nsc">
@@ -95,7 +98,7 @@ export default function AsianWomxn(props) {
             <div className="targetClass aw-1 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/cookie-do"
-                target="_blank"
+                // target="_blank"
                 rel="noreferrer"
               >
                 <img src={AW_Caitlin} alt="Cookie Do" />
@@ -105,7 +108,7 @@ export default function AsianWomxn(props) {
             <div className="targetClass aw-2 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/the-contemplative-art-of-suminagashi-with-jenn-chen"
-                target="_blank"
+                // target="_blank"
                 rel="noreferrer"
               >
                 <img src={AW_Jenn} alt="Jenn Chen" />
@@ -121,7 +124,7 @@ export default function AsianWomxn(props) {
             <div className="targetClass aw-3 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/jeannie-huang"
-                target="_blank"
+                // target="_blank"
                 rel="noreferrer"
               >
                 <img src={AW_Jeannie} alt="Jeannie Huang" />
@@ -135,7 +138,7 @@ export default function AsianWomxn(props) {
             <div className="targetClass aw-4 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/creative-couple-series-judy-and-oscar"
-                target="_blank"
+                // target="_blank"
                 rel="noreferrer"
               >
                 <img src={AW_JudyOscar} alt="Judy & Oscar" />
@@ -148,7 +151,7 @@ export default function AsianWomxn(props) {
             <div className="targetClass aw-5 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/sewing-circle-with-nicole-liao"
-                target="_blank"
+                // target="_blank"
                 rel="noreferrer"
               >
                 <img src={AW_Nicole} alt="Nicole Liao" />
@@ -161,7 +164,7 @@ export default function AsianWomxn(props) {
             <div className="targetClass aw-6 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/smoothing-out-hard-corners-in-clay"
-                target="_blank"
+                // target="_blank"
                 rel="noreferrer"
               >
                 <img src={AW_Robyn} alt="Corners in Clay" />
