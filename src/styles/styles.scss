@@ -52,8 +52,12 @@ main {
 
 // background segments
 .background-container .bg-segment {
-  height: 30vh;
+  height: 33.33vh;
   width: 0%;
+
+  @include respond-max($bp-mob) {
+    height: 30vh;
+  }
 
   &.index {
     background-color: #ffe3c9;
@@ -82,8 +86,12 @@ main {
 }
 
 .scene-wrapper {
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
+
+  @include respond-max($bp-mob) {
+    height: 90vh;
+  }
 
   &.intro {
     display: flex;
@@ -210,7 +218,7 @@ main {
       padding-bottom: 25px;
     }
     @include respond-max($bp-mob) {
-      padding-top: 11%;
+      padding-top: 58px;
       padding-bottom: 2px;
     }
   }
