@@ -15,10 +15,9 @@
 
 - [ ] Full mobile optimization for image wells
 - [ ] Parallax effect on images
-- [ ] Subscription email fix
+- [x] Subscription email fix
 
 Currently deployed on https://nsc-yir.netlify.app
-
 
 **To get started:**
 

@@ -6,11 +6,11 @@
   left: 0;
   transform: translate(0px, 0px);
 
-  &.asian-womxn .targetClass:hover:not(.poster) {
+  &.asian-womxn .targetClass:hover:not(.poster), .targetClass:active:not(poster) {
     -webkit-box-shadow: 0px 0px 24px 12px #ff4c24;
     box-shadow: 0px 0px 24px 12px #ff4c24;
   }
-  &.illustrators .targetClass:hover:not(.poster) {
+  &.illustrators .targetClass:hover:not(.poster), .targetClass:active:not(poster) {
     -webkit-box-shadow: 0px 0px 24px 12px #ffceb3;
     box-shadow: 0px 0px 24px 12px #ffceb3;
 
@@ -20,19 +20,19 @@
       filter: drop-shadow(0 0 17px #ffceb3);
     }
   }
-  &.blog .targetClass:hover:not(.poster) {
+  &.blog .targetClass:hover:not(.poster), .targetClass:active:not(poster) {
     -webkit-box-shadow: 0px 0px 24px 12px #c8ffce;
     box-shadow: 0px 0px 24px 12px #c8ffce;
   }
-  &.health .targetClass:hover:not(.poster) {
+  &.health .targetClass:hover:not(.poster), .targetClass:active:not(poster) {
     -webkit-box-shadow: 0px 0px 24px 12px #34ac5d;
     box-shadow: 0px 0px 24px 12px #34ac5d;
   }
-  &.nightsnack .targetClass:hover:not(.poster) {
+  &.nightsnack .targetClass:hover:not(.poster), .targetClass:active:not(poster) {
     -webkit-box-shadow: 0px 0px 24px 12px #8667ff;
     box-shadow: 0px 0px 24px 12px #8667ff;
   }
-  &.spiritual .targetClass:hover:not(.poster) {
+  &.spiritual .targetClass:hover:not(.poster), .targetClass:active:not(poster) {
     -webkit-box-shadow: 0px 0px 24px 12px #0b8639;
     box-shadow: 0px 0px 24px 12px #0b8639;
   }
