@@ -87,10 +87,10 @@ export function outroTransitions() {
         yPercent: 500,
       },
       {
-        duration: 1.5,
-        ease: "power4",
+        duration: 1,
+        ease: "power1",
         yPercent: 0,
-        delay: 0.5,
+        delay: 2,
       },
       0.0
     )
