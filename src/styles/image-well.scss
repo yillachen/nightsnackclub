@@ -288,7 +288,7 @@
         @include respond-max($bp-mob) {
           height: 196px;
           left: 90px;
-          bottom: -45px;
+          bottom: -2%;
         }
 
         &.inactive-card {
@@ -370,7 +370,7 @@
 
         @include respond-max($bp-mob) {
           right: -51px;
-          bottom: -20px;
+          bottom: 6%;
           height: 156px;
         }
 
@@ -413,8 +413,8 @@
         }
 
         @include respond-max($bp-mob) {
-          bottom: 85px;
-          right: -72px;
+          bottom: 24%;
+          right: -20%;
           height: 138px;
         }
 
@@ -500,7 +500,7 @@
         }
         @include respond-max($bp-mob) {
           height: 108px;
-          top: 265px;
+          top: 43%;
           left: 3%;
         }
 
@@ -539,7 +539,7 @@
         @include respond-max($bp-mob) {
           height: 111px;
           right: -17%;
-          top: 400px;
+          top: 58%;
         }
 
         &.inactive-card {
@@ -579,8 +579,8 @@
 
         @include respond-max($bp-mob) {
           height: 97px;
-          top: 500px;
-          right: 2%;
+          top: 72%;
+          right: 0%;
         }
 
         &.inactive-card {
@@ -621,7 +621,7 @@
         @include respond-max($bp-mob) {
           height: 73px;
           left: 16%;
-          bottom: 225px;
+          bottom: 36%;
         }
 
         &.inactive-card {
@@ -659,7 +659,7 @@
 
         @include respond-max($bp-mob) {
           height: 98px;
-          bottom: 0;
+          bottom: 7%;
         }
 
         &.inactive-card {
@@ -699,7 +699,7 @@
         @include respond-max($bp-mob) {
           height: 89px;
           left: 21px;
-          top: 468px;
+          top: 68%;
         }
 
         &.inactive-card {
@@ -1015,7 +1015,7 @@
 
         @include respond-max($bp-mob) {
           height: 123px;
-          top: 415px;
+          top: 56%;
           right: -10%;
         }
 
@@ -1050,7 +1050,7 @@
         }
         @include respond-max($bp-mob) {
           height: 132px;
-          top: 500px;
+          top: 75%;
           left: 7%;
         }
 
@@ -1130,7 +1130,7 @@
         @include respond-max($bp-mob) {
           height: 172px;
           left: 14%;
-          top: 285px;
+          top: 44%;
         }
 
         &.inactive-card {
@@ -1171,8 +1171,8 @@
 
         @include respond-max($bp-mob) {
           height: 133px;
-          bottom: -20px;
-          right: -17%;
+          bottom: 5%;
+          right: -19%;
         }
 
         &.inactive-card {
@@ -1213,7 +1213,7 @@
 
         @include respond-max($bp-mob) {
           height: 141px;
-          top: 216px;
+          top: 38%;
           right: -28px;
         }
 
@@ -1295,7 +1295,7 @@
 
         @include respond-max($bp-mob) {
           height: 142px;
-          top: 475px;
+          top: 76%;
           right: -35px;
           z-index: 100;
         }
@@ -1374,7 +1374,7 @@
 
         @include respond-max($bp-mob) {
           height: 170px;
-          bottom: -25px;
+          bottom: 0%;
         }
 
         &.inactive-card {

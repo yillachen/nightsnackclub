@@ -29,6 +29,7 @@
     @include respond-max($bp-mob) {
       width: 114px;
       right: 20px;
+      margin-bottom: env(safe-area-inset-bottom, 12vh);
     }
   }
 
@@ -36,8 +37,9 @@
     bottom: 8%;
     position: absolute;
 
-    @include respond-max($bp-tab) {
+    @include respond-max($bp-mob) {
       bottom: 12px;
+      margin-bottom: env(safe-area-inset-bottom, 12vh);
     }
 
     a {
