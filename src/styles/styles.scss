@@ -44,7 +44,8 @@ main {
 
 // general background styles
 .background-container {
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   position: fixed;
   z-index: 0;
@@ -54,6 +55,7 @@ main {
 .background-container .bg-segment {
   height: 33.33vh;
   width: 0%;
+  max-width: 100%;
 
   @include respond-max($bp-mob) {
     height: 30vh;
@@ -87,7 +89,7 @@ main {
 
 .scene-wrapper {
   height: 100vh;
-  overflow: hidden;
+  width: 100%;
 
   @include respond-max($bp-mob) {
     height: 90vh;
@@ -162,40 +164,6 @@ main {
   flex-direction: column;
 }
 
-.intro-video {
-  text-align: center;
-  margin: 50px 0 50px 0;
-  width: 75%;
-
-  @include respond-max($bp-lg-desk) {
-    margin: 25px 0 25px 0;
-  }
-
-  @include respond-max($bp-desk) {
-    width: 82%;
-    margin: 42px 0 42px 0;
-  }
-
-  @include respond-max($bp-lg-lap) {
-    margin: 38px 0 38px 0;
-  }
-
-  @include respond-max($bp-lap) {
-    margin: 30px 0 30px 0;
-    width: 78%;
-  }
-
-  @include respond-max($bp-tab) {
-    margin: 27px 0 29px 0;
-    width: 85%;
-  }
-
-  @include respond-max($bp-mob) {
-    margin: 18px 22px 16px 22px;
-    width: 400px;
-  }
-}
-
 .anim-container {
   display: block;
   position: relative;
@@ -227,7 +195,6 @@ main {
     position: relative;
     display: inline-block;
     margin: 0;
-    // z-index: 9;
     margin: 0px 0 9px;
 
     @include respond-max($bp-tab) {
@@ -340,6 +307,7 @@ main {
     @include respond-max($bp-mob) {
       font-size: 70px;
       letter-spacing: -0.04em;
+      line-height: 63px;
     }
   }
 
@@ -545,10 +513,51 @@ main {
     padding-bottom: 0;
   }
   &:last-child {
-    padding-top: 16px;
+    padding-top: 0;
+
+    @include respond-max($bp-lg-desk) {
+      padding-top: 10px;
+    }
+    @include respond-max($bp-lap) {
+      padding-top: 3px;
+    }
   }
 }
 
 video {
   width: 80%;
+}
+
+.intro-video {
+  text-align: center;
+  margin: 10px 0 30px 0;
+  width: 82%;
+
+  @include respond-max($bp-lg-desk) {
+    margin: 8px 0 25px 0;
+  }
+
+  @include respond-max($bp-desk) {
+    width: 94%;
+    margin: 10px 0 19px 0;
+  }
+
+  @include respond-max($bp-lg-lap) {
+    margin: 5px 0 15px 0;
+    width: 88%;
+  }
+
+  @include respond-max($bp-lap) {
+    margin: 8px 0 11px 0;
+    width: 78%;
+  }
+
+  @include respond-max($bp-tab) {
+    margin: 10px 0 15px 0;
+    width: 105%;
+  }
+
+  @include respond-max($bp-mob) {
+    margin: 8px 22px 3px 22px;
+  }
 }
