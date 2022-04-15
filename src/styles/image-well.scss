@@ -753,7 +753,6 @@
         right: 0%;
         bottom: 5%;
         height: 240px;
-        z-index: -1;
 
         @include respond-max($bp-lg-desk) {
           right: 1%;
@@ -1010,12 +1009,13 @@
 
         @include respond-max($bp-tab) {
           height: 178px;
-          top: 415px;
+          top: 55%;
           right: 5%;
         }
 
         @include respond-max($bp-mob) {
           height: 123px;
+          top: 415px;
           right: -10%;
         }
 
@@ -1347,7 +1347,6 @@
         left: 27%;
         bottom: -5%;
         height: 444px;
-        z-index: -1;
 
         @include respond-max($bp-lg-desk) {
           left: 27%;
