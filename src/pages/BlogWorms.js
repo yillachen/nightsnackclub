@@ -71,7 +71,7 @@ export default function BlogWorms(props) {
             <div className="targetClass bw-1 inactive-card">
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/drawing-a-sacai-with-nicolet"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/4_Blog_Worms/24_Nicolet_xo8b90.jpg" alt="Sacai with Nicolet" />
               </a>
@@ -83,7 +83,7 @@ export default function BlogWorms(props) {
             <div className="targetClass bw-2 inactive-card">
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/leah-maldonado-invites-you-to-her-digital-playground"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/4_Blog_Worms/25_Leah_qiqsp1.png" alt="Leah Maldonado" />
               </a>
@@ -95,7 +95,7 @@ export default function BlogWorms(props) {
             <div className="targetClass bw-3 inactive-card">
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/sourdough-diaries-brownies"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/4_Blog_Worms/26_Johana_vod4f6.jpg" alt="Sourdough Diaries: Brownies" />
               </a>
@@ -107,7 +107,7 @@ export default function BlogWorms(props) {
             <div className="targetClass bw-4 inactive-card">
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/sewing-circle-with-nicole-liao"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/4_Blog_Worms/27_Nicole_zy2mdw.jpg" alt="Sewing Circle with Nicole Liao" />
               </a>
@@ -119,7 +119,7 @@ export default function BlogWorms(props) {
             <div className="targetClass bw-5 inactive-card">
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/a-collector-duys-comme-des-garcons-collection  "
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/4_Blog_Worms/28_Duy_m7faxs.jpg" alt="Duy's Comme des Garcons Collection" />
               </a>
