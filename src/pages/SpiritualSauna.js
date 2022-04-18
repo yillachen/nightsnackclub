@@ -5,14 +5,6 @@ import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
 
-// Images
-import {
-  SS_August,
-  SS_July,
-  SS_Poster,
-  SS_Sept,
-} from "../assets/images/allPhotos";
-
 export default function SpiritualSauna(props) {
   function getBgColor() {
     let bgColor = props.location.from;
@@ -40,7 +32,6 @@ export default function SpiritualSauna(props) {
               <div className="title-container">
                 <div id="nsc-anim-wipe" className="title-swipe-effect">
                   <Link to="/">
-                    {" "}
                     <h3 className="current-title nsc-title-small anim-title spiritual-title">
                       Night Snack Club
                     </h3>
@@ -77,15 +68,14 @@ export default function SpiritualSauna(props) {
         <div className="images-well spiritual">
           <div className="images-palette">
             <div className="targetClass poster ss-poster inactive-card">
-              <img src={SS_Poster} alt="Spiritual Sauna" />
+              <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/3_Spirtual_Sauna/19_Poster_Tarot_wyyemj.jpg" alt="Spiritual Sauna" />
             </div>
             <div className="targetClass ss-1 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-august-2020"
-                target="_blank"
                 rel="noreferrer"
               >
-                <img src={SS_August} alt="Tarot Spread Guide for August 2020" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/3_Spirtual_Sauna/20_NightSnackClub_AugustTarot_Spread_yvqphe.png" alt="Tarot Spread Guide for August 2020" />
               </a>
               <div className="project-title">
                 Tarot Spread Guide <br />
@@ -95,10 +85,9 @@ export default function SpiritualSauna(props) {
             <div className="targetClass ss-2 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-july-2020"
-                target="_blank"
                 rel="noreferrer"
               >
-                <img src={SS_July} alt="Tarot Spread Guide for July 2020" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/3_Spirtual_Sauna/21_NightSnackClub_JulyTarot_Spread_coixko.png" alt="Tarot Spread Guide for July 2020" />
               </a>
               <div className="project-title">
                 Tarot Spread Guide <br />
@@ -108,11 +97,10 @@ export default function SpiritualSauna(props) {
             <div className="targetClass ss-3 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-september-2020"
-                target="_blank"
                 rel="noreferrer"
               >
                 <img
-                  src={SS_Sept}
+                  src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/3_Spirtual_Sauna/22_NightSnackClub_SeptemberTarot_Spread_pzqi2a.png"
                   alt="Tarot Spread Guide for September 2020"
                 />
               </a>

@@ -5,15 +5,6 @@ import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
 
-// Images
-import {
-  NS_Jenn,
-  NS_Johana,
-  NS_Poster,
-  NS_Shirley,
-  NS_Shirley2,
-} from "../assets/images/allPhotos";
-
 export default function NightSnacks(props) {
   function getBgColor() {
     let bgColor = props.location.from;
@@ -74,15 +65,14 @@ export default function NightSnacks(props) {
         <div className="images-well nightsnack">
           <div className="images-palette">
             <div className="targetClass poster ns-poster inactive-card">
-              <img src={NS_Poster} alt="Night Snacks" />
+              <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/6_Night_Snacks/35_Poster_Night_Snacks_ssrvzz.png" alt="Night Snacks" />
             </div>
             <div className="targetClass ns-1 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/pansy-orange-gin-cordial"
                 rel="noreferrer"
-                target="_blank"
               >
-                <img src={NS_Shirley} alt="Pansy Orange Fin Cordial" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/6_Night_Snacks/36_Shirley_mmxng8.jpg" alt="Pansy Orange Fin Cordial" />
               </a>
               <div className="project-title">Pansy Orange Gin Cordial</div>
             </div>
@@ -90,9 +80,8 @@ export default function NightSnacks(props) {
               <a
                 href="https://www.nightsnackclub.com/blog/egg-tarts"
                 rel="noreferrer"
-                target="_blank"
               >
-                <img src={NS_Jenn} alt="Hong Kong meets Philly Egg Tarts" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/6_Night_Snacks/37_Jenn_hcxmxl.jpg" alt="Hong Kong meets Philly Egg Tarts" />
               </a>
               <div className="project-title">
                 My Mom’s HK Style Egg Tarts <br />
@@ -103,10 +92,9 @@ export default function NightSnacks(props) {
               <a
                 href="https://www.nightsnackclub.com/blog/finding-inspiration-dessert-edition"
                 rel="noreferrer"
-                target="_blank"
               >
                 <img
-                  src={NS_Johana}
+                  src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/6_Night_Snacks/38_Johana_yzivif.jpg"
                   alt="Finding Inspiration, Dessert Edition"
                 />
               </a>
@@ -119,9 +107,8 @@ export default function NightSnacks(props) {
               <a
                 href="https://www.nightsnackclub.com/blog/anh-anhs-salted-eggs"
                 rel="noreferrer"
-                target="_blank"
               >
-                <img src={NS_Shirley2} alt="Anh Anh's   Salted Eggs" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/6_Night_Snacks/39_Shirley_v3icdv.jpg" alt="Anh Anh's   Salted Eggs" />
               </a>
               <div className="project-title">Anh Anh’s Salted Eggs</div>
             </div>

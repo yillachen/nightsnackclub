@@ -5,22 +5,6 @@ import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
 
-// Images
-// import {
-//   DT_Ale,
-//   DT_Caitlin,
-//   DT_Emily,
-//   DT_Enle,
-//   DT_Header,
-//   DT_Jocelyn,
-//   DT_Leah,
-//   DT_Liz,
-//   DT_Monica,
-//   DT_NicoleT,
-//   DT_Poster,
-//   DT_Tiffany,
-// } from "../assets/images/allPhotos";
-
 export default function DrawAndTell(props) {
   function getBgColor() {
     let bgColor = props.location.from;
@@ -88,7 +72,6 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-1 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/creative-couple-series-liz-and-enle"
-                // target="_blank"
                 rel="noreferrer"
               >
                 <img
@@ -104,7 +87,6 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-2 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/cookie-do"
-                // target="_blank"
                 rel="noreferrer"
               >
                 <img
@@ -118,7 +100,6 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-3 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/meet-alejandro-chen-li"
-                // target="_blank"
                 rel="noreferrer"
               >
                 <img
@@ -135,7 +116,6 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-4 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/tattooing-as-a-form-of-ritual"
-                // target="_blank"
                 rel="noreferrer"
               >
                 <img
@@ -151,7 +131,6 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-5 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/abc-for-abcs"
-                // target="_blank"
                 rel="noreferrer"
               >
                 <img
@@ -164,7 +143,6 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-6 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/the-meandering-path-of-emily"
-                // target="_blank"
                 rel="noreferrer"
               >
                 <img
@@ -180,7 +158,6 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-7 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/leah-maldonado-invites-you-to-her-digital-playground"
-                // target="_blank"
                 rel="noreferrer"
               >
                 <img
@@ -196,7 +173,6 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-8 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/creative-couple-series-liz-and-enle"
-                // target="_blank"
                 rel="noreferrer"
               >
                 <img
@@ -212,7 +188,6 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-9 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/behind-the-murals"
-                // target="_blank"
                 rel="noreferrer"
               >
                 <img
@@ -225,7 +200,6 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-10 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/drawing-a-sacai-with-nicolet"
-                // target="_blank"
                 rel="noreferrer"
               >
                 <img
@@ -241,7 +215,6 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-11 drop-shadow inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/from-nyc-to-nola"
-                // target="_blank"
                 rel="noreferrer"
               >
                 <img

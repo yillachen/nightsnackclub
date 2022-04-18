@@ -5,16 +5,6 @@ import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
 
-// Images
-import {
-  HW_Anna,
-  HW_Hui,
-  HW_Jenn,
-  HW_Poster,
-  HW_Yilla,
-  HW_Ying,
-} from "../assets/images/allPhotos";
-
 export default function HealthWellness(props) {
   function getBgColor() {
     let bgColor = props.location.from;
@@ -84,15 +74,14 @@ export default function HealthWellness(props) {
         <div className="images-well health">
           <div className="images-palette">
             <div className="targetClass poster hw-poster inactive-card">
-              <img src={HW_Poster} alt="Health and Wellness" />
+              <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/5_Health_and_Wellness/29_Poster_Health_and_Wellness_m6g4lf.png" alt="Health and Wellness" />
             </div>
             <div className="targetClass hw-1 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/sculpt-your-way-to-glowy-skin-with-yilla"
                 rel="noreferrer"
-                target="_blank"
               >
-                <img src={HW_Yilla} alt="Facial Massage with Yilla" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/5_Health_and_Wellness/30_Yilla_kaqgc9.png" alt="Facial Massage with Yilla" />
               </a>
               <div className="project-title">
                 Sculpt Your Way to <br />
@@ -103,9 +92,8 @@ export default function HealthWellness(props) {
               <a
                 href="https://www.nightsnackclub.com/blog/yoga-journey-with-ying"
                 rel="noreferrer"
-                target="_blank"
               >
-                <img src={HW_Ying} alt="Yoga with Ying" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/5_Health_and_Wellness/31_Ying_jgsnkl.jpg" alt="Yoga with Ying" />
               </a>
               <div className="project-title">Yoga Journey with Ying</div>
             </div>
@@ -113,9 +101,8 @@ export default function HealthWellness(props) {
               <a
                 href="https://www.nightsnackclub.com/blog/kombucha-dabbles"
                 rel="noreferrer"
-                target="_blank"
               >
-                <img src={HW_Anna} alt="Kombucha Dabbles with Anna" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/5_Health_and_Wellness/32_Anna_inesed.jpg" alt="Kombucha Dabbles with Anna" />
               </a>
               <div className="project-title">Kombucha Dabbles</div>
             </div>
@@ -123,9 +110,8 @@ export default function HealthWellness(props) {
               <a
                 href="https://www.nightsnackclub.com/blog/the-contemplative-art-of-suminagashi-with-jenn-chen"
                 rel="noreferrer"
-                target="_blank"
               >
-                <img src={HW_Jenn} alt="Suminagashi with Jenn" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/5_Health_and_Wellness/33_Jenn_sfyotc.jpg" alt="Suminagashi with Jenn" />
               </a>
               <div className="project-title">
                 The Contemplative <br />
@@ -137,9 +123,8 @@ export default function HealthWellness(props) {
               <a
                 href="https://www.nightsnackclub.com/blog/the-unqualified-herbalist-chamomile"
                 rel="noreferrer"
-                target="_blank"
               >
-                <img src={HW_Hui} alt="Herbalism with Hui" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/5_Health_and_Wellness/34_Hui_sudefj.jpg" alt="Herbalism with Hui" />
               </a>
               <div className="project-title">
                 The Unqualified <br />

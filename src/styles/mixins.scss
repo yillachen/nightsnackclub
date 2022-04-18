@@ -8,7 +8,7 @@ $bp-lg-lap: 1440px;
 $bp-lap: 1280px;
 $bp-tab: 800px;
 $bp-mob: 600px;
-$bp-mob-xs: 675px;
+$bp-mob-xs: 675px; // iPhone SE users
 
 @mixin respond($width) {
   @media screen and (max-width: $width) {

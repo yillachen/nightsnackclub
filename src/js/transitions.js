@@ -82,7 +82,7 @@ export function outroTransitions() {
     .fromTo(
       ".mail-signup",
       {
-        yPercent: 250,
+        yPercent: 300,
       },
       {
         duration: 1,

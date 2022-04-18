@@ -5,16 +5,6 @@ import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
 
-// Images
-import {
-  BW_Duy,
-  BW_Johana,
-  BW_Leah,
-  BW_Nicole,
-  BW_Nicolet,
-  BW_Poster,
-} from "../assets/images/allPhotos";
-
 export default function BlogWorms(props) {
   function getBgColor() {
     let bgColor = props.location.from;
@@ -74,15 +64,14 @@ export default function BlogWorms(props) {
         <div className="images-well blog">
           <div className="images-palette">
             <div className="targetClass poster bw-poster inactive-card">
-              <img src={BW_Poster} alt="Blog Worms" />
+              <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/4_Blog_Worms/23_Poster_Blogworms_w8zdvi.png" alt="Blog Worms" />
             </div>
             <div className="targetClass bw-1 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/drawing-a-sacai-with-nicolet"
-                target="_blank"
                 rel="noreferrer"
               >
-                <img src={BW_Nicolet} alt="Sacai with Nicolet" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/4_Blog_Worms/24_Nicolet_xo8b90.jpg" alt="Sacai with Nicolet" />
               </a>
               <div className="project-title">
                 Drawing a Sacai <br />
@@ -92,10 +81,9 @@ export default function BlogWorms(props) {
             <div className="targetClass bw-2 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/leah-maldonado-invites-you-to-her-digital-playground"
-                target="_blank"
                 rel="noreferrer"
               >
-                <img src={BW_Leah} alt="Leah Maldonado" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/4_Blog_Worms/25_Leah_qiqsp1.png" alt="Leah Maldonado" />
               </a>
               <div className="project-title">
                 Leah Maldonado Invites You to <br />
@@ -105,10 +93,9 @@ export default function BlogWorms(props) {
             <div className="targetClass bw-3 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/sourdough-diaries-brownies"
-                target="_blank"
                 rel="noreferrer"
               >
-                <img src={BW_Johana} alt="Sourdough Diaries: Brownies" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/4_Blog_Worms/26_Johana_vod4f6.jpg" alt="Sourdough Diaries: Brownies" />
               </a>
               <div className="project-title">
                 Sourdough Diaries: <br />
@@ -118,10 +105,9 @@ export default function BlogWorms(props) {
             <div className="targetClass bw-4 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/sewing-circle-with-nicole-liao"
-                target="_blank"
                 rel="noreferrer"
               >
-                <img src={BW_Nicole} alt="Sewing Circle with Nicole Liao" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/4_Blog_Worms/27_Nicole_zy2mdw.jpg" alt="Sewing Circle with Nicole Liao" />
               </a>
               <div className="project-title">
                 Sewing Circle with <br />
@@ -131,10 +117,9 @@ export default function BlogWorms(props) {
             <div className="targetClass bw-5 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/a-collector-duys-comme-des-garcons-collection  "
-                target="_blank"
                 rel="noreferrer"
               >
-                <img src={BW_Duy} alt="Duy's Comme des Garcons Collection" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/4_Blog_Worms/28_Duy_m7faxs.jpg" alt="Duy's Comme des Garcons Collection" />
               </a>
               <div className="project-title">
                 A Collector: Duy’s Comme <br />
