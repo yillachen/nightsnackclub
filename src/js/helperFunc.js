@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 // for image well animations coming in
 export function removeClass(targetClass) {
   const imageGroup = document.querySelectorAll(".images-well .targetClass");
@@ -47,5 +49,20 @@ export function parallax() {
         ${y / sFront}%
       )
     `;
+  });
+}
+
+export function loadpage() {
+  $(document).ready(function () {
+    $(".delay").click(function (e) {
+      if (window.innerWidth < 800) {
+        e.preventDefault();
+        var $a = $(this).addClass("clicked");
+        setTimeout(function () {
+          window.open($a.attr("href"), '_blank');
+        }, 500);
+      }
+      return;
+    });
   });
 }

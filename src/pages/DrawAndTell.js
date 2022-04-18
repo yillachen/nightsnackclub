@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
+import { loadpage } from "../js/helperFunc";
 
 export default function DrawAndTell(props) {
   function getBgColor() {
@@ -12,6 +13,7 @@ export default function DrawAndTell(props) {
   }
 
   useEffect(() => {
+    loadpage();
     appTransitions();
   });
 
@@ -71,7 +73,7 @@ export default function DrawAndTell(props) {
             </div>
             <div className="targetClass ii-1 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/creative-couple-series-liz-and-enle"
+                className="delay" href="https://www.nightsnackclub.com/blog/creative-couple-series-liz-and-enle"
                 rel="noreferrer" target="_blank"
               >
                 <img
@@ -86,7 +88,7 @@ export default function DrawAndTell(props) {
             </div>
             <div className="targetClass ii-2 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/cookie-do"
+                className="delay" href="https://www.nightsnackclub.com/blog/cookie-do"
                 rel="noreferrer" target="_blank"
               >
                 <img
@@ -99,7 +101,7 @@ export default function DrawAndTell(props) {
 
             <div className="targetClass ii-3 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/meet-alejandro-chen-li"
+                className="delay" href="https://www.nightsnackclub.com/blog/meet-alejandro-chen-li"
                 rel="noreferrer" target="_blank"
               >
                 <img
@@ -115,7 +117,7 @@ export default function DrawAndTell(props) {
 
             <div className="targetClass ii-4 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/tattooing-as-a-form-of-ritual"
+                className="delay" href="https://www.nightsnackclub.com/blog/tattooing-as-a-form-of-ritual"
                 rel="noreferrer" target="_blank"
               >
                 <img
@@ -130,7 +132,7 @@ export default function DrawAndTell(props) {
             </div>
             <div className="targetClass ii-5 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/abc-for-abcs"
+                className="delay" href="https://www.nightsnackclub.com/blog/abc-for-abcs"
                 rel="noreferrer" target="_blank"
               >
                 <img
@@ -142,7 +144,7 @@ export default function DrawAndTell(props) {
             </div>
             <div className="targetClass ii-6 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/the-meandering-path-of-emily"
+                className="delay" href="https://www.nightsnackclub.com/blog/the-meandering-path-of-emily"
                 rel="noreferrer" target="_blank"
               >
                 <img
@@ -157,7 +159,7 @@ export default function DrawAndTell(props) {
             </div>
             <div className="targetClass ii-7 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/leah-maldonado-invites-you-to-her-digital-playground"
+                className="delay" href="https://www.nightsnackclub.com/blog/leah-maldonado-invites-you-to-her-digital-playground"
                 rel="noreferrer" target="_blank"
               >
                 <img
@@ -172,7 +174,7 @@ export default function DrawAndTell(props) {
             </div>
             <div className="targetClass ii-8 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/creative-couple-series-liz-and-enle"
+                className="delay" href="https://www.nightsnackclub.com/blog/creative-couple-series-liz-and-enle"
                 rel="noreferrer" target="_blank"
               >
                 <img
@@ -187,7 +189,7 @@ export default function DrawAndTell(props) {
             </div>
             <div className="targetClass ii-9 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/behind-the-murals"
+                className="delay" href="https://www.nightsnackclub.com/blog/behind-the-murals"
                 rel="noreferrer" target="_blank"
               >
                 <img
@@ -199,7 +201,7 @@ export default function DrawAndTell(props) {
             </div>
             <div className="targetClass ii-10 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/drawing-a-sacai-with-nicolet"
+                className="delay" href="https://www.nightsnackclub.com/blog/drawing-a-sacai-with-nicolet"
                 rel="noreferrer" target="_blank"
               >
                 <img
@@ -214,7 +216,7 @@ export default function DrawAndTell(props) {
             </div>
             <div className="targetClass ii-11 drop-shadow inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/from-nyc-to-nola"
+                className="delay" href="https://www.nightsnackclub.com/blog/from-nyc-to-nola"
                 rel="noreferrer" target="_blank"
               >
                 <img

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
+import { loadpage } from "../js/helperFunc";
 
 export default function NightSnacks(props) {
   function getBgColor() {
@@ -12,6 +13,7 @@ export default function NightSnacks(props) {
   }
 
   useEffect(() => {
+    loadpage();
     appTransitions();
   });
 
@@ -69,7 +71,7 @@ export default function NightSnacks(props) {
             </div>
             <div className="targetClass ns-1 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/pansy-orange-gin-cordial"
+                className="delay" href="https://www.nightsnackclub.com/blog/pansy-orange-gin-cordial"
                 rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/6_Night_Snacks/36_Shirley_mmxng8.jpg" alt="Pansy Orange Fin Cordial" />
@@ -78,7 +80,7 @@ export default function NightSnacks(props) {
             </div>
             <div className="targetClass ns-2 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/egg-tarts"
+                className="delay" href="https://www.nightsnackclub.com/blog/egg-tarts"
                 rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/6_Night_Snacks/37_Jenn_hcxmxl.jpg" alt="Hong Kong meets Philly Egg Tarts" />
@@ -90,7 +92,7 @@ export default function NightSnacks(props) {
             </div>
             <div className="targetClass ns-3 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/finding-inspiration-dessert-edition"
+                className="delay" href="https://www.nightsnackclub.com/blog/finding-inspiration-dessert-edition"
                 rel="noreferrer" target="_blank"
               >
                 <img
@@ -105,7 +107,7 @@ export default function NightSnacks(props) {
             </div>
             <div className="targetClass ns-4 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/anh-anhs-salted-eggs"
+                className="delay" href="https://www.nightsnackclub.com/blog/anh-anhs-salted-eggs"
                 rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/6_Night_Snacks/39_Shirley_v3icdv.jpg" alt="Anh Anh's   Salted Eggs" />

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
+import { loadpage } from "../js/helperFunc";
 
 export default function SpiritualSauna(props) {
   function getBgColor() {
@@ -12,6 +13,7 @@ export default function SpiritualSauna(props) {
   }
 
   useEffect(() => {
+    loadpage();
     appTransitions();
   });
 
@@ -72,7 +74,7 @@ export default function SpiritualSauna(props) {
             </div>
             <div className="targetClass ss-1 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-august-2020"
+                className="delay" href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-august-2020"
                 rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/3_Spirtual_Sauna/20_NightSnackClub_AugustTarot_Spread_yvqphe.png" alt="Tarot Spread Guide for August 2020" />
@@ -84,7 +86,7 @@ export default function SpiritualSauna(props) {
             </div>
             <div className="targetClass ss-2 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-july-2020"
+                className="delay" href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-july-2020"
                 rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/3_Spirtual_Sauna/21_NightSnackClub_JulyTarot_Spread_coixko.png" alt="Tarot Spread Guide for July 2020" />
@@ -96,7 +98,7 @@ export default function SpiritualSauna(props) {
             </div>
             <div className="targetClass ss-3 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-september-2020"
+                className="delay" href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-september-2020"
                 rel="noreferrer" target="_blank"
               >
                 <img

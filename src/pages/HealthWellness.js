@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
+import { loadpage } from "../js/helperFunc";
 
 export default function HealthWellness(props) {
   function getBgColor() {
@@ -12,6 +13,7 @@ export default function HealthWellness(props) {
   }
 
   useEffect(() => {
+    loadpage();
     appTransitions();
   });
 
@@ -78,7 +80,7 @@ export default function HealthWellness(props) {
             </div>
             <div className="targetClass hw-1 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/sculpt-your-way-to-glowy-skin-with-yilla"
+                className="delay" href="https://www.nightsnackclub.com/blog/sculpt-your-way-to-glowy-skin-with-yilla"
                 rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/5_Health_and_Wellness/30_Yilla_kaqgc9.png" alt="Facial Massage with Yilla" />
@@ -90,7 +92,7 @@ export default function HealthWellness(props) {
             </div>
             <div className="targetClass hw-2 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/yoga-journey-with-ying"
+                className="delay" href="https://www.nightsnackclub.com/blog/yoga-journey-with-ying"
                 rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/5_Health_and_Wellness/31_Ying_jgsnkl.jpg" alt="Yoga with Ying" />
@@ -99,7 +101,7 @@ export default function HealthWellness(props) {
             </div>
             <div className="targetClass hw-3 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/kombucha-dabbles"
+                className="delay" href="https://www.nightsnackclub.com/blog/kombucha-dabbles"
                 rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/5_Health_and_Wellness/32_Anna_inesed.jpg" alt="Kombucha Dabbles with Anna" />
@@ -108,7 +110,7 @@ export default function HealthWellness(props) {
             </div>
             <div className="targetClass hw-4 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/the-contemplative-art-of-suminagashi-with-jenn-chen"
+                className="delay" href="https://www.nightsnackclub.com/blog/the-contemplative-art-of-suminagashi-with-jenn-chen"
                 rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/5_Health_and_Wellness/33_Jenn_sfyotc.jpg" alt="Suminagashi with Jenn" />
@@ -121,7 +123,7 @@ export default function HealthWellness(props) {
             </div>
             <div className="targetClass hw-5 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/the-unqualified-herbalist-chamomile"
+                className="delay" href="https://www.nightsnackclub.com/blog/the-unqualified-herbalist-chamomile"
                 rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/5_Health_and_Wellness/34_Hui_sudefj.jpg" alt="Herbalism with Hui" />

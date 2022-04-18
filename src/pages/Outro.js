@@ -6,8 +6,6 @@ import RestartButton from "../components/RestartButton";
 import MailchimpForm from "../components/Mailchimp";
 import { outroTransitions } from "../js/transitions";
 
-// Images
-
 export default function Outro(props) {
   function getBgColor() {
     let bgColor = props.location.from;
