@@ -61,7 +61,6 @@ export function appTransitions() {
 export function outroTransitions() {
   const tl = gsap.timeline({
     onComplete: () => {
-      projectTooltip();
       return;
     },
   });
@@ -84,13 +83,13 @@ export function outroTransitions() {
     .fromTo(
       ".mail-signup",
       {
-        yPercent: 500,
+        yPercent: 250,
       },
       {
         duration: 1,
         ease: "power1",
         yPercent: 0,
-        delay: 2,
+        delay: 1.25,
       },
       0.0
     )

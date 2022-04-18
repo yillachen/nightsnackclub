@@ -13,7 +13,6 @@ body {
 
 main {
   position: relative;
-  margin: 0;
   overflow: hidden;
 
   &.body-index {
@@ -45,7 +44,6 @@ main {
 // general background styles
 .background-container {
   width: 100vw;
-  height: 100vh;
   top: 0;
   position: fixed;
   z-index: 0;
