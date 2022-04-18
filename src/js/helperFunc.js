@@ -60,7 +60,7 @@ export function loadpage() {
         var $a = $(this).addClass("clicked");
         setTimeout(function () {
           window.open($a.attr("href"), '_blank');
-        }, 500);
+        }, 600);
       }
       return;
     });

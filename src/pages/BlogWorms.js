@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
+import { loadpage } from "../js/helperFunc";
 
 export default function BlogWorms(props) {
   function getBgColor() {
@@ -12,6 +13,7 @@ export default function BlogWorms(props) {
   }
 
   useEffect(() => {
+    loadpage();
     appTransitions();
   });
 
@@ -68,7 +70,7 @@ export default function BlogWorms(props) {
             </div>
             <div className="targetClass bw-1 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/drawing-a-sacai-with-nicolet"
+                className="delay" href="https://www.nightsnackclub.com/blog/drawing-a-sacai-with-nicolet"
                 rel="noreferrer"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/4_Blog_Worms/24_Nicolet_xo8b90.jpg" alt="Sacai with Nicolet" />
@@ -80,7 +82,7 @@ export default function BlogWorms(props) {
             </div>
             <div className="targetClass bw-2 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/leah-maldonado-invites-you-to-her-digital-playground"
+                className="delay" href="https://www.nightsnackclub.com/blog/leah-maldonado-invites-you-to-her-digital-playground"
                 rel="noreferrer"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/4_Blog_Worms/25_Leah_qiqsp1.png" alt="Leah Maldonado" />
@@ -92,7 +94,7 @@ export default function BlogWorms(props) {
             </div>
             <div className="targetClass bw-3 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/sourdough-diaries-brownies"
+                className="delay" href="https://www.nightsnackclub.com/blog/sourdough-diaries-brownies"
                 rel="noreferrer"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/4_Blog_Worms/26_Johana_vod4f6.jpg" alt="Sourdough Diaries: Brownies" />
@@ -104,7 +106,7 @@ export default function BlogWorms(props) {
             </div>
             <div className="targetClass bw-4 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/sewing-circle-with-nicole-liao"
+                className="delay" href="https://www.nightsnackclub.com/blog/sewing-circle-with-nicole-liao"
                 rel="noreferrer"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/4_Blog_Worms/27_Nicole_zy2mdw.jpg" alt="Sewing Circle with Nicole Liao" />
@@ -116,7 +118,7 @@ export default function BlogWorms(props) {
             </div>
             <div className="targetClass bw-5 inactive-card">
               <a
-                href="https://www.nightsnackclub.com/blog/a-collector-duys-comme-des-garcons-collection  "
+                className="delay" href="https://www.nightsnackclub.com/blog/a-collector-duys-comme-des-garcons-collection  "
                 rel="noreferrer"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/4_Blog_Worms/28_Duy_m7faxs.jpg" alt="Duy's Comme des Garcons Collection" />
