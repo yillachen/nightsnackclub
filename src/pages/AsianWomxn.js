@@ -87,7 +87,7 @@ export default function AsianWomxn(props) {
             <div className="targetClass aw-1 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/cookie-do"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1649950573/1_Asian_Womxn/7_Caitlin_jqpqb3.jpg" alt="Cookie Do" />
               </a>
@@ -96,7 +96,7 @@ export default function AsianWomxn(props) {
             <div className="targetClass aw-2 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/the-contemplative-art-of-suminagashi-with-jenn-chen"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1649950573/1_Asian_Womxn/6_Jenn_qbkot9.jpg" alt="Jenn Chen" />
               </a>
@@ -111,7 +111,7 @@ export default function AsianWomxn(props) {
             <div className="targetClass aw-3 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/jeannie-huang"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1649950574/1_Asian_Womxn/5_Jeannie_rqn6ve.jpg" alt="Jeannie Huang" />
               </a>
@@ -124,7 +124,7 @@ export default function AsianWomxn(props) {
             <div className="targetClass aw-4 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/creative-couple-series-judy-and-oscar"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1649950573/1_Asian_Womxn/4_Judy_hap9pv.png" alt="Judy & Oscar" />
               </a>
@@ -136,7 +136,7 @@ export default function AsianWomxn(props) {
             <div className="targetClass aw-5 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/sewing-circle-with-nicole-liao"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1649950573/1_Asian_Womxn/3_Nicole_vq91dq.jpg" alt="Nicole Liao" />
               </a>
@@ -148,7 +148,7 @@ export default function AsianWomxn(props) {
             <div className="targetClass aw-6 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/smoothing-out-hard-corners-in-clay"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1649950573/1_Asian_Womxn/2_Robyn_gzahyw.jpg" alt="Corners in Clay" />
               </a>

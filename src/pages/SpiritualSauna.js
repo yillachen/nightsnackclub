@@ -73,7 +73,7 @@ export default function SpiritualSauna(props) {
             <div className="targetClass ss-1 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-august-2020"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/3_Spirtual_Sauna/20_NightSnackClub_AugustTarot_Spread_yvqphe.png" alt="Tarot Spread Guide for August 2020" />
               </a>
@@ -85,7 +85,7 @@ export default function SpiritualSauna(props) {
             <div className="targetClass ss-2 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-july-2020"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/3_Spirtual_Sauna/21_NightSnackClub_JulyTarot_Spread_coixko.png" alt="Tarot Spread Guide for July 2020" />
               </a>
@@ -97,7 +97,7 @@ export default function SpiritualSauna(props) {
             <div className="targetClass ss-3 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-september-2020"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/3_Spirtual_Sauna/22_NightSnackClub_SeptemberTarot_Spread_pzqi2a.png"

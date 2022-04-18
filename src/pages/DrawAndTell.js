@@ -72,7 +72,7 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-1 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/creative-couple-series-liz-and-enle"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951378/2_Draw_And_Tell/10_Liz_hmpgad.jpg"
@@ -87,7 +87,7 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-2 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/cookie-do"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951379/2_Draw_And_Tell/17_Caitlin_v6uwf7.png"
@@ -100,7 +100,7 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-3 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/meet-alejandro-chen-li"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951379/2_Draw_And_Tell/12_Ale_b7io9j.jpg"
@@ -116,7 +116,7 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-4 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/tattooing-as-a-form-of-ritual"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951378/2_Draw_And_Tell/13_Monica_pyzrpy.jpg"
@@ -131,7 +131,7 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-5 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/abc-for-abcs"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951378/2_Draw_And_Tell/14_Tiffany_lblj02.png"
@@ -143,7 +143,7 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-6 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/the-meandering-path-of-emily"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951378/2_Draw_And_Tell/15_Emily_yxkc6o.jpg"
@@ -158,7 +158,7 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-7 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/leah-maldonado-invites-you-to-her-digital-playground"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951379/2_Draw_And_Tell/16_Leah_inb4sk.png"
@@ -173,7 +173,7 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-8 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/creative-couple-series-liz-and-enle"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951378/2_Draw_And_Tell/11_Enle_tkvmma.jpg"
@@ -188,7 +188,7 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-9 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/behind-the-murals"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951378/2_Draw_And_Tell/18_Jocelyn_ow53xy.jpg"
@@ -200,7 +200,7 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-10 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/drawing-a-sacai-with-nicolet"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951379/2_Draw_And_Tell/9_Nicolet_iaxeyv.jpg"
@@ -215,7 +215,7 @@ export default function DrawAndTell(props) {
             <div className="targetClass ii-11 drop-shadow inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/from-nyc-to-nola"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951379/2_Draw_And_Tell/header-image_pccrhu.png"

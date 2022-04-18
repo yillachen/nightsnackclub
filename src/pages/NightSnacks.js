@@ -70,7 +70,7 @@ export default function NightSnacks(props) {
             <div className="targetClass ns-1 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/pansy-orange-gin-cordial"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/6_Night_Snacks/36_Shirley_mmxng8.jpg" alt="Pansy Orange Fin Cordial" />
               </a>
@@ -79,7 +79,7 @@ export default function NightSnacks(props) {
             <div className="targetClass ns-2 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/egg-tarts"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/6_Night_Snacks/37_Jenn_hcxmxl.jpg" alt="Hong Kong meets Philly Egg Tarts" />
               </a>
@@ -91,7 +91,7 @@ export default function NightSnacks(props) {
             <div className="targetClass ns-3 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/finding-inspiration-dessert-edition"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/6_Night_Snacks/38_Johana_yzivif.jpg"
@@ -106,7 +106,7 @@ export default function NightSnacks(props) {
             <div className="targetClass ns-4 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/anh-anhs-salted-eggs"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/6_Night_Snacks/39_Shirley_v3icdv.jpg" alt="Anh Anh's   Salted Eggs" />
               </a>

@@ -79,7 +79,7 @@ export default function HealthWellness(props) {
             <div className="targetClass hw-1 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/sculpt-your-way-to-glowy-skin-with-yilla"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/5_Health_and_Wellness/30_Yilla_kaqgc9.png" alt="Facial Massage with Yilla" />
               </a>
@@ -91,7 +91,7 @@ export default function HealthWellness(props) {
             <div className="targetClass hw-2 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/yoga-journey-with-ying"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/5_Health_and_Wellness/31_Ying_jgsnkl.jpg" alt="Yoga with Ying" />
               </a>
@@ -100,7 +100,7 @@ export default function HealthWellness(props) {
             <div className="targetClass hw-3 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/kombucha-dabbles"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/5_Health_and_Wellness/32_Anna_inesed.jpg" alt="Kombucha Dabbles with Anna" />
               </a>
@@ -109,7 +109,7 @@ export default function HealthWellness(props) {
             <div className="targetClass hw-4 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/the-contemplative-art-of-suminagashi-with-jenn-chen"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/5_Health_and_Wellness/33_Jenn_sfyotc.jpg" alt="Suminagashi with Jenn" />
               </a>
@@ -122,7 +122,7 @@ export default function HealthWellness(props) {
             <div className="targetClass hw-5 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/the-unqualified-herbalist-chamomile"
-                rel="noreferrer"
+                rel="noreferrer" target="_blank"
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/5_Health_and_Wellness/34_Hui_sudefj.jpg" alt="Herbalism with Hui" />
               </a>
