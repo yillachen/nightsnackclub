@@ -114,6 +114,7 @@ export default function DrawAndTell(props) {
               </a>
               <div className="project-title">COOKIE DO</div>
             </div>
+
             <div className="targetClass ii-3 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/meet-alejandro-chen-li"
@@ -130,6 +131,7 @@ export default function DrawAndTell(props) {
                 Chen Li
               </div>
             </div>
+
             <div className="targetClass ii-4 inactive-card">
               <a
                 href="https://www.nightsnackclub.com/blog/tattooing-as-a-form-of-ritual"

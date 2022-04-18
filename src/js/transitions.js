@@ -9,7 +9,6 @@ export function appTransitions() {
   const tl = gsap.timeline({
     onComplete: () => {
       projectTooltip();
-      // parallax();
       return;
     },
   });
@@ -89,7 +88,7 @@ export function outroTransitions() {
         duration: 1,
         ease: "power1",
         yPercent: 0,
-        delay: 1.25,
+        delay: 1,
       },
       0.0
     )
@@ -134,12 +133,12 @@ export function introTransitions() {
     .fromTo(
       ".start-btn-scale",
       {
-        scale: 0
+        scale: 0,
       },
       {
         delay: 1.1,
         scale: 1,
-        duration: 0.75
+        duration: 0.75,
       },
       0.0
     );

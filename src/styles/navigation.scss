@@ -1,47 +1,11 @@
 .nav-row {
-  &.begin-again-btn svg {
-    bottom: 8%;
-    position: absolute;
-    width: 285px;
-    right: 65px;
-
-    @include respond-max($bp-lg-desk) {
-      right: 55px;
-      width: 183px;
-    }
-
-    @include respond-max($bp-desk) {
-      right: 50px;
-    }
-
-    @include respond-max($bp-lg-lap) {
-      width: 137px;
-    }
-
-    @include respond-max($bp-lap) {
-      right: 33px;
-    }
-
-    @include respond-max($bp-tab) {
-      bottom: 12px;
-    }
-
-    @include respond-max($bp-mob) {
-      width: 114px;
-      right: 20px;
-      // margin-bottom: 10vh;
-      // margin-bottom: env(safe-area-inset-bottom);
-    }
-  }
-
   &__btn {
     bottom: 8%;
     position: absolute;
 
     @include respond-max($bp-mob) {
       bottom: 12px;
-      // margin-bottom: 10vh;
-      // margin-bottom: env(safe-area-inset-bottom);
+      position: fixed;
     }
 
     a {
@@ -187,6 +151,40 @@
       svg path.btn-fill {
         fill: #8667ff;
       }
+    }
+  }
+
+  &.begin-again-btn svg {
+    bottom: 8%;
+    position: absolute;
+    width: 285px;
+    right: 65px;
+
+    @include respond-max($bp-lg-desk) {
+      right: 55px;
+      width: 183px;
+    }
+
+    @include respond-max($bp-desk) {
+      right: 50px;
+    }
+
+    @include respond-max($bp-lg-lap) {
+      width: 137px;
+    }
+
+    @include respond-max($bp-lap) {
+      right: 33px;
+    }
+
+    @include respond-max($bp-tab) {
+      bottom: 12px;
+    }
+
+    @include respond-max($bp-mob) {
+      position: fixed;
+      width: 114px;
+      right: 20px;
     }
   }
 }
