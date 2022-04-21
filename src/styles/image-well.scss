@@ -108,7 +108,7 @@
       .project-title {
         display: block;
 
-        @include respond-max($bp-mob) {
+        @include respond-max($bp-tab) {
           display: none;
         }
       }

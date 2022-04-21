@@ -186,5 +186,10 @@
       width: 114px;
       right: 20px;
     }
+
+    @include respond-max($bp-mob-xs) {
+      bottom: 12px;
+      position: fixed;
+    }
   }
 }
