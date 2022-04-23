@@ -161,6 +161,10 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  @include respond-max($bp-mob) {
+    margin-top: -50px;
+  }
 }
 
 .anim-container {

@@ -60,7 +60,7 @@ export default function HealthWellness(props) {
             </div>
             <div className="page-title-container health-title mobile-only">
               <h2 className="page-title page-title-js">
-                <span className="space">&nbsp;</span>
+                <span className="space"></span>
               </h2>
               <div className="page-title page-title-js">W</div>
               <div className="page-title page-title-js">E</div>

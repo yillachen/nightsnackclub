@@ -52,8 +52,8 @@ export default function NightSnacks(props) {
               <div className="page-title page-title-js">K</div>
             </div>
             <div className="page-title-container nightsnack-title mobile-only">
-              <h2 className="page-title page-title-js">
-                <span className="space">&nbsp;</span>
+              <h2 className="page-title page-title-js" style={{marginLeft: -8}}>
+                <span className="space"></span>
               </h2>
               <div className="page-title page-title-js">A</div>
               <div className="page-title page-title-js">T</div>

@@ -16,7 +16,7 @@
 
       svg {
         display: inline-block;
-        width: 285px;
+        width: 200px;
         height: 100%;
 
         @include respond-max($bp-lg-desk) {
@@ -157,7 +157,7 @@
   &.begin-again-btn svg {
     bottom: 8%;
     position: absolute;
-    width: 285px;
+    width: 200px;
     right: 65px;
 
     @include respond-max($bp-lg-desk) {
