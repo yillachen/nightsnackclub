@@ -127,6 +127,15 @@ main {
       display: inline-block;
     }
   }
+
+  &.nightsnack-title {
+    &.mobile-only {
+      @include respond-max($bp-tab) {
+        display: inline-block;
+        margin-left: -8px;
+      }
+    }
+  }
 }
 
 .page-title {
@@ -456,9 +465,9 @@ main {
       padding-bottom: 28px;
     }
 
-    @media (max-height: 670px) {
-      padding-top: 0;
-      padding-bottom: 0;
+    @include respond-max($bp-mob-xxs) {
+      padding-top: 62px;
+      padding-bottom: 0px;
     }
   }
 
