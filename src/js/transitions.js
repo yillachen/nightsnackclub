@@ -2,9 +2,9 @@ import { removeClass, projectTooltip } from "./helperFunc";
 import gsap from "gsap";
 
 export function appTransitions() {
-  // setTimeout(() => {
-  //   removeClass("inactive-card");
-  // }, 1250);
+  setTimeout(() => {
+    removeClass("inactive-card");
+  }, 1250);
 
   const tl = gsap.timeline({
     onComplete: () => {
