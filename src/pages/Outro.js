@@ -30,20 +30,18 @@ export default function Outro(props) {
         <div className="top-gradient"></div>
         <div className=" nsc-page-title">
           <div className="anim-nsc">
-            <div className="anim-nsc">
-              <div className="anim-container">
-                <Link to="/">
-                  <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
-                    Night
-                  </div>
-                  <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
-                    Snack
-                  </div>
-                  <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
-                    Club
-                  </div>
-                </Link>
-              </div>
+            <div className="anim-container outro">
+              <Link to="/">
+                <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
+                  Night
+                </div>
+                <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
+                  Snack
+                </div>
+                <div className="anim-title nsc-title-kerning page-title-js nsc-title-medium">
+                  Club
+                </div>
+              </Link>
             </div>
           </div>
         </div>
