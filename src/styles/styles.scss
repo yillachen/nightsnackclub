@@ -495,8 +495,9 @@ main {
       }
 
       @include respond-max($bp-mob) {
-        font-size: 56px;
+        font-size: 60px;
         line-height: 100%;
+        letter-spacing: -0.04em;
       }
 
       &.content-desk {

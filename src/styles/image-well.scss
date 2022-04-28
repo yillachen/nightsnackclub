@@ -134,7 +134,7 @@
         height: 435px;
       }
       @include respond-max($bp-mob) {
-        height: 260px;
+        height: 280px;
 
         &.aw-poster,
         &.ii-poster,
@@ -1648,7 +1648,7 @@
         }
 
         @include respond-max-height($bp-mob-xs) {
-          top: 65%;
+          top: 66%;
         }
 
         @include respond-max-height($bp-mob-xxs) {
@@ -1735,7 +1735,7 @@
         }
 
         @include respond-max-height($bp-mob-xs) {
-          top: 300px;
+          top: 318px;
         }
 
         &.inactive-card {
@@ -1779,7 +1779,7 @@
         }
 
         @include respond-max-height($bp-mob-xs) {
-          top: 68%;
+          top: 66%;
         }
 
         &.inactive-card {
