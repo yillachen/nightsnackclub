@@ -164,7 +164,7 @@ main {
   flex-direction: column;
 
   @include respond-max($bp-mob) {
-    margin-top: -140px;
+    margin-top: -165px;
   }
 }
 
@@ -176,7 +176,10 @@ main {
 
   &.outro {
     @include respond-max($bp-mob) {
-      margin-top: -70px;
+      margin-top: -105px;
+    }
+    @include respond-max-height($bp-mob-xxs) {
+      margin-top: -120px;
     }
   }
 
@@ -459,13 +462,11 @@ main {
     }
 
     @include respond-max($bp-mob) {
-      padding-top: 60px;
-      padding-bottom: 28px;
+      padding-top: 115px;
     }
 
     @include respond-max-height($bp-mob-xs) {
-      padding-top: 62px;
-      padding-bottom: 0px;
+      padding-top: 120px;
     }
   }
 
