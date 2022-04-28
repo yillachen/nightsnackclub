@@ -1316,7 +1316,8 @@
         }
 
         @include respond-max-height($bp-mob-xs) {
-          top: 39%;
+          top: 36%;
+
         }
 
         &.inactive-card {
@@ -1507,7 +1508,7 @@
 
         @include respond-max-height($bp-mob-xs) {
           height: 127px;
-          top: 70%;
+          top: 67.5%;
           right: -19px;
         }
         @include respond-max-height($bp-mob-xxs) {
