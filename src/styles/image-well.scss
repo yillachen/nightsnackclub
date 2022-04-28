@@ -134,23 +134,21 @@
         height: 435px;
       }
       @include respond-max($bp-mob) {
-        height: 280px;
+        height: 300px;
+        width: 212px;
 
         &.aw-poster,
         &.ii-poster,
         &.ss-poster,
         &.bw-poster,
         &.ns-poster {
-          top: 51%;
-        }
-        &.hw-poster {
-          top: 61%;
+          top: 50%;
         }
       }
 
       @include respond-max-height($bp-mob-xs) {
         &.hw-poster {
-          top: 59%;
+          top: 57%;
         }
       }
 
