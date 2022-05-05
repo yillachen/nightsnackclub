@@ -1,4 +1,4 @@
-import $ from 'jquery';
+import $ from "jquery";
 
 // for image well animations coming in
 export function removeClass(targetClass) {
@@ -52,6 +52,7 @@ export function parallax() {
   });
 }
 
+// delayed click for mobile
 export function loadpage() {
   $(document).ready(function () {
     $(".delay").click(function (e) {
@@ -59,7 +60,7 @@ export function loadpage() {
         e.preventDefault();
         var $a = $(this).addClass("clicked");
         setTimeout(function () {
-          window.open($a.attr("href"), '_blank');
+          window.open($a.attr("href"), "_blank");
         }, 600);
       }
       return;

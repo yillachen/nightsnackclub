@@ -8,7 +8,7 @@ $bp-lg-lap: 1440px;
 $bp-lap: 1280px;
 $bp-tab: 820px;
 $bp-mob: 600px;
-$bp-mob-xs: 675px; // iPhone SE users
+$bp-mob-xs: 670px; // iPhone XR users
 $bp-mob-xxs: 625px; // iPhone SE users
 
 @mixin respond($width) {
@@ -41,6 +41,8 @@ $bp-mob-xxs: 625px; // iPhone SE users
 @include respond($bp-tab) {
   .mobile-only {
     display: block !important;
+    margin-top: -5px;
+    margin-bottom: 5px;
 
     .space {
       display: none;
