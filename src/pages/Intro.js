@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import StartButton from "../components/StartButton";
-// import Animation from "../assets/images/2020_original-hevc-safari.mp4";
+import Animation from "../assets/images/2020_original-hevc-safari.mp4";
 import Animation2 from "../assets/images/2020_original-vp9-chrome.webm";
 import { introTransitions } from "../js/transitions";
 
@@ -38,7 +38,7 @@ export default function Intro(props) {
 
           <div className="intro-video">
             <video muted autoPlay playsInline style={{ pointerEvents: "none" }}>
-              {/* <source src="https://res.cloudinary.com/y-chen/video/upload/v1651853427/2020_original-hevc-safari_bih7rl.mp4" type="video/mp4" /> */}
+              <source src={Animation} type="video/mp4" />
               <source src={Animation2} type="video/mp4" />
             </video>
           </div>
