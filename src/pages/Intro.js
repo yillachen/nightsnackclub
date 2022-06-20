@@ -8,7 +8,7 @@ import { introTransitions } from "../js/transitions";
 
 const Intro = () => {
   useEffect(() => {
-    (document.readyState === 'complete' || document.readyState === 'interactive') && introTransitions();
+    document.readyState !== 'loading' && introTransitions();
   });
 
   return (
