@@ -6,9 +6,9 @@ import Animation from "../assets/images/2020_original-hevc-safari.mp4";
 import Animation2 from "../assets/images/2020_original-vp9-chrome.webm";
 import { introTransitions } from "../js/transitions";
 
-export default function Intro(props) {
+const Intro = () => {
   useEffect(() => {
-    introTransitions();
+    (document.readyState === 'complete' || document.readyState === 'interactive') && introTransitions();
   });
 
   return (
@@ -79,3 +79,5 @@ export default function Intro(props) {
     </main>
   );
 }
+
+export default Intro;

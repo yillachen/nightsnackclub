@@ -6,16 +6,16 @@ import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
 import { loadpage } from "../js/helperFunc";
 
-export default function BlogWorms(props) {
+const BlogWorms = ({location}) => {
   function getBgColor() {
-    let bgColor = props.location.from;
-    return bgColor ? `body-${bgColor}` : "body-spiritual";
+    let bgColor = location.from;
+    return bgColor ? `body-${bgColor}` : "body-illustrators";
   }
 
   useEffect(() => {
-    loadpage();
     appTransitions();
-  });
+    loadpage();
+  }, []);
 
   return (
     <main className={getBgColor()}>
@@ -158,3 +158,5 @@ export default function BlogWorms(props) {
     </main>
   );
 }
+
+export default BlogWorms;

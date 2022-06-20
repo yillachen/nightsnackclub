@@ -6,9 +6,9 @@ import RestartButton from "../components/RestartButton";
 import MailchimpForm from "../components/Mailchimp";
 import { outroTransitions } from "../js/transitions";
 
-export default function Outro(props) {
+const Outro = ({location}) => {
   function getBgColor() {
-    let bgColor = props.location.from;
+    let bgColor = location.from;
     return bgColor ? `body-${bgColor}` : "body-nightsnack";
   }
 
@@ -159,3 +159,4 @@ export default function Outro(props) {
     </main>
   );
 }
+export default Outro;
