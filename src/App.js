@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
 import "./styles/styles.scss";
 import {
@@ -11,6 +11,9 @@ import {
   BlogWorms,
   Outro,
 } from "./pages/index";
+import ReactGA from 'react-ga';
+ReactGA.initialize(process.env.REACT_APP_GA);
+
 
 const routes = [
   { path: "/", name: "Home", component: Intro },
@@ -32,7 +35,11 @@ const routes = [
   { path: "/thank-you", name: "Thank you", component: Outro },
 ];
 
-export default function App() {
+const App = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <Switch>
       {routes.map(({ path, component }, index) => (
@@ -41,3 +48,5 @@ export default function App() {
     </Switch>
   );
 }
+
+export default App;
