@@ -14,7 +14,6 @@ import {
 import ReactGA from 'react-ga';
 ReactGA.initialize(process.env.REACT_APP_GA);
 
-
 const routes = [
   { path: "/", name: "Home", component: Intro },
   { path: "/home", name: "Home", component: Intro },

@@ -5,8 +5,10 @@ import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
 import { loadpage } from "../js/helperFunc";
+import useAnalyticsEventTracker from '../gaTracking'
 
-const AsianWomxn = ({location}) => {
+const AsianWomxn = ({ location }) => {
+  const gaEventTracker = useAnalyticsEventTracker('Contact us');
   function getBgColor() {
     let bgColor = location.from;
     return bgColor ? `body-${bgColor}` : "body-index";
@@ -109,6 +111,7 @@ const AsianWomxn = ({location}) => {
                 href="https://www.nightsnackclub.com/blog/the-contemplative-art-of-suminagashi-with-jenn-chen"
                 rel="noreferrer"
                 target="_blank"
+                onClick={()=>gaEventTracker('Cookie Do')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649950573/1_Asian_Womxn/6_Jenn_qbkot9.jpg"
