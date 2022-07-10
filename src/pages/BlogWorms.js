@@ -5,20 +5,19 @@ import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
 import { loadpage } from "../js/helperFunc";
+import useAnalyticsEventTracker from '../js/useAnalyticsEventTracker'
+import getBgColor from '../js/getBgColor'
 
 const BlogWorms = ({location}) => {
-  function getBgColor() {
-    let bgColor = location.from;
-    return bgColor ? `body-${bgColor}` : "body-illustrators";
-  }
-
   useEffect(() => {
     appTransitions();
     loadpage();
   }, []);
 
+  const gaEventTracker = useAnalyticsEventTracker('Blog Worms');
+
   return (
-    <main className={getBgColor()}>
+    <main className={getBgColor(location.from)}>
       <Helmet>
         <meta name="theme-color" content="#0f4d4d" />
       </Helmet>
@@ -72,6 +71,7 @@ const BlogWorms = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/drawing-a-sacai-with-nicolet"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Sacai with Nicolet')}
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/4_Blog_Worms/24_Nicolet_xo8b90.jpg" alt="Sacai with Nicolet" />
               </a>
@@ -84,6 +84,7 @@ const BlogWorms = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/leah-maldonado-invites-you-to-her-digital-playground"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Digital Playground with Leah Maldonado')}
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/4_Blog_Worms/25_Leah_qiqsp1.png" alt="Leah Maldonado" />
               </a>
@@ -96,6 +97,7 @@ const BlogWorms = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/sourdough-diaries-brownies"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Sourdough Diaries: Brownies')}
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/4_Blog_Worms/26_Johana_vod4f6.jpg" alt="Sourdough Diaries: Brownies" />
               </a>
@@ -108,6 +110,7 @@ const BlogWorms = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/sewing-circle-with-nicole-liao"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Sewing Circle with Nicole Liao')}
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/4_Blog_Worms/27_Nicole_zy2mdw.jpg" alt="Sewing Circle with Nicole Liao" />
               </a>
@@ -120,6 +123,7 @@ const BlogWorms = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/a-collector-duys-comme-des-garcons-collection  "
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Duys Comme des Garcons Collection')}
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/4_Blog_Worms/28_Duy_m7faxs.jpg" alt="Duy's Comme des Garcons Collection" />
               </a>

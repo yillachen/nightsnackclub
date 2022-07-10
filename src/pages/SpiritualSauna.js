@@ -5,20 +5,19 @@ import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
 import { loadpage } from "../js/helperFunc";
+import useAnalyticsEventTracker from '../js/useAnalyticsEventTracker'
+import getBgColor from '../js/getBgColor'
 
 const SpiritualSauna = ({location}) => {
-  function getBgColor() {
-    let bgColor = location.from;
-    return bgColor ? `body-${bgColor}` : "body-illustrators";
-  }
-
   useEffect(() => {
     appTransitions();
     loadpage();
   }, []);
 
+  const gaEventTracker = useAnalyticsEventTracker('Spiritual Sauna');
+
   return (
-    <main className={getBgColor()}>
+    <main className={getBgColor(location.from)}>
       <Helmet>
         <meta name="theme-color" content="#ddd3f3" />
       </Helmet>
@@ -76,6 +75,7 @@ const SpiritualSauna = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-august-2020"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Tarot Spread Guide from August 2020')}
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/3_Spirtual_Sauna/20_NightSnackClub_AugustTarot_Spread_yvqphe.png" alt="Tarot Spread Guide for August 2020" />
               </a>
@@ -88,6 +88,7 @@ const SpiritualSauna = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-july-2020"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Tarot Spread Guide for July 2020')}
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/3_Spirtual_Sauna/21_NightSnackClub_JulyTarot_Spread_coixko.png" alt="Tarot Spread Guide for July 2020" />
               </a>
@@ -100,6 +101,7 @@ const SpiritualSauna = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/tarot-spread-guide-for-september-2020"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Tarot Spread Guide for Sep 2020')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/3_Spirtual_Sauna/22_NightSnackClub_SeptemberTarot_Spread_pzqi2a.png"

@@ -5,19 +5,18 @@ import BackButton from "../components/BackButton";
 import RestartButton from "../components/RestartButton";
 import MailchimpForm from "../components/Mailchimp";
 import { outroTransitions } from "../js/transitions";
+import useAnalyticsEventTracker from '../js/useAnalyticsEventTracker'
+import getBgColor from '../js/getBgColor'
 
 const Outro = ({location}) => {
-  function getBgColor() {
-    let bgColor = location.from;
-    return bgColor ? `body-${bgColor}` : "body-nightsnack";
-  }
-
   useEffect(() => {
     outroTransitions();
   });
 
+  const gaEventTracker = useAnalyticsEventTracker('Outro');
+
   return (
-    <main className={getBgColor()}>
+    <main className={getBgColor(location.from)}>
       <Helmet>
         <meta name="theme-color" content="#dddcff" />
       </Helmet>
@@ -114,6 +113,7 @@ const Outro = ({location}) => {
                       href="https://nightsnackclub.com"
                       target="_blank"
                       rel="noreferrer"
+                      onClick={() => gaEventTracker('Website')}
                     >
                       WEBSITE
                     </a>
@@ -123,6 +123,7 @@ const Outro = ({location}) => {
                       href="https://instagram.com/nightsnackclub"
                       target="_blank"
                       rel="noreferrer"
+                      onClick={() => gaEventTracker('Instagram')}
                     >
                       INSTAGRAM
                     </a>

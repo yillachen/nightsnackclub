@@ -5,20 +5,19 @@ import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
 import { loadpage } from "../js/helperFunc";
+import useAnalyticsEventTracker from '../js/useAnalyticsEventTracker'
+import getBgColor from '../js/getBgColor'
 
 const NightSnacks = ({location}) => {
-  function getBgColor() {
-    let bgColor = location.from;
-    return bgColor ? `body-${bgColor}` : "body-illustrators";
-  }
-
   useEffect(() => {
     appTransitions();
     loadpage();
   }, []);
 
+  const gaEventTracker = useAnalyticsEventTracker('Snack Attack');
+
   return (
-    <main className={getBgColor()}>
+    <main className={getBgColor(location.from)}>
       <Helmet>
         <meta name="theme-color" content="#c6d2cf" />
       </Helmet>
@@ -73,6 +72,7 @@ const NightSnacks = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/pansy-orange-gin-cordial"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Pansy Orange Gin Cordial')}
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/6_Night_Snacks/36_Shirley_mmxng8.jpg" alt="Pansy Orange Fin Cordial" />
               </a>
@@ -82,6 +82,7 @@ const NightSnacks = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/egg-tarts"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Hong Kong meets Philly Egg Tarts')}
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/6_Night_Snacks/37_Jenn_hcxmxl.jpg" alt="Hong Kong meets Philly Egg Tarts" />
               </a>
@@ -94,6 +95,7 @@ const NightSnacks = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/finding-inspiration-dessert-edition"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Finding Inspiration, Dessert Edition')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/6_Night_Snacks/38_Johana_yzivif.jpg"
@@ -109,8 +111,9 @@ const NightSnacks = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/anh-anhs-salted-eggs"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Anh Anhs Salted Eggs')}
               >
-                <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/6_Night_Snacks/39_Shirley_v3icdv.jpg" alt="Anh Anh's   Salted Eggs" />
+                <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/6_Night_Snacks/39_Shirley_v3icdv.jpg" alt="Anh Anh's Salted Eggs" />
               </a>
               <div className="project-title">Anh Anh’s Salted Eggs</div>
             </div>

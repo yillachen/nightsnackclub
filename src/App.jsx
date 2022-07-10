@@ -12,7 +12,9 @@ import {
   Outro,
 } from "./pages/index";
 import ReactGA from 'react-ga';
-ReactGA.initialize(process.env.REACT_APP_GA);
+
+const tracking_id = process.env.REACT_APP_GA
+ReactGA.initialize(tracking_id);
 
 const routes = [
   { path: "/", name: "Home", component: Intro },

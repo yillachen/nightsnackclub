@@ -5,20 +5,20 @@ import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
 import { loadpage } from "../js/helperFunc";
+import useAnalyticsEventTracker from '../js/useAnalyticsEventTracker'
+import getBgColor from '../js/getBgColor'
+
 
 const HealthWellness = ({location}) => {
-  function getBgColor() {
-    let bgColor = location.from;
-    return bgColor ? `body-${bgColor}` : "body-illustrators";
-  }
-
   useEffect(() => {
     appTransitions();
     loadpage();
   }, []);
 
+  const gaEventTracker = useAnalyticsEventTracker('Health & Wellness');
+
   return (
-    <main className={getBgColor()}>
+    <main className={getBgColor(location.from)}>
       <Helmet>
         <meta name="theme-color" content="#fee3ba" />
       </Helmet>
@@ -82,6 +82,7 @@ const HealthWellness = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/sculpt-your-way-to-glowy-skin-with-yilla"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Sculpt Your Way to Glowy Skin with Yilla')}
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/5_Health_and_Wellness/30_Yilla_kaqgc9.png" alt="Facial Massage with Yilla" />
               </a>
@@ -94,6 +95,7 @@ const HealthWellness = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/yoga-journey-with-ying"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Yoga Journey with Ying')}
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/5_Health_and_Wellness/31_Ying_jgsnkl.jpg" alt="Yoga with Ying" />
               </a>
@@ -103,6 +105,7 @@ const HealthWellness = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/kombucha-dabbles"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Kombucha Dabbles with Anna')}
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313342/5_Health_and_Wellness/32_Anna_inesed.jpg" alt="Kombucha Dabbles with Anna" />
               </a>
@@ -112,6 +115,7 @@ const HealthWellness = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/the-contemplative-art-of-suminagashi-with-jenn-chen"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Suminagashi with Jenn')}
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/5_Health_and_Wellness/33_Jenn_sfyotc.jpg" alt="Suminagashi with Jenn" />
               </a>
@@ -125,6 +129,7 @@ const HealthWellness = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/the-unqualified-herbalist-chamomile"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Unqualified Herbalist: Chamomile')}
               >
                 <img src="https://res.cloudinary.com/y-chen/image/upload/v1650313341/5_Health_and_Wellness/34_Hui_sudefj.jpg" alt="Herbalism with Hui" />
               </a>

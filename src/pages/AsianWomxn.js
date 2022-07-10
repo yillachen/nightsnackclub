@@ -5,22 +5,19 @@ import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
 import { loadpage } from "../js/helperFunc";
-import useAnalyticsEventTracker from '../gaTracking'
+import useAnalyticsEventTracker from '../js/useAnalyticsEventTracker'
+import getBgColor from '../js/getBgColor'
 
 const AsianWomxn = ({ location }) => {
-  const gaEventTracker = useAnalyticsEventTracker('Contact us');
-  function getBgColor() {
-    let bgColor = location.from;
-    return bgColor ? `body-${bgColor}` : "body-index";
-  }
-
   useEffect(() => {
     appTransitions();
     loadpage();
   }, []);
 
+  const gaEventTracker = useAnalyticsEventTracker('Asian Womxn');
+
   return (
-    <main className={getBgColor()}>
+    <main className={getBgColor(location.from)}>
       <Helmet>
         <meta name="theme-color" content="#fff1de" />
       </Helmet>
@@ -97,6 +94,7 @@ const AsianWomxn = ({ location }) => {
                 href="https://www.nightsnackclub.com/blog/cookie-do"
                 rel="noreferrer"
                 target="_blank"
+                onClick={() => gaEventTracker('Cookie Do')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649950573/1_Asian_Womxn/7_Caitlin_jqpqb3.jpg"
@@ -111,7 +109,7 @@ const AsianWomxn = ({ location }) => {
                 href="https://www.nightsnackclub.com/blog/the-contemplative-art-of-suminagashi-with-jenn-chen"
                 rel="noreferrer"
                 target="_blank"
-                onClick={()=>gaEventTracker('Cookie Do')}
+                onClick={() => gaEventTracker('Suminagashi with Jenn Chen')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649950573/1_Asian_Womxn/6_Jenn_qbkot9.jpg"
@@ -132,6 +130,7 @@ const AsianWomxn = ({ location }) => {
                 href="https://www.nightsnackclub.com/blog/jeannie-huang"
                 rel="noreferrer"
                 target="_blank"
+                onClick={() => gaEventTracker('Jeannie Huang')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649950574/1_Asian_Womxn/5_Jeannie_rqn6ve.jpg"
@@ -150,6 +149,7 @@ const AsianWomxn = ({ location }) => {
                 href="https://www.nightsnackclub.com/blog/creative-couple-series-judy-and-oscar"
                 rel="noreferrer"
                 target="_blank"
+                onClick={() => gaEventTracker('Judy & Oscar')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649950573/1_Asian_Womxn/4_Judy_hap9pv.png"
@@ -167,6 +167,7 @@ const AsianWomxn = ({ location }) => {
                 href="https://www.nightsnackclub.com/blog/sewing-circle-with-nicole-liao"
                 rel="noreferrer"
                 target="_blank"
+                onClick={() => gaEventTracker('Sewing Circle with Nicole Liao')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649950573/1_Asian_Womxn/3_Nicole_vq91dq.jpg"
@@ -184,6 +185,7 @@ const AsianWomxn = ({ location }) => {
                 href="https://www.nightsnackclub.com/blog/smoothing-out-hard-corners-in-clay"
                 rel="noreferrer"
                 target="_blank"
+                onClick={() => gaEventTracker('Smoothing Out Hard Corners in Clay')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649950573/1_Asian_Womxn/2_Robyn_gzahyw.jpg"

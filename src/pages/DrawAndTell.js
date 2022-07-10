@@ -5,20 +5,19 @@ import BackButton from "../components/BackButton";
 import NextButton from "../components/NextButton";
 import { appTransitions } from "../js/transitions";
 import { loadpage } from "../js/helperFunc";
+import getBgColor from '../js/getBgColor'
+import useAnalyticsEventTracker from '../js/useAnalyticsEventTracker'
 
 const DrawAndTell = ({location}) => {
-  function getBgColor() {
-    let bgColor = location.from;
-    return bgColor ? `body-${bgColor}` : "body-asian-womxn";
-  }
-
   useEffect(() => {
     appTransitions();
     loadpage();
   }, []);
 
+  const gaEventTracker = useAnalyticsEventTracker('Draw & Tell');
+
   return (
-    <main className={getBgColor()}>
+    <main className={getBgColor(location.from)}>
       <Helmet>
         <meta name="theme-color" content="#0a1772" />
       </Helmet>
@@ -75,6 +74,7 @@ const DrawAndTell = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/creative-couple-series-liz-and-enle"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Liz & Enle')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951378/2_Draw_And_Tell/10_Liz_hmpgad.jpg"
@@ -90,6 +90,7 @@ const DrawAndTell = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/cookie-do"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Cookie Do')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951379/2_Draw_And_Tell/17_Caitlin_v6uwf7.png"
@@ -103,6 +104,7 @@ const DrawAndTell = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/meet-alejandro-chen-li"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Alejandro Chen Li')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951379/2_Draw_And_Tell/12_Ale_b7io9j.jpg"
@@ -119,6 +121,7 @@ const DrawAndTell = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/tattooing-as-a-form-of-ritual"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Tattooing as a Form of Ritual')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951378/2_Draw_And_Tell/13_Monica_pyzrpy.jpg"
@@ -134,6 +137,7 @@ const DrawAndTell = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/abc-for-abcs"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('ABCs for ABCs')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951378/2_Draw_And_Tell/14_Tiffany_lblj02.png"
@@ -146,6 +150,7 @@ const DrawAndTell = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/the-meandering-path-of-emily"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Meandering Path of Emily')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951378/2_Draw_And_Tell/15_Emily_yxkc6o.jpg"
@@ -153,7 +158,7 @@ const DrawAndTell = ({location}) => {
                 />
               </a>
               <div className="project-title">
-                The meandering <br />
+                The meandering<br />
                 path of emily
               </div>
             </div>
@@ -161,6 +166,7 @@ const DrawAndTell = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/leah-maldonado-invites-you-to-her-digital-playground"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Leah Maldonado')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951379/2_Draw_And_Tell/16_Leah_inb4sk.png"
@@ -176,6 +182,7 @@ const DrawAndTell = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/creative-couple-series-liz-and-enle"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Liz & Enle 2')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951378/2_Draw_And_Tell/11_Enle_tkvmma.jpg"
@@ -191,6 +198,7 @@ const DrawAndTell = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/behind-the-murals"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Behind the Murals')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951378/2_Draw_And_Tell/18_Jocelyn_ow53xy.jpg"
@@ -203,6 +211,7 @@ const DrawAndTell = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/drawing-a-sacai-with-nicolet"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('Drawing a Sacai with Nicolet')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951379/2_Draw_And_Tell/9_Nicolet_iaxeyv.jpg"
@@ -218,6 +227,7 @@ const DrawAndTell = ({location}) => {
               <a
                 className="delay" href="https://www.nightsnackclub.com/blog/from-nyc-to-nola"
                 rel="noreferrer" target="_blank"
+                onClick={() => gaEventTracker('From NYC to NOLA')}
               >
                 <img
                   src="https://res.cloudinary.com/y-chen/image/upload/v1649951379/2_Draw_And_Tell/header-image_pccrhu.png"
